@@ -1,0 +1,36 @@
+{
+  "version": "jrtip-detection-budget-quality-v2",
+  "run_id": "101064-2026-11-22T04:04:05Z",
+  "source_benchmark": "jrtip\\baseline_benchmark_v1",
+  "source_benchmark_config_sha256": "a48c1b58e5b9440bfad7801cf1d57a5be4166ba8f1cda00afa9749c691aa333f",
+  "checkpoint": "jrtip\\baseline_pilot_v1\\checkpoint_001000.pt",
+  "checkpoint_sha256": "7c45e7eefb06aadb111b9b3262b49bc9019e48f665b78a2e3f1a8ee2d4c405dd",
+  "coco_weights_sha256_constant": "bf2d0c1efbc936eeee2bc95a48e80ebc86b891f61b0106485937fc29f9315fc0",
+  "scale": 640,
+  "model_default_detections_per_img": 100,
+  "control_cap": 100,
+  "predeclared_tolerances": {
+    "AP_drop_vs_control_pp": 1.0,
+    "count_MAE_increase_vs_control_leaf": 0.2
+  },
+  "device": "cuda",
+  "threads": 4,
+  "precision": "FP32",
+  "evaluation_contract": "src/jrtip_pilot.quality(): select_dev over V_SOURCE/V_SHIFT valid frames, genotype-macro COCO mask AP recomputed per collection, count MAE aggregated frame -> plant -> genotype -> equal dev domain",
+  "max_frames_per_plant": 0,
+  "smoke_limited": false,
+  "formal_36_epoch_run": false,
+  "locked_roles_accessed": [],
+  "diagnostic_only": true,
+  "frozen_benchmark_control": {
+    "AP": 70.4607911786734,
+    "AP50": 95.41115101923182,
+    "AP75": 80.92950804085432,
+    "count_MAE": 1.0139046254831632
+  },
+  "frozen_benchmark_stream_sha256": "fc70f5cbf7ab31b485bc44cae0f4f9b4dea43509cb74c05809cd3e38c8af65b8",
+  "note": "Predeclared P1 bottleneck pilot: default 1000 optimizer updates, effective batch 4 (physical 1 x accumulation 4), seed 43, FP32, independent generic COCO R50-FPN initialization; multi-scale long edge 320/480/640. A shorter pilot first measures bottlenecks. SGD .005/.9/1e-4, 500-update linear warmup from .0005, then constant .005. Even a longer --steps run uses this pilot schedule, NOT the formal 36-epoch 24/32-epoch decay schedule. Formal 36-epoch training has NOT been run by this script's implementation; pilot outputs must not be described as full formal results. Selection uses only V_SOURCE/V_SHIFT at long edge 640; benchmark does not reselect weights. Relative S640 tolerances were fixed before measurement: AP drop <=1 percentage point and count MAE increase <=0.2. Development point-estimate feasibility is not a confirmatory noninferiority claim.",
+  "budgets": [
+    100
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "version": "jrtip-budget-condition1-verdict-v1",
+  "generated_utc": "2026-11-22T17:22:07Z",
+  "criterion": "plan v2 section 5 (comparator amendment, predeclared before any controller number existed) and section 9 stop-loss condition 1: a learned threshold candidate counts only if, at its own measured masked-instance work, it drops less macro AP than the strongest passing label-free arm within +/-5% work (static or rule) AND its count-MAE increase is no larger than that arm's.",
+  "work_window": 0.05,
+  "control_work_masks_per_frame": 89.519,
+  "label_free_tables": [
+    "jrtip\\budget_policy_v1\\policy_eval.json",
+    "jrtip\\budget_policy_v1_extra\\policy_eval.json",
+    "jrtip\\budget_bucket_pricing_v1\\bucket_pricing.json"
+  ],
+  "label_free_comparators": 48,
+  "label_free_skipped": [
+    {
+      "source": "jrtip\\budget_policy_v1\\policy_eval.json",
+      "name": "15",
+      "kind": "static",
+      "work": 15.0,
+      "drop_pp": 1.1888,
+      "why": "fails a predeclared gate"
+    },
+    {
+      "source": "jrtip\\budget_policy_v1\\policy_eval.json",
+      "name": "10",
+      "kind": "static",
+      "work": 10.0,
+      "drop_pp": 6.2965,
+      "why": "fails a predeclared gate"
+    },
+    {
+      "source": "jrtip\\budget_policy_v1\\policy_eval.json",
+      "name": "5",
+      "kind": "static",
+      "work": 5.0,
+      "drop_pp": 31.3652,
+      "why": "fails a predeclared gate"
+    }
+  ],
+  "controller_tables": [
+    "jrtip\\budget_p1b_v1\\arms_C1.json"
+  ],
+  "candidates": 3,
+  "candidates_interior": 1,
+  "candidates_boundary": [
+    "C1_53ea82b633a37375",
+    "C1_bbb04da0dfdddf62"
+  ],
+  "interior_candidates": [
+    "C1_5594eb64e8dd9db1"
+  ],
+  "distinct_policy_digests": [
+    "53ea82b633a37375",
+    "5594eb64e8dd9db1",
+    "bbb04da0dfdddf62"
+  ],
+  "condition_1_triggered": true,
+  "no_interior_candidate": false,
+  "winners": [],
+  "rows": [
+    {
+      "name": "C1_53ea82b633a37375",
+      "class": "disqualified_by_gate",
+      "work": 15.0,
+      "ap_drop_pp": 1.1888,
+      "count_leaf": 0.0034,
+      "truncated_frames": 201,
+      "passes_gates": false,
+      "budget_median": 15.0,
+      "budget_max": 15,
+      "budget_histogram": null,
+      "comparison": {
+        "window": [
+          14.25,
+          15.75
+        ],
+        "comparators_in_window": 1,
+        "strongest_label_free": {
+          "source": "policy_eval.json",
+          "name": "clip(count+2,15,100)",
+          "kind": "rule_count_plus_m",
+          "work": 15.442,
+          "drop_pp": 0.586,
+          "count_leaf": 0.0,
+          "reduction_vs_control": 0.8275
+        },
+        "label_free_gain_pp": -0.6028,
+        "beats_strongest": false,
+        "ap_strictly_lower": false,
+        "count_not_worse": false,
+        "all_in_window": [
+          {
+            "source": "policy_eval.json",
+            "name": "clip(count+2,15,100)",
+            "kind": "rule_count_plus_m",
+            "work": 15.442,
+            "drop_pp": 0.586,
+            "count_leaf": 0.0,
+            "reduction_vs_control": 0.8275
+          }
+        ]
+      }
+    },
+    {
+      "name": "C1_5594eb64e8dd9db1",
+      "class": "interior",
+      "work": 15.405,
+      "ap_drop_pp": 0.5994,
+      "count_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_gates": true,
+      "budget_median": 15.0,
+      "budget_max": 30,
+      "budget_histogram": null,
+      "comparison": {
+        "window": [
+          14.635,
+          16.175
+        ],
+        "comparators_in_window": 3,
+        "strongest_label_free": {
+          "source": "policy_eval.json",
+          "name": "clip(ceil(1.25*count),15,100)",
+          "kind": "rule_count_times_r",
+          "work": 15.905,
+          "drop_pp": 0.4755,
+          "count_leaf": 0.0,
+          "reduction_vs_control": 0.8223
+        },
+        "label_free_gain_pp": -0.1239,
+        "beats_strongest": false,
+        "ap_strictly_lower": false,
+        "count_not_worse": true,
+        "all_in_window": [
+          {
+            "source": "policy_eval.json",
+            "name": "clip(ceil(1.25*count),15,100)",
+            "kind": "rule_count_times_r",
+            "work": 15.905,
+            "drop_pp": 0.4755,
+            "count_leaf": 0.0,
+            "reduction_vs_control": 0.8223
+          },
+          {
+            "source": "policy_eval.json",
+            "name": "clip(count+2,15,100)",
+            "kind": "rule_count_plus_m",
+            "work": 15.442,
+            "drop_pp": 0.586,
+            "count_leaf": 0.0,
+            "reduction_vs_control": 0.8275
+          },
+          {
+            "source": "policy_eval.json",
+            "name": "16",
+            "kind": "static",
+            "work": 16.0,
+            "drop_pp": 0.9052,
+            "count_leaf": -0.0008,
+            "reduction_vs_control": 0.8213
+          }
+        ]
+      }
+    },
+    {
+      "name": "C1_bbb04da0dfdddf62",
+      "class": "boundary_control",
+      "work": 89.519,
+      "ap_drop_pp": 0.0,
+      "count_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_gates": true,
+      "budget_median": 100.0,
+      "budget_max": 100,
+      "budget_histogram": null,
+      "comparison": {
+        "window": [
+          85.043,
+          93.995
+        ],
+        "comparators_in_window": 0,
+        "strongest_label_free": null,
+        "beats_strongest": null,
+        "why": "no passing label-free arm inside the +/-5% window"
+      }
+    }
+  ],
+  "reading": "condition 1 stops the formal matrix.  Boundary taus are listed with their class: tau=-inf is the cap-100 control (no saving, nothing to compare against) and tau=+inf collapses to static 15 (fails the AP gate); neither is an allocation.  A grid that yields one interior policy is reported as such - the collapse is a result, not a filtering artifact."
+}

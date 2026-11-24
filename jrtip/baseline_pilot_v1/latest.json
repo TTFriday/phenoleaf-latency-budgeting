@@ -1,0 +1,7 @@
+{
+  "checkpoint": "jrtip\\baseline_pilot_v1\\checkpoint_001000.pt",
+  "optimizer_step": 1000,
+  "evaluation_complete": true,
+  "config_sha256": "f98e171197174614b1243d532985662b20832e58e6bba6cbd14c868ba33056f8",
+  "checkpoint_sha256": "7c45e7eefb06aadb111b9b3262b49bc9019e48f665b78a2e3f1a8ee2d4c405dd"
+}

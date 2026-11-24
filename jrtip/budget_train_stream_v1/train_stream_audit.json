@@ -1,0 +1,63 @@
+{
+  "version": "jrtip-budget-train-stream-audit-v1",
+  "generated_utc": "2026-11-22T15:41:26Z",
+  "stream": "jrtip\\budget_train_stream_v1\\quality_000100_S640_TRAIN.jsonl",
+  "seconds": 3.4,
+  "rows": 8070,
+  "distinct_image_ids": 8070,
+  "selected_frames": 8070,
+  "selected_plants": 150,
+  "selected_genotypes": [
+    "Ba4-1",
+    "Ba5-1",
+    "Bch-4",
+    "Col-0",
+    "Cvi-0",
+    "Go-0",
+    "Hs-0",
+    "Ler-1",
+    "Lz-0",
+    "Sav-0",
+    "TOU-I-17",
+    "Uk-1",
+    "Uk-4",
+    "Ws-2",
+    "Zdr-1"
+  ],
+  "role": "TRAIN",
+  "locked_roles_accessed": [],
+  "required_fields": [
+    "image_id",
+    "split_role",
+    "genotype",
+    "plant",
+    "count",
+    "gt_count",
+    "count_abs_error",
+    "original_hw",
+    "geometry",
+    "instances",
+    "ap_score_threshold",
+    "count_score_threshold",
+    "mask_threshold"
+  ],
+  "instance_fields": [
+    "score",
+    "box_xyxy",
+    "segmentation"
+  ],
+  "counters": {
+    "schema": 0,
+    "identity": 0,
+    "role": 0,
+    "cap": 0,
+    "score_order": 0,
+    "count_mismatch": 0,
+    "count_error": 0,
+    "thresholds": 0
+  },
+  "structural_failure_count": 0,
+  "structural_failures": [],
+  "passed": true,
+  "note": "structural audit only; the TRAIN COCO mask AP / count MAE readout comes from train_pass's score_genotypes, so this script never recomputes a metric"
+}

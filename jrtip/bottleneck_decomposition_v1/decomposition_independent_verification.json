@@ -1,0 +1,311 @@
+{
+  "verdict": "PASS",
+  "checks_total": 98,
+  "checks_passed": 98,
+  "checks_failed": 0,
+  "failed": [],
+  "reported_not_checked": {
+    "note": "The decomposition run subsamples the stream, forwards twice per frame, and times inside a single process; the frozen protocol sessions remain the record for service time. These values are shown for context and are NOT compared as equal.",
+    "protocol_timing_mean_ms": {
+      "320": 421.46242506906674,
+      "480": 420.72748561725643,
+      "640": 416.14043920481873
+    },
+    "decomposition_service_median_ms_all_frames": {
+      "320": 448.7305001821369,
+      "480": 445.94864995451644,
+      "640": 452.8896499541588
+    },
+    "decomposition_service_median_ms_clean_window": {
+      "320": 430.07745005888864,
+      "480": 453.9842999074608,
+      "640": 456.9900500937365
+    },
+    "decomposition_service_median_ms_inflation_le_1_30": {
+      "320": 445.5902499612421,
+      "480": 445.94864995451644,
+      "640": 447.7457500179298
+    },
+    "eval_postprocess_share_of_forward": {
+      "320": 0.8455156719965722,
+      "480": 0.8395835856816933,
+      "640": 0.8286974621684955
+    },
+    "postprocess_share_of_service": {
+      "320": 0.20849372715143177,
+      "480": 0.21004457938893178,
+      "640": 0.20559470399627144
+    },
+    "forward_event_ms_all_frames": {
+      "320": 346.25587463378906,
+      "480": 340.89697265625,
+      "640": 342.8733825683594
+    },
+    "probe_interference_context": {
+      "320": {
+        "matrix_inflation": 1.3944444507323088,
+        "matrix_ms": 0.012851200252771377,
+        "launch_ms": 0.006144000217318535,
+        "cpu_ms": 1.5531500685028732,
+        "foreign_contexts": 34.0
+      },
+      "480": {
+        "matrix_inflation": 1.0528634547619091,
+        "matrix_ms": 0.012134400010108948,
+        "launch_ms": 0.005632000043988228,
+        "cpu_ms": 1.4949000324122608,
+        "foreign_contexts": 34.0
+      },
+      "640": {
+        "matrix_inflation": 1.0931372524542626,
+        "matrix_ms": 0.011417599767446518,
+        "launch_ms": 0.005119999870657921,
+        "cpu_ms": 1.3815000420436263,
+        "foreign_contexts": 34.0
+      }
+    },
+    "clean_subset_definitions": {
+      "320": {
+        "frames": 358,
+        "probe_boundary_frames_clean": 2,
+        "interval_frames_clean": 32,
+        "definition_note": "aggregate() keeps records whose ordinal is itself a probe ordinal in a clean window, not every record inside a clean window. Both subsets are recomputed here so the smallness of the reported clean-window medians is visible; the all-frame medians are the robust column.",
+        "median_service_ms": {
+          "all": 448.7305001821369,
+          "probe_boundary_clean": 430.07745005888864,
+          "interval_clean": 445.5902499612421
+        },
+        "median_forward_event_ms": {
+          "all": 346.25587463378906,
+          "probe_boundary_clean": 317.21156311035156,
+          "interval_clean": 347.12144470214844
+        },
+        "median_eval_postprocess_ms": {
+          "all": 293.72108459472656,
+          "probe_boundary_clean": 272.8688659667969,
+          "interval_clean": 295.8699493408203
+        }
+      },
+      "480": {
+        "frames": 358,
+        "probe_boundary_frames_clean": 16,
+        "interval_frames_clean": 358,
+        "definition_note": "aggregate() keeps records whose ordinal is itself a probe ordinal in a clean window, not every record inside a clean window. Both subsets are recomputed here so the smallness of the reported clean-window medians is visible; the all-frame medians are the robust column.",
+        "median_service_ms": {
+          "all": 445.94864995451644,
+          "probe_boundary_clean": 453.9842999074608,
+          "interval_clean": 445.94864995451644
+        },
+        "median_forward_event_ms": {
+          "all": 340.89697265625,
+          "probe_boundary_clean": 343.5410614013672,
+          "interval_clean": 340.89697265625
+        },
+        "median_eval_postprocess_ms": {
+          "all": 287.7163543701172,
+          "probe_boundary_clean": 291.9833679199219,
+          "interval_clean": 287.7163543701172
+        }
+      },
+      "640": {
+        "frames": 358,
+        "probe_boundary_frames_clean": 12,
+        "interval_frames_clean": 276,
+        "definition_note": "aggregate() keeps records whose ordinal is itself a probe ordinal in a clean window, not every record inside a clean window. Both subsets are recomputed here so the smallness of the reported clean-window medians is visible; the all-frame medians are the robust column.",
+        "median_service_ms": {
+          "all": 452.8896499541588,
+          "probe_boundary_clean": 456.9900500937365,
+          "interval_clean": 447.03935005236417
+        },
+        "median_forward_event_ms": {
+          "all": 342.8733825683594,
+          "probe_boundary_clean": 342.61598205566406,
+          "interval_clean": 341.28834533691406
+        },
+        "median_eval_postprocess_ms": {
+          "all": 285.40467834472656,
+          "probe_boundary_clean": 283.68946838378906,
+          "interval_clean": 284.08216857910156
+        }
+      }
+    },
+    "instance_bins_all_frames": {
+      "320": {
+        "10+": {
+          "frames": 358,
+          "mask_restore_ms": {
+            "n": 358,
+            "mean": 37.5505857557896,
+            "median": 35.8683499507606,
+            "p05": 18.944610003381968,
+            "p95": 54.13670495618135,
+            "min": 12.26770004723221,
+            "max": 64.03439992573112
+          },
+          "rle_encode_ms": {
+            "n": 358,
+            "mean": 44.04641424504749,
+            "median": 42.8752499865368,
+            "p05": 20.25581994676031,
+            "p95": 67.18337499769403,
+            "min": 12.51990010496229,
+            "max": 88.94479996524751
+          },
+          "serialize_ms": {
+            "n": 358,
+            "mean": 0.8947413441381683,
+            "median": 0.895200006198138,
+            "p05": 0.5860900389961898,
+            "p95": 1.2441100087016816,
+            "min": 0.40660006925463676,
+            "max": 2.1589999087154865
+          },
+          "postprocess_ms": {
+            "n": 358,
+            "mean": 94.46311257447913,
+            "median": 88.8659501215443,
+            "p05": 47.62495992472395,
+            "p95": 135.1178650453221,
+            "min": 29.09730013925582,
+            "max": 168.82759996224195
+          },
+          "serialized_bytes": {
+            "n": 358,
+            "mean": 20536.921787709496,
+            "median": 21908.0,
+            "p05": 10523.8,
+            "p95": 26696.399999999998,
+            "min": 6911.0,
+            "max": 31523.0
+          }
+        }
+      },
+      "480": {
+        "10+": {
+          "frames": 358,
+          "mask_restore_ms": {
+            "n": 358,
+            "mean": 38.43447346078992,
+            "median": 36.75324999494478,
+            "p05": 19.0563999931328,
+            "p95": 53.53651996701956,
+            "min": 12.299799942411482,
+            "max": 69.38390003051609
+          },
+          "rle_encode_ms": {
+            "n": 358,
+            "mean": 45.91733407893858,
+            "median": 43.07489999337122,
+            "p05": 19.127605023095384,
+            "p95": 72.05807003192604,
+            "min": 11.937799979932606,
+            "max": 112.10549995303154
+          },
+          "serialize_ms": {
+            "n": 358,
+            "mean": 0.9588181586186896,
+            "median": 0.9555500582791865,
+            "p05": 0.5418650340288877,
+            "p95": 1.3488899101503191,
+            "min": 0.32210000790655613,
+            "max": 1.8945999909192324
+          },
+          "postprocess_ms": {
+            "n": 358,
+            "mean": 97.4448941356643,
+            "median": 90.35330009646714,
+            "p05": 45.87818008149043,
+            "p95": 141.01614017272368,
+            "min": 28.86559988837689,
+            "max": 181.89020012505352
+          },
+          "serialized_bytes": {
+            "n": 358,
+            "mean": 20502.061452513968,
+            "median": 21547.5,
+            "p05": 9948.75,
+            "p95": 26610.7,
+            "min": 5536.0,
+            "max": 30405.0
+          }
+        }
+      },
+      "640": {
+        "10+": {
+          "frames": 358,
+          "mask_restore_ms": {
+            "n": 358,
+            "mean": 38.30928770875995,
+            "median": 36.46114998264238,
+            "p05": 19.597825035452846,
+            "p95": 52.746640046825625,
+            "min": 9.689300088211894,
+            "max": 61.22719997074455
+          },
+          "rle_encode_ms": {
+            "n": 358,
+            "mean": 46.023955026266876,
+            "median": 41.13904997939244,
+            "p05": 20.65961498883553,
+            "p95": 71.40346993692218,
+            "min": 11.059200041927397,
+            "max": 141.4323999779299
+          },
+          "serialize_ms": {
+            "n": 358,
+            "mean": 0.9849396646126855,
+            "median": 0.9559000609442592,
+            "p05": 0.5848899483680725,
+            "p95": 1.4410350122489033,
+            "min": 0.39080006536096334,
+            "max": 4.417699994519353
+          },
+          "postprocess_ms": {
+            "n": 358,
+            "mean": 98.93106927089757,
+            "median": 91.76365000894293,
+            "p05": 47.68329005455599,
+            "p95": 141.78833486512303,
+            "min": 24.239800171926618,
+            "max": 222.9966000886634
+          },
+          "serialized_bytes": {
+            "n": 358,
+            "mean": 20532.103351955306,
+            "median": 21424.5,
+            "p05": 9675.5,
+            "p95": 26962.1,
+            "min": 4792.0,
+            "max": 32983.0
+          }
+        }
+      }
+    },
+    "detection_budget_sweep_service_median_ms": {
+      "320": {
+        "100": 450.1546500832774,
+        "20": 133.58704996062443,
+        "5": 69.25300002330914
+      },
+      "480": {
+        "100": 442.5280502764508,
+        "20": 134.01350006461143,
+        "5": 76.15484995767474
+      },
+      "640": {
+        "100": 442.70910002524033,
+        "20": 130.0469000125304,
+        "5": 68.81209986750036
+      }
+    }
+  },
+  "run": "jrtip\\bottleneck_decomposition_v1",
+  "config_sha256": "fa50cb45d36ed5be4eb952ba999a15b3514c382c66447cdb12c2a0fc4853cf13",
+  "decomposition_sha256": "801138df077d93c3d4759fd3349f7bb5af740b4a44b386c3187876e64385178a",
+  "frames_sha256": {
+    "320": "c0c36fec936a4ec1861b436d928ffeacc72b9b050512b92a108db86894347648",
+    "480": "ee3566eb555e70c3f5ac6263c84083cd907e31ee70460eafdf30e5ebe2c485a7",
+    "640": "fee5a521ad6a2a0d36f308f9ab23bfec5242d26e7b445b167847557993490d00"
+  },
+  "method": "Recomputed the strided stream identity and digest, resize_long integer geometry, stage additivity, the service reconstruction formula, span containment, detection-ordering invariants, probe-window membership, every reported quantile, instance bins, the resolution response, the verdict flags, the fidelity counts and the budget-sweep invariants from the raw JSONL using numpy only."
+}

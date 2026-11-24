@@ -1,0 +1,986 @@
+{
+  "version": "jrtip-budget-rule-equal-work-v1",
+  "generated_utc": "2026-11-22T15:27:23Z",
+  "pricing_artifact": "jrtip\\budget_bucket_pricing_v1\\bucket_pricing.json",
+  "knot_cross_checked_against": [
+    "jrtip\\budget_policy_v1\\policy_eval.json",
+    "jrtip\\budget_policy_v1_extra\\policy_eval.json"
+  ],
+  "knot_disagreements": [],
+  "static_curve_monotone_in_work": true,
+  "monotonicity_breaches": [],
+  "work_window": 0.05,
+  "predeclared_tolerances": {
+    "ap_drop_pp": 1.0,
+    "count_MAE_increase_leaf": 0.2
+  },
+  "control": {
+    "AP": 70.4607911786734,
+    "AP50": 95.41115101923182,
+    "AP75": 80.92950804085432,
+    "count_MAE": 1.0139046254831632,
+    "work_masks_per_frame": 89.519
+  },
+  "static_knots": [
+    [
+      5.0,
+      31.3652,
+      "5"
+    ],
+    [
+      10.0,
+      6.2965,
+      "10"
+    ],
+    [
+      15.0,
+      1.1888,
+      "15"
+    ],
+    [
+      16.0,
+      0.9052,
+      "16"
+    ],
+    [
+      17.0,
+      0.7145,
+      "17"
+    ],
+    [
+      18.0,
+      0.5937,
+      "18"
+    ],
+    [
+      19.0,
+      0.4483,
+      "19"
+    ],
+    [
+      19.999,
+      0.4128,
+      "20"
+    ],
+    [
+      21.999,
+      0.3296,
+      "22"
+    ],
+    [
+      23.997,
+      0.2763,
+      "24"
+    ],
+    [
+      24.996,
+      0.2612,
+      "25"
+    ],
+    [
+      25.995,
+      0.2384,
+      "26"
+    ],
+    [
+      27.992,
+      0.1917,
+      "28"
+    ],
+    [
+      29.985,
+      0.1635,
+      "30"
+    ],
+    [
+      34.956,
+      0.1351,
+      "35"
+    ],
+    [
+      39.88,
+      0.0952,
+      "40"
+    ],
+    [
+      44.734,
+      0.0697,
+      "45"
+    ],
+    [
+      49.494,
+      0.0631,
+      "50"
+    ],
+    [
+      89.519,
+      0.0,
+      "100"
+    ]
+  ],
+  "static_knot_scored_in": {
+    "100": [
+      "policy_eval.json"
+    ],
+    "50": [
+      "policy_eval.json"
+    ],
+    "40": [
+      "policy_eval.json"
+    ],
+    "30": [
+      "policy_eval.json"
+    ],
+    "25": [
+      "policy_eval.json"
+    ],
+    "20": [
+      "policy_eval.json"
+    ],
+    "15": [
+      "policy_eval.json"
+    ],
+    "10": [
+      "policy_eval.json"
+    ],
+    "5": [
+      "policy_eval.json"
+    ],
+    "45": [
+      "policy_eval.json"
+    ],
+    "35": [
+      "policy_eval.json"
+    ],
+    "28": [
+      "policy_eval.json"
+    ],
+    "26": [
+      "policy_eval.json"
+    ],
+    "24": [
+      "policy_eval.json"
+    ],
+    "22": [
+      "policy_eval.json"
+    ],
+    "19": [
+      "policy_eval.json"
+    ],
+    "18": [
+      "policy_eval.json"
+    ],
+    "17": [
+      "policy_eval.json"
+    ],
+    "16": [
+      "policy_eval.json"
+    ]
+  },
+  "passing_static_arms": [
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "22",
+    "24",
+    "25",
+    "26",
+    "28",
+    "30",
+    "35",
+    "40",
+    "45",
+    "50"
+  ],
+  "arms": [
+    {
+      "arm": "sync_c_plus_10_f15",
+      "work_masks_per_frame": 19.353,
+      "ap_drop_pp": 0.2956,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 78.38,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4198
+      },
+      "projected_pass_seconds_cost_model": 475.9,
+      "nearest_passing_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.1172
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4358,
+        "error_bound_pp": 0.023,
+        "gain_pp": 0.1402,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": true
+    },
+    {
+      "arm": "sync_ceil_1p5_f15",
+      "work_masks_per_frame": 16.986,
+      "ap_drop_pp": 0.3845,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 81.03,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4181
+      },
+      "projected_pass_seconds_cost_model": 447.8,
+      "nearest_passing_static": {
+        "arm": "17",
+        "work": 17.0,
+        "ap_drop_pp": 0.7145,
+        "gain_pp": 0.33
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.7172,
+        "error_bound_pp": 0.188,
+        "gain_pp": 0.3327,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": true
+    },
+    {
+      "arm": "readfull_c_plus_10_f15",
+      "work_masks_per_frame": 19.353,
+      "ap_drop_pp": 0.2956,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 78.38,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4198
+      },
+      "projected_pass_seconds_cost_model": 475.9,
+      "nearest_passing_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.1172
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4358,
+        "error_bound_pp": 0.023,
+        "gain_pp": 0.1402,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": true
+    },
+    {
+      "arm": "bucket_c_plus_10_f15",
+      "work_masks_per_frame": 22.672,
+      "ap_drop_pp": 0.2042,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 74.67,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -0.7034
+      },
+      "projected_pass_seconds_cost_model": 515.4,
+      "nearest_passing_static": {
+        "arm": "22",
+        "work": 21.999,
+        "ap_drop_pp": 0.3296,
+        "gain_pp": 0.1254
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.3116,
+        "error_bound_pp": 0.0353,
+        "gain_pp": 0.1074,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": true
+    },
+    {
+      "arm": "bucket_ceil_1p5_f15",
+      "work_masks_per_frame": 18.269,
+      "ap_drop_pp": 0.2837,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 79.59,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -0.8206
+      },
+      "projected_pass_seconds_cost_model": 463.0,
+      "nearest_passing_static": {
+        "arm": "19",
+        "work": 19.0,
+        "ap_drop_pp": 0.4483,
+        "gain_pp": 0.1646
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.5546,
+        "error_bound_pp": 0.1063,
+        "gain_pp": 0.2709,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": true
+    },
+    {
+      "arm": "sync_c_plus_2_f17",
+      "work_masks_per_frame": 17.195,
+      "ap_drop_pp": 0.5016,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 80.79,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -2.1478
+      },
+      "projected_pass_seconds_cost_model": 450.2,
+      "nearest_passing_static": {
+        "arm": "18",
+        "work": 18.0,
+        "ap_drop_pp": 0.5937,
+        "gain_pp": 0.0921
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.6909,
+        "error_bound_pp": 0.0972,
+        "gain_pp": 0.1893,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_c_plus_3_f17",
+      "work_masks_per_frame": 17.299,
+      "ap_drop_pp": 0.4465,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 80.68,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.8587
+      },
+      "projected_pass_seconds_cost_model": 451.5,
+      "nearest_passing_static": {
+        "arm": "18",
+        "work": 18.0,
+        "ap_drop_pp": 0.5937,
+        "gain_pp": 0.1472
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.6784,
+        "error_bound_pp": 0.0847,
+        "gain_pp": 0.2319,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_c_plus_5_f17",
+      "work_masks_per_frame": 17.645,
+      "ap_drop_pp": 0.4021,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 80.29,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.6813
+      },
+      "projected_pass_seconds_cost_model": 455.6,
+      "nearest_passing_static": {
+        "arm": "18",
+        "work": 18.0,
+        "ap_drop_pp": 0.5937,
+        "gain_pp": 0.1916
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.6366,
+        "error_bound_pp": 0.0779,
+        "gain_pp": 0.2345,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_c_plus_10_f17",
+      "work_masks_per_frame": 19.825,
+      "ap_drop_pp": 0.2957,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 77.85,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4198
+      },
+      "projected_pass_seconds_cost_model": 481.5,
+      "nearest_passing_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.1171
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.419,
+        "error_bound_pp": 0.0293,
+        "gain_pp": 0.1233,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_ceil_1p25_f17",
+      "work_masks_per_frame": 17.498,
+      "ap_drop_pp": 0.4332,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 80.45,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.685
+      },
+      "projected_pass_seconds_cost_model": 453.8,
+      "nearest_passing_static": {
+        "arm": "18",
+        "work": 18.0,
+        "ap_drop_pp": 0.5937,
+        "gain_pp": 0.1605
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.6543,
+        "error_bound_pp": 0.0606,
+        "gain_pp": 0.2211,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_ceil_1p5_f17",
+      "work_masks_per_frame": 18.301,
+      "ap_drop_pp": 0.3431,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 79.56,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4181
+      },
+      "projected_pass_seconds_cost_model": 463.4,
+      "nearest_passing_static": {
+        "arm": "19",
+        "work": 19.0,
+        "ap_drop_pp": 0.4483,
+        "gain_pp": 0.1052
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.5499,
+        "error_bound_pp": 0.1016,
+        "gain_pp": 0.2068,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_c_plus_2_f18",
+      "work_masks_per_frame": 18.127,
+      "ap_drop_pp": 0.4629,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 79.75,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -2.0693
+      },
+      "projected_pass_seconds_cost_model": 461.3,
+      "nearest_passing_static": {
+        "arm": "19",
+        "work": 19.0,
+        "ap_drop_pp": 0.4483,
+        "gain_pp": -0.0146
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.5752,
+        "error_bound_pp": 0.1269,
+        "gain_pp": 0.1123,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": false,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_c_plus_3_f18",
+      "work_masks_per_frame": 18.195,
+      "ap_drop_pp": 0.4109,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 79.67,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.7781
+      },
+      "projected_pass_seconds_cost_model": 462.1,
+      "nearest_passing_static": {
+        "arm": "19",
+        "work": 19.0,
+        "ap_drop_pp": 0.4483,
+        "gain_pp": 0.0374
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.5653,
+        "error_bound_pp": 0.117,
+        "gain_pp": 0.1544,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_c_plus_5_f18",
+      "work_masks_per_frame": 18.442,
+      "ap_drop_pp": 0.3712,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 79.4,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.6813
+      },
+      "projected_pass_seconds_cost_model": 465.1,
+      "nearest_passing_static": {
+        "arm": "19",
+        "work": 19.0,
+        "ap_drop_pp": 0.4483,
+        "gain_pp": 0.0771
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.5294,
+        "error_bound_pp": 0.0811,
+        "gain_pp": 0.1582,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_c_plus_10_f18",
+      "work_masks_per_frame": 20.219,
+      "ap_drop_pp": 0.2933,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 77.41,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4198
+      },
+      "projected_pass_seconds_cost_model": 486.2,
+      "nearest_passing_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.1195
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4036,
+        "error_bound_pp": 0.074,
+        "gain_pp": 0.1103,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_ceil_1p25_f18",
+      "work_masks_per_frame": 18.355,
+      "ap_drop_pp": 0.3967,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 79.5,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.6819
+      },
+      "projected_pass_seconds_cost_model": 464.0,
+      "nearest_passing_static": {
+        "arm": "19",
+        "work": 19.0,
+        "ap_drop_pp": 0.4483,
+        "gain_pp": 0.0516
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.5421,
+        "error_bound_pp": 0.0938,
+        "gain_pp": 0.1454,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_ceil_1p5_f18",
+      "work_masks_per_frame": 19.031,
+      "ap_drop_pp": 0.328,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 78.74,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4181
+      },
+      "projected_pass_seconds_cost_model": 472.1,
+      "nearest_passing_static": {
+        "arm": "19",
+        "work": 19.0,
+        "ap_drop_pp": 0.4483,
+        "gain_pp": 0.1203
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4472,
+        "error_bound_pp": 0.0344,
+        "gain_pp": 0.1192,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_c_plus_2_f19",
+      "work_masks_per_frame": 19.078,
+      "ap_drop_pp": 0.3848,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 78.69,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -2.0698
+      },
+      "projected_pass_seconds_cost_model": 472.6,
+      "nearest_passing_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.028
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4455,
+        "error_bound_pp": 0.0327,
+        "gain_pp": 0.0607,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_c_plus_3_f19",
+      "work_masks_per_frame": 19.127,
+      "ap_drop_pp": 0.3692,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 78.63,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.7791
+      },
+      "projected_pass_seconds_cost_model": 473.2,
+      "nearest_passing_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.0436
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4438,
+        "error_bound_pp": 0.031,
+        "gain_pp": 0.0746,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_c_plus_5_f19",
+      "work_masks_per_frame": 19.299,
+      "ap_drop_pp": 0.3497,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 78.44,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.6814
+      },
+      "projected_pass_seconds_cost_model": 475.3,
+      "nearest_passing_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.0631
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4377,
+        "error_bound_pp": 0.0249,
+        "gain_pp": 0.088,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_c_plus_10_f19",
+      "work_masks_per_frame": 20.692,
+      "ap_drop_pp": 0.2897,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 76.89,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4198
+      },
+      "projected_pass_seconds_cost_model": 491.8,
+      "nearest_passing_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.1231
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.384,
+        "error_bound_pp": 0.0544,
+        "gain_pp": 0.0943,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_ceil_1p25_f19",
+      "work_masks_per_frame": 19.251,
+      "ap_drop_pp": 0.3603,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 78.5,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.6822
+      },
+      "projected_pass_seconds_cost_model": 474.7,
+      "nearest_passing_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.0525
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4394,
+        "error_bound_pp": 0.0266,
+        "gain_pp": 0.0791,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    },
+    {
+      "arm": "sync_ceil_1p5_f19",
+      "work_masks_per_frame": 19.827,
+      "ap_drop_pp": 0.311,
+      "count_MAE_increase_leaf": 0.0,
+      "truncated_frames": 0,
+      "passes_quality_gate": true,
+      "mask_work_reduction_vs_control": 77.85,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4181
+      },
+      "projected_pass_seconds_cost_model": 481.6,
+      "nearest_passing_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.1018
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4189,
+        "error_bound_pp": 0.0294,
+        "gain_pp": 0.1079,
+        "extrapolated": null
+      },
+      "gain_established_both_readings": true,
+      "timed_in_section_11": false
+    }
+  ],
+  "criterion": "an arm counts only if the nearest passing static arm inside a 5% work window loses more AP, AND the statically interpolated drop at the same work exceeds the arm's drop by more than the chord error bound (same form as §10)",
+  "arms_beating_static_at_equal_work_both_readings": [
+    "sync_c_plus_10_f15",
+    "sync_ceil_1p5_f15",
+    "readfull_c_plus_10_f15",
+    "bucket_c_plus_10_f15",
+    "bucket_ceil_1p5_f15",
+    "sync_c_plus_2_f17",
+    "sync_c_plus_3_f17",
+    "sync_c_plus_5_f17",
+    "sync_c_plus_10_f17",
+    "sync_ceil_1p25_f17",
+    "sync_ceil_1p5_f17",
+    "sync_c_plus_3_f18",
+    "sync_c_plus_5_f18",
+    "sync_c_plus_10_f18",
+    "sync_ceil_1p25_f18",
+    "sync_ceil_1p5_f18",
+    "sync_c_plus_2_f19",
+    "sync_c_plus_3_f19",
+    "sync_c_plus_5_f19",
+    "sync_c_plus_10_f19",
+    "sync_ceil_1p25_f19",
+    "sync_ceil_1p5_f19"
+  ],
+  "pass_line_by_work": [
+    {
+      "work": 16.986,
+      "best_label_free_ap_drop_pp": 0.3845,
+      "arm": "sync_ceil_1p5_f15"
+    },
+    {
+      "work": 17.195,
+      "best_label_free_ap_drop_pp": 0.5016,
+      "arm": "sync_c_plus_2_f17"
+    },
+    {
+      "work": 17.299,
+      "best_label_free_ap_drop_pp": 0.4465,
+      "arm": "sync_c_plus_3_f17"
+    },
+    {
+      "work": 17.498,
+      "best_label_free_ap_drop_pp": 0.4332,
+      "arm": "sync_ceil_1p25_f17"
+    },
+    {
+      "work": 17.645,
+      "best_label_free_ap_drop_pp": 0.4021,
+      "arm": "sync_c_plus_5_f17"
+    },
+    {
+      "work": 18.127,
+      "best_label_free_ap_drop_pp": 0.4629,
+      "arm": "sync_c_plus_2_f18"
+    },
+    {
+      "work": 18.195,
+      "best_label_free_ap_drop_pp": 0.4109,
+      "arm": "sync_c_plus_3_f18"
+    },
+    {
+      "work": 18.269,
+      "best_label_free_ap_drop_pp": 0.2837,
+      "arm": "bucket_ceil_1p5_f15"
+    },
+    {
+      "work": 18.301,
+      "best_label_free_ap_drop_pp": 0.3431,
+      "arm": "sync_ceil_1p5_f17"
+    },
+    {
+      "work": 18.355,
+      "best_label_free_ap_drop_pp": 0.3967,
+      "arm": "sync_ceil_1p25_f18"
+    },
+    {
+      "work": 18.442,
+      "best_label_free_ap_drop_pp": 0.3712,
+      "arm": "sync_c_plus_5_f18"
+    },
+    {
+      "work": 19.031,
+      "best_label_free_ap_drop_pp": 0.328,
+      "arm": "sync_ceil_1p5_f18"
+    },
+    {
+      "work": 19.078,
+      "best_label_free_ap_drop_pp": 0.3848,
+      "arm": "sync_c_plus_2_f19"
+    },
+    {
+      "work": 19.127,
+      "best_label_free_ap_drop_pp": 0.3692,
+      "arm": "sync_c_plus_3_f19"
+    },
+    {
+      "work": 19.251,
+      "best_label_free_ap_drop_pp": 0.3603,
+      "arm": "sync_ceil_1p25_f19"
+    },
+    {
+      "work": 19.299,
+      "best_label_free_ap_drop_pp": 0.3497,
+      "arm": "sync_c_plus_5_f19"
+    },
+    {
+      "work": 19.353,
+      "best_label_free_ap_drop_pp": 0.2956,
+      "arm": "sync_c_plus_10_f15"
+    },
+    {
+      "work": 19.353,
+      "best_label_free_ap_drop_pp": 0.2956,
+      "arm": "readfull_c_plus_10_f15"
+    },
+    {
+      "work": 19.825,
+      "best_label_free_ap_drop_pp": 0.2957,
+      "arm": "sync_c_plus_10_f17"
+    },
+    {
+      "work": 19.827,
+      "best_label_free_ap_drop_pp": 0.311,
+      "arm": "sync_ceil_1p5_f19"
+    },
+    {
+      "work": 20.219,
+      "best_label_free_ap_drop_pp": 0.2933,
+      "arm": "sync_c_plus_10_f18"
+    },
+    {
+      "work": 20.692,
+      "best_label_free_ap_drop_pp": 0.2897,
+      "arm": "sync_c_plus_10_f19"
+    },
+    {
+      "work": 22.672,
+      "best_label_free_ap_drop_pp": 0.2042,
+      "arm": "bucket_c_plus_10_f15"
+    }
+  ],
+  "note_on_streams": "work and projected seconds come from the 2,947-frame development contract; service times for ['sync_ceil_1p5_f15', 'sync_c_plus_10_f15', 'readfull_c_plus_10_f15', 'bucket_ceil_1p5_f15', 'bucket_c_plus_10_f15'] come from §11's 1,073-frame timing stream and are different populations, reported side by side but never averaged"
+}

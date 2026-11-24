@@ -1,0 +1,628 @@
+{
+  "control_stream_frames": 2947,
+  "caps": {
+    "50": {
+      "mismatching_instances": 0,
+      "identical_after_decode": 0,
+      "genuinely_different_masks": 0,
+      "min_iou_among_different": null,
+      "reported_leaves_affected": 0,
+      "cases": []
+    },
+    "30": {
+      "mismatching_instances": 0,
+      "identical_after_decode": 0,
+      "genuinely_different_masks": 0,
+      "min_iou_among_different": null,
+      "reported_leaves_affected": 0,
+      "cases": []
+    },
+    "25": {
+      "mismatching_instances": 0,
+      "identical_after_decode": 0,
+      "genuinely_different_masks": 0,
+      "min_iou_among_different": null,
+      "reported_leaves_affected": 0,
+      "cases": []
+    },
+    "20": {
+      "mismatching_instances": 15,
+      "identical_after_decode": 0,
+      "genuinely_different_masks": 15,
+      "min_iou_among_different": 0.991735537,
+      "reported_leaves_affected": 9,
+      "cases": [
+        {
+          "image_id": "7174",
+          "split_role": "V_SHIFT",
+          "genotype": "Kz-9",
+          "instance_rank": 9,
+          "score": 0.9666788578033447,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 249,
+          "counts_len_b": 247,
+          "pixels_identical": false,
+          "iou": 0.999542125,
+          "area_a": 2184,
+          "area_b": 2183
+        },
+        {
+          "image_id": "8260",
+          "split_role": "V_SHIFT",
+          "genotype": "Kz-9",
+          "instance_rank": 3,
+          "score": 0.9903790950775146,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 189,
+          "counts_len_b": 189,
+          "pixels_identical": false,
+          "iou": 0.9998362,
+          "area_a": 6105,
+          "area_b": 6104
+        },
+        {
+          "image_id": "8269",
+          "split_role": "V_SHIFT",
+          "genotype": "Kz-9",
+          "instance_rank": 13,
+          "score": 0.47913339734077454,
+          "reported_leaf": false,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 166,
+          "counts_len_b": 163,
+          "pixels_identical": false,
+          "iou": 0.999275362,
+          "area_a": 1379,
+          "area_b": 1380
+        },
+        {
+          "image_id": "8679",
+          "split_role": "V_SHIFT",
+          "genotype": "Kz-9",
+          "instance_rank": 4,
+          "score": 0.982537567615509,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 112,
+          "counts_len_b": 112,
+          "pixels_identical": false,
+          "iou": 0.999074074,
+          "area_a": 1079,
+          "area_b": 1080
+        },
+        {
+          "image_id": "11366",
+          "split_role": "V_SHIFT",
+          "genotype": "Or-0",
+          "instance_rank": 19,
+          "score": 0.1934032142162323,
+          "reported_leaf": false,
+          "size_a": [
+            528,
+            521
+          ],
+          "size_b": [
+            528,
+            521
+          ],
+          "counts_len_a": 243,
+          "counts_len_b": 243,
+          "pixels_identical": false,
+          "iou": 0.99949975,
+          "area_a": 1998,
+          "area_b": 1999
+        },
+        {
+          "image_id": "1687",
+          "split_role": "V_SOURCE",
+          "genotype": "Col-0",
+          "instance_rank": 8,
+          "score": 0.954510509967804,
+          "reported_leaf": true,
+          "size_a": [
+            450,
+            432
+          ],
+          "size_b": [
+            450,
+            432
+          ],
+          "counts_len_a": 107,
+          "counts_len_b": 107,
+          "pixels_identical": false,
+          "iou": 0.998916576,
+          "area_a": 923,
+          "area_b": 922
+        },
+        {
+          "image_id": "2309",
+          "split_role": "V_SOURCE",
+          "genotype": "Col-0",
+          "instance_rank": 15,
+          "score": 0.057845618575811386,
+          "reported_leaf": false,
+          "size_a": [
+            531,
+            519
+          ],
+          "size_b": [
+            531,
+            519
+          ],
+          "counts_len_a": 69,
+          "counts_len_b": 67,
+          "pixels_identical": false,
+          "iou": 0.997333333,
+          "area_a": 375,
+          "area_b": 374
+        },
+        {
+          "image_id": "3709",
+          "split_role": "V_SOURCE",
+          "genotype": "Cvi-0",
+          "instance_rank": 3,
+          "score": 0.9918124675750732,
+          "reported_leaf": true,
+          "size_a": [
+            450,
+            432
+          ],
+          "size_b": [
+            450,
+            432
+          ],
+          "counts_len_a": 238,
+          "counts_len_b": 238,
+          "pixels_identical": false,
+          "iou": 0.999724745,
+          "area_a": 3632,
+          "area_b": 3633
+        },
+        {
+          "image_id": "3885",
+          "split_role": "V_SOURCE",
+          "genotype": "Cvi-0",
+          "instance_rank": 17,
+          "score": 0.02976447343826294,
+          "reported_leaf": false,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 31,
+          "counts_len_b": 31,
+          "pixels_identical": false,
+          "iou": 0.991735537,
+          "area_a": 121,
+          "area_b": 120
+        },
+        {
+          "image_id": "4556",
+          "split_role": "V_SOURCE",
+          "genotype": "Go-0",
+          "instance_rank": 16,
+          "score": 0.7606762051582336,
+          "reported_leaf": true,
+          "size_a": [
+            527,
+            530
+          ],
+          "size_b": [
+            527,
+            530
+          ],
+          "counts_len_a": 584,
+          "counts_len_b": 582,
+          "pixels_identical": false,
+          "iou": 0.99962406,
+          "area_a": 2659,
+          "area_b": 2660
+        },
+        {
+          "image_id": "11030",
+          "split_role": "V_SOURCE",
+          "genotype": "Ler-1",
+          "instance_rank": 9,
+          "score": 0.32036253809928894,
+          "reported_leaf": false,
+          "size_a": [
+            523,
+            539
+          ],
+          "size_b": [
+            523,
+            539
+          ],
+          "counts_len_a": 716,
+          "counts_len_b": 716,
+          "pixels_identical": false,
+          "iou": 0.999675114,
+          "area_a": 3078,
+          "area_b": 3077
+        },
+        {
+          "image_id": "11033",
+          "split_role": "V_SOURCE",
+          "genotype": "Ler-1",
+          "instance_rank": 12,
+          "score": 0.15640151500701904,
+          "reported_leaf": false,
+          "size_a": [
+            523,
+            539
+          ],
+          "size_b": [
+            523,
+            539
+          ],
+          "counts_len_a": 332,
+          "counts_len_b": 332,
+          "pixels_identical": false,
+          "iou": 0.999673842,
+          "area_a": 3066,
+          "area_b": 3065
+        },
+        {
+          "image_id": "11766",
+          "split_role": "V_SOURCE",
+          "genotype": "TOU-I-17",
+          "instance_rank": 10,
+          "score": 0.8843098878860474,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 163,
+          "counts_len_b": 163,
+          "pixels_identical": false,
+          "iou": 0.999272198,
+          "area_a": 1373,
+          "area_b": 1374
+        },
+        {
+          "image_id": "13973",
+          "split_role": "V_SOURCE",
+          "genotype": "Uk-1",
+          "instance_rank": 0,
+          "score": 0.9967823028564453,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 214,
+          "counts_len_b": 214,
+          "pixels_identical": false,
+          "iou": 0.999843579,
+          "area_a": 6392,
+          "area_b": 6393
+        },
+        {
+          "image_id": "13974",
+          "split_role": "V_SOURCE",
+          "genotype": "Uk-1",
+          "instance_rank": 18,
+          "score": 0.7227073907852173,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 182,
+          "counts_len_b": 182,
+          "pixels_identical": false,
+          "iou": 0.999435666,
+          "area_a": 1772,
+          "area_b": 1771
+        }
+      ]
+    },
+    "10": {
+      "mismatching_instances": 7,
+      "identical_after_decode": 0,
+      "genuinely_different_masks": 7,
+      "min_iou_among_different": 0.998916576,
+      "reported_leaves_affected": 6,
+      "cases": [
+        {
+          "image_id": "7174",
+          "split_role": "V_SHIFT",
+          "genotype": "Kz-9",
+          "instance_rank": 9,
+          "score": 0.9666788578033447,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 249,
+          "counts_len_b": 247,
+          "pixels_identical": false,
+          "iou": 0.999542125,
+          "area_a": 2184,
+          "area_b": 2183
+        },
+        {
+          "image_id": "8260",
+          "split_role": "V_SHIFT",
+          "genotype": "Kz-9",
+          "instance_rank": 3,
+          "score": 0.9903790950775146,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 189,
+          "counts_len_b": 189,
+          "pixels_identical": false,
+          "iou": 0.9998362,
+          "area_a": 6105,
+          "area_b": 6104
+        },
+        {
+          "image_id": "8679",
+          "split_role": "V_SHIFT",
+          "genotype": "Kz-9",
+          "instance_rank": 4,
+          "score": 0.982537567615509,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 112,
+          "counts_len_b": 112,
+          "pixels_identical": false,
+          "iou": 0.999074074,
+          "area_a": 1079,
+          "area_b": 1080
+        },
+        {
+          "image_id": "1687",
+          "split_role": "V_SOURCE",
+          "genotype": "Col-0",
+          "instance_rank": 8,
+          "score": 0.954510509967804,
+          "reported_leaf": true,
+          "size_a": [
+            450,
+            432
+          ],
+          "size_b": [
+            450,
+            432
+          ],
+          "counts_len_a": 107,
+          "counts_len_b": 107,
+          "pixels_identical": false,
+          "iou": 0.998916576,
+          "area_a": 923,
+          "area_b": 922
+        },
+        {
+          "image_id": "3709",
+          "split_role": "V_SOURCE",
+          "genotype": "Cvi-0",
+          "instance_rank": 3,
+          "score": 0.9918124675750732,
+          "reported_leaf": true,
+          "size_a": [
+            450,
+            432
+          ],
+          "size_b": [
+            450,
+            432
+          ],
+          "counts_len_a": 238,
+          "counts_len_b": 238,
+          "pixels_identical": false,
+          "iou": 0.999724745,
+          "area_a": 3632,
+          "area_b": 3633
+        },
+        {
+          "image_id": "11030",
+          "split_role": "V_SOURCE",
+          "genotype": "Ler-1",
+          "instance_rank": 9,
+          "score": 0.32036253809928894,
+          "reported_leaf": false,
+          "size_a": [
+            523,
+            539
+          ],
+          "size_b": [
+            523,
+            539
+          ],
+          "counts_len_a": 716,
+          "counts_len_b": 716,
+          "pixels_identical": false,
+          "iou": 0.999675114,
+          "area_a": 3078,
+          "area_b": 3077
+        },
+        {
+          "image_id": "13973",
+          "split_role": "V_SOURCE",
+          "genotype": "Uk-1",
+          "instance_rank": 0,
+          "score": 0.9967823028564453,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 214,
+          "counts_len_b": 214,
+          "pixels_identical": false,
+          "iou": 0.999843579,
+          "area_a": 6392,
+          "area_b": 6393
+        }
+      ]
+    },
+    "5": {
+      "mismatching_instances": 4,
+      "identical_after_decode": 0,
+      "genuinely_different_masks": 4,
+      "min_iou_among_different": 0.999074074,
+      "reported_leaves_affected": 4,
+      "cases": [
+        {
+          "image_id": "8260",
+          "split_role": "V_SHIFT",
+          "genotype": "Kz-9",
+          "instance_rank": 3,
+          "score": 0.9903790950775146,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 189,
+          "counts_len_b": 189,
+          "pixels_identical": false,
+          "iou": 0.9998362,
+          "area_a": 6105,
+          "area_b": 6104
+        },
+        {
+          "image_id": "8679",
+          "split_role": "V_SHIFT",
+          "genotype": "Kz-9",
+          "instance_rank": 4,
+          "score": 0.982537567615509,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 112,
+          "counts_len_b": 112,
+          "pixels_identical": false,
+          "iou": 0.999074074,
+          "area_a": 1079,
+          "area_b": 1080
+        },
+        {
+          "image_id": "3709",
+          "split_role": "V_SOURCE",
+          "genotype": "Cvi-0",
+          "instance_rank": 3,
+          "score": 0.9918124675750732,
+          "reported_leaf": true,
+          "size_a": [
+            450,
+            432
+          ],
+          "size_b": [
+            450,
+            432
+          ],
+          "counts_len_a": 238,
+          "counts_len_b": 238,
+          "pixels_identical": false,
+          "iou": 0.999724745,
+          "area_a": 3632,
+          "area_b": 3633
+        },
+        {
+          "image_id": "13973",
+          "split_role": "V_SOURCE",
+          "genotype": "Uk-1",
+          "instance_rank": 0,
+          "score": 0.9967823028564453,
+          "reported_leaf": true,
+          "size_a": [
+            432,
+            450
+          ],
+          "size_b": [
+            432,
+            450
+          ],
+          "counts_len_a": 214,
+          "counts_len_b": 214,
+          "pixels_identical": false,
+          "iou": 0.999843579,
+          "area_a": 6392,
+          "area_b": 6393
+        }
+      ]
+    }
+  }
+}

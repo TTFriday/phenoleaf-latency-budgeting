@@ -1,0 +1,61 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_P1_QUARANTINE",
+  "approved_for_training": true,
+  "created_utc": "2026-11-20T14:38:51.346451+00:00",
+  "source_inventory_sha256": "91316b3d807eaee9cee5d059b51dd5c346e6a24b15fd77500ea46ef1b8f7cb27",
+  "pilot_inventory_sha256": "3190e4b511ece0a3137cf7ca3f9f60da0b35a6f89af7dcb80a33b5299ebfe9db",
+  "pilot_instances_sha256": "1c29234b9e31397df1a7777629a2e09315b66d4c38c1a7583eb22341a76b9a62",
+  "code_sha256": "27b79b285e4d21037fcab8476f7fa9caca7777bedcaa3587efef731dcbc27272",
+  "quarantined_plant_units": [
+    "Cvi-0__rep_05",
+    "Cvi-0__rep_45"
+  ],
+  "quarantined_frames": 89,
+  "counts_by_role": {
+    "C_POLICY": {
+      "frames": 1240,
+      "plant_units": 24
+    },
+    "TRAIN": {
+      "frames": 8070,
+      "plant_units": 150
+    },
+    "T_GENO": {
+      "frames": 2347,
+      "plant_units": 43
+    },
+    "T_ID": {
+      "frames": 2363,
+      "plant_units": 44
+    },
+    "V_SHIFT": {
+      "frames": 1210,
+      "plant_units": 24
+    },
+    "V_SOURCE": {
+      "frames": 1737,
+      "plant_units": 31
+    }
+  },
+  "train_quantiles": {
+    "relative_area_q25": 0.001610082304526749,
+    "area_pixels_q25": 338.0,
+    "crowding_q25": 0.4643466296546272
+  },
+  "crowding_correction": {
+    "definition": "min_j(distance(center_i,center_j)/(sqrt(area_i)+sqrt(area_j)))",
+    "instances_changed_from_nearest_distance_proxy": 48862
+  },
+  "protocol_amendment_before_any_training": [
+    "Original audit and all data roles remain immutable. Two ambiguous TRAIN units are withheld from P1, not merged or reassigned.",
+    "Training quantiles are recomputed only on the retained TRAIN inputs.",
+    "Corrected crowding minimizes the normalized pair distance, as specified in the original MVA plan.",
+    "Rotated/size-varying images remain suitable for segmentation; temporal area analysis must separately assess stable ROI.",
+    "No locked-role model accuracy or sampling effects were inspected."
+  ],
+  "limitations": [
+    "Cultivation identity is supported by dataset structure and filenames, not independently measured biological identity.",
+    "Temporal physical scale calibration remains unverified; area results are conditional pixel-view analyses.",
+    "External KOMATSUNA validation is not yet performed."
+  ]
+}

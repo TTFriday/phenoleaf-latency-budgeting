@@ -1,0 +1,73 @@
+{
+  "version": "jrtip-comparator-duplicates-v1",
+  "generated_from": "src\\jrtip_budget_p1b_condition1.py",
+  "tables": [
+    "policy_eval.json",
+    "policy_eval.json",
+    "bucket_pricing.json"
+  ],
+  "emitted_entries": 48,
+  "entries_per_file": {
+    "jrtip\\budget_policy_v1\\policy_eval.json": 15,
+    "jrtip\\budget_policy_v1_extra\\policy_eval.json": 10,
+    "jrtip\\budget_bucket_pricing_v1\\bucket_pricing.json": 23
+  },
+  "entries_per_source": {
+    "policy_eval.json": 25,
+    "bucket_pricing.json": 23
+  },
+  "distinct_by_kind_and_name": 48,
+  "distinct_by_kind_name_work_drop": 48,
+  "duplicate_entries": {},
+  "duplicate_count": 0,
+  "coordinate_collisions": {
+    "work 16.99 / drop 0.3845 pp": [
+      {
+        "name": "clip(ceil(1.5*count),15,100)",
+        "kind": "rule_count_times_r",
+        "source": "policy_eval.json",
+        "work": 16.986,
+        "drop_pp": 0.3845
+      },
+      {
+        "name": "sync_ceil_1p5_f15",
+        "kind": "rule",
+        "source": "bucket_pricing.json",
+        "work": 16.986,
+        "drop_pp": 0.3845
+      }
+    ],
+    "work 19.35 / drop 0.2956 pp": [
+      {
+        "name": "clip(count+10,15,100)",
+        "kind": "rule_count_plus_m",
+        "source": "policy_eval.json",
+        "work": 19.353,
+        "drop_pp": 0.2956
+      },
+      {
+        "name": "sync_c_plus_10_f15",
+        "kind": "rule",
+        "source": "bucket_pricing.json",
+        "work": 19.353,
+        "drop_pp": 0.2956
+      },
+      {
+        "name": "readfull_c_plus_10_f15",
+        "kind": "rule",
+        "source": "bucket_pricing.json",
+        "work": 19.353,
+        "drop_pp": 0.2956
+      }
+    ]
+  },
+  "entries_reduction_ge_60pct": 45,
+  "distinct_points_reduction_ge_60pct": 42,
+  "duplicates_with_conflicting_numbers": {},
+  "gate_review_distinct_points_on_rounded_work_and_drop": 45,
+  "skipped_entries": 3,
+  "skipped_reasons": {
+    "fails a predeclared gate": 3
+  },
+  "reading": "48 counts every comparator entry of every table; 45 counts distinct (work, ap_drop) coordinates after rounding to 0.01 masks and 0.0001 pp.  The difference is not cross-table repetition - every entry has a unique (kind, name), so no arm is counted twice - it is differently named arms that land on the same rounded coordinate, listed under coordinate_collisions.  The verdict is unaffected: condition 1 takes the minimum drop inside the work window, which neither repeating an arm nor rounding its coordinates can change."
+}

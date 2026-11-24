@@ -1,0 +1,271 @@
+{
+  "version": "jrtip-budget-headroom-v1",
+  "stream_frames": 2947,
+  "control_budget": 100,
+  "returned_instances_at_control": {
+    "n": 2947,
+    "mean": 89.5192,
+    "p50": 100,
+    "p90": 100,
+    "p99": 100,
+    "max": 100,
+    "min": 18
+  },
+  "count_at_control": {
+    "n": 2947,
+    "mean": 9.2732,
+    "p50": 9,
+    "p90": 15,
+    "p99": 20,
+    "max": 26,
+    "min": 3
+  },
+  "gt_count": {
+    "n": 2947,
+    "mean": 9.1388,
+    "p50": 9,
+    "p90": 14,
+    "p99": 19,
+    "max": 24,
+    "min": 3
+  },
+  "frames_saturating_control_budget": 1774,
+  "oracle_safe_floor": {
+    "n": 2947,
+    "mean": 9.2732,
+    "p50": 9,
+    "p90": 15,
+    "p99": 20,
+    "max": 26,
+    "min": 3
+  },
+  "per_frame_masks_removed_by_fixed_budgets": {
+    "100": {
+      "mean_returned": 89.5192,
+      "median_returned": 100,
+      "frames_at_cap": 1774
+    },
+    "50": {
+      "mean_returned": 49.4944,
+      "median_returned": 50,
+      "frames_at_cap": 2777
+    },
+    "20": {
+      "mean_returned": 19.9993,
+      "median_returned": 20,
+      "frames_at_cap": 2946
+    },
+    "10": {
+      "mean_returned": 10.0,
+      "median_returned": 10,
+      "frames_at_cap": 2947
+    },
+    "5": {
+      "mean_returned": 5.0,
+      "median_returned": 5,
+      "frames_at_cap": 2947
+    }
+  },
+  "count_changed_vs_control": {
+    "100": 0,
+    "50": 0,
+    "20": 19,
+    "10": 1009,
+    "5": 2428
+  },
+  "count_error_changed_vs_control": {
+    "100": 0,
+    "50": 0,
+    "20": 18,
+    "10": 913,
+    "5": 2370
+  },
+  "gt_recall_of_count_at_control": {
+    "5": {
+      "frames_with_count_above_k": 2428,
+      "share_of_frames": 0.8239,
+      "frames_with_gt_count_above_k": 2491,
+      "share_of_frames_gt": 0.8453
+    },
+    "10": {
+      "frames_with_count_above_k": 1009,
+      "share_of_frames": 0.3424,
+      "frames_with_gt_count_above_k": 949,
+      "share_of_frames_gt": 0.322
+    },
+    "15": {
+      "frames_with_count_above_k": 201,
+      "share_of_frames": 0.0682,
+      "frames_with_gt_count_above_k": 143,
+      "share_of_frames_gt": 0.0485
+    },
+    "20": {
+      "frames_with_count_above_k": 19,
+      "share_of_frames": 0.0064,
+      "frames_with_gt_count_above_k": 20,
+      "share_of_frames_gt": 0.0068
+    },
+    "30": {
+      "frames_with_count_above_k": 0,
+      "share_of_frames": 0.0,
+      "frames_with_gt_count_above_k": 0,
+      "share_of_frames_gt": 0.0
+    },
+    "50": {
+      "frames_with_count_above_k": 0,
+      "share_of_frames": 0.0,
+      "frames_with_gt_count_above_k": 0,
+      "share_of_frames_gt": 0.0
+    },
+    "100": {
+      "frames_with_count_above_k": 0,
+      "share_of_frames": 0.0,
+      "frames_with_gt_count_above_k": 0,
+      "share_of_frames_gt": 0.0
+    }
+  },
+  "by_role": {
+    "V_SHIFT": {
+      "frames": 1210,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 8.81,
+      "mean_gt_count": 8.73
+    },
+    "V_SOURCE": {
+      "frames": 1737,
+      "frames_count_changed_at_cap20": 19,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 9.6,
+      "mean_gt_count": 9.42
+    }
+  },
+  "by_genotype": {
+    "Ba4-1": {
+      "frames": 24,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 11.5,
+      "mean_gt_count": 11.42
+    },
+    "Ba5-1": {
+      "frames": 23,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 12.3,
+      "mean_gt_count": 12.7
+    },
+    "Bch-4": {
+      "frames": 15,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 9.53,
+      "mean_gt_count": 8.6
+    },
+    "Col-0": {
+      "frames": 266,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 8.79,
+      "mean_gt_count": 8.88
+    },
+    "Cvi-0": {
+      "frames": 260,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 8.2,
+      "mean_gt_count": 8.17
+    },
+    "Ei-6": {
+      "frames": 35,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 10.94,
+      "mean_gt_count": 9.2
+    },
+    "Go-0": {
+      "frames": 30,
+      "frames_count_changed_at_cap20": 5,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 15.43,
+      "mean_gt_count": 15.73
+    },
+    "Hs-0": {
+      "frames": 16,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 12.12,
+      "mean_gt_count": 12.0
+    },
+    "Kz-9": {
+      "frames": 1108,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 8.61,
+      "mean_gt_count": 8.61
+    },
+    "Ler-1": {
+      "frames": 221,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 9.69,
+      "mean_gt_count": 9.61
+    },
+    "Lz-0": {
+      "frames": 16,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 13.31,
+      "mean_gt_count": 11.69
+    },
+    "Or-0": {
+      "frames": 67,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 11.03,
+      "mean_gt_count": 10.46
+    },
+    "Sav-0": {
+      "frames": 24,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 10.08,
+      "mean_gt_count": 10.08
+    },
+    "TOU-I-17": {
+      "frames": 267,
+      "frames_count_changed_at_cap20": 1,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 9.57,
+      "mean_gt_count": 9.27
+    },
+    "Uk-1": {
+      "frames": 262,
+      "frames_count_changed_at_cap20": 11,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 10.87,
+      "mean_gt_count": 10.87
+    },
+    "Uk-4": {
+      "frames": 28,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 12.57,
+      "mean_gt_count": 12.07
+    },
+    "Ws-2": {
+      "frames": 22,
+      "frames_count_changed_at_cap20": 0,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 10.59,
+      "mean_gt_count": 10.09
+    },
+    "Zdr-1": {
+      "frames": 263,
+      "frames_count_changed_at_cap20": 2,
+      "mean_returned_at_cap20": 20.0,
+      "mean_count_at_control": 8.58,
+      "mean_gt_count": 7.93
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "step": 1000,
+  "evaluation_long_edge": 640,
+  "development_frames": 2947,
+  "equal_domain_macro": {
+    "AP": 70.4607911786734,
+    "AP50": 95.41115101923182,
+    "AP75": 80.92950804085432,
+    "count_MAE": 1.0139046254831632
+  },
+  "role_macro": {
+    "V_SOURCE": {
+      "AP": 69.50937659666876,
+      "AP50": 95.36838234934092,
+      "AP75": 80.35371168839536,
+      "count_MAE": 0.8635423080453253
+    },
+    "V_SHIFT": {
+      "AP": 71.41220576067805,
+      "AP50": 95.45391968912274,
+      "AP75": 81.50530439331327,
+      "count_MAE": 1.1642669429210013
+    }
+  },
+  "single_seed_development_pilot_only": true,
+  "not_speed_or_formal_36_epoch_result": true
+}

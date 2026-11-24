@@ -1,0 +1,478 @@
+{
+  "version": "jrtip-budget-rule-timing-v2",
+  "generated_utc": "2026-11-22T20:01:39Z",
+  "arms": [
+    {
+      "arm": "bucket_c_plus_10_f15",
+      "family": "rule_bucket",
+      "definition": "k=clip(c+10,15,100) ceiled to {15,20,30,50,100}",
+      "sessions": 3,
+      "session_means_ms": [
+        140.191,
+        141.086,
+        156.392
+      ],
+      "mean_ms_session_averaged": 145.89,
+      "spread_of_session_means_ms": 16.201,
+      "p95_ms_session_averaged": 190.685,
+      "equal_domain_mean_ms_session_averaged": 156.33,
+      "emitted_instances_mean": 23.2106,
+      "read_ms_mean": 0.26865,
+      "wrapper_total_ms_mean": 5.48469,
+      "probe_inflation_median_by_session": [
+        1.1255,
+        1.1198,
+        1.5968
+      ],
+      "contention_any_session": true,
+      "arm_pass_seconds_by_session": [
+        154.3,
+        155.3,
+        171.9
+      ],
+      "time_reduction_vs_static100_native": 0.6462
+    },
+    {
+      "arm": "bucket_ceil_1p5_f15",
+      "family": "rule_bucket",
+      "definition": "k=clip(ceil(1.5*c),15,100) ceiled to {15,20,30,50,100}",
+      "sessions": 3,
+      "session_means_ms": [
+        121.981,
+        123.1,
+        119.683
+      ],
+      "mean_ms_session_averaged": 121.588,
+      "spread_of_session_means_ms": 3.417,
+      "p95_ms_session_averaged": 170.314,
+      "equal_domain_mean_ms_session_averaged": 129.321,
+      "emitted_instances_mean": 18.4296,
+      "read_ms_mean": 0.25975,
+      "wrapper_total_ms_mean": 5.18377,
+      "probe_inflation_median_by_session": [
+        1.1212,
+        1.1288,
+        1.094
+      ],
+      "contention_any_session": true,
+      "arm_pass_seconds_by_session": [
+        134.8,
+        136.5,
+        132.4
+      ],
+      "time_reduction_vs_static100_native": 0.7052
+    },
+    {
+      "arm": "readfull_c_plus_10_f15",
+      "family": "rule_readfull",
+      "definition": "as sync_c_plus_10_f15 but the whole score vector is transferred; prices candidate-feature controllers",
+      "sessions": 3,
+      "session_means_ms": [
+        125.545,
+        139.863,
+        125.795
+      ],
+      "mean_ms_session_averaged": 130.401,
+      "spread_of_session_means_ms": 14.318,
+      "p95_ms_session_averaged": 165.25,
+      "equal_domain_mean_ms_session_averaged": 138.28,
+      "emitted_instances_mean": 19.7139,
+      "read_ms_mean": 0.16058,
+      "wrapper_total_ms_mean": 5.23592,
+      "probe_inflation_median_by_session": [
+        1.1429,
+        1.5196,
+        1.1154
+      ],
+      "contention_any_session": true,
+      "arm_pass_seconds_by_session": [
+        139.0,
+        154.0,
+        138.9
+      ],
+      "time_reduction_vs_static100_native": 0.6838
+    },
+    {
+      "arm": "static100_native",
+      "family": "static",
+      "definition": "detections_per_img=100, unmodified torchvision path",
+      "sessions": 3,
+      "session_means_ms": [
+        413.854,
+        411.792,
+        411.5
+      ],
+      "mean_ms_session_averaged": 412.382,
+      "spread_of_session_means_ms": 2.354,
+      "p95_ms_session_averaged": 492.08,
+      "equal_domain_mean_ms_session_averaged": 440.639,
+      "emitted_instances_mean": 91.4846,
+      "read_ms_mean": 0.0,
+      "wrapper_total_ms_mean": 0.0,
+      "probe_inflation_median_by_session": [
+        1.0813,
+        1.1271,
+        1.4247
+      ],
+      "contention_any_session": true,
+      "arm_pass_seconds_by_session": [
+        448.4,
+        446.0,
+        445.9
+      ],
+      "time_reduction_vs_static100_native": 0.0
+    },
+    {
+      "arm": "static100_wrap",
+      "family": "wrapper_control",
+      "definition": "wrapper, rule degenerated to constant 100 (gate A arm)",
+      "sessions": 3,
+      "session_means_ms": [
+        414.455,
+        412.982,
+        403.296
+      ],
+      "mean_ms_session_averaged": 410.244,
+      "spread_of_session_means_ms": 11.159,
+      "p95_ms_session_averaged": 485.732,
+      "equal_domain_mean_ms_session_averaged": 437.655,
+      "emitted_instances_mean": 91.4846,
+      "read_ms_mean": 0.0,
+      "wrapper_total_ms_mean": 6.98642,
+      "probe_inflation_median_by_session": [
+        1.8802,
+        1.6614,
+        1.1205
+      ],
+      "contention_any_session": true,
+      "arm_pass_seconds_by_session": [
+        449.0,
+        447.4,
+        436.9
+      ],
+      "time_reduction_vs_static100_native": 0.0052
+    },
+    {
+      "arm": "static15_native",
+      "family": "static",
+      "definition": "detections_per_img=15",
+      "sessions": 3,
+      "session_means_ms": [
+        109.769,
+        106.747,
+        107.455
+      ],
+      "mean_ms_session_averaged": 107.99,
+      "spread_of_session_means_ms": 3.022,
+      "p95_ms_session_averaged": 125.029,
+      "equal_domain_mean_ms_session_averaged": 111.309,
+      "emitted_instances_mean": 15.0,
+      "read_ms_mean": 0.0,
+      "wrapper_total_ms_mean": 0.0,
+      "probe_inflation_median_by_session": [
+        1.1101,
+        1.0858,
+        1.0726
+      ],
+      "contention_any_session": true,
+      "arm_pass_seconds_by_session": [
+        121.7,
+        118.4,
+        119.2
+      ],
+      "time_reduction_vs_static100_native": 0.7381
+    },
+    {
+      "arm": "static16_native",
+      "family": "static",
+      "definition": "detections_per_img=16 (frozen static challenger)",
+      "sessions": 3,
+      "session_means_ms": [
+        112.254,
+        110.685,
+        110.972
+      ],
+      "mean_ms_session_averaged": 111.303,
+      "spread_of_session_means_ms": 1.569,
+      "p95_ms_session_averaged": 128.417,
+      "equal_domain_mean_ms_session_averaged": 114.532,
+      "emitted_instances_mean": 16.0,
+      "read_ms_mean": 0.0,
+      "wrapper_total_ms_mean": 0.0,
+      "probe_inflation_median_by_session": [
+        1.0862,
+        1.1145,
+        1.0855
+      ],
+      "contention_any_session": true,
+      "arm_pass_seconds_by_session": [
+        124.4,
+        122.6,
+        123.0
+      ],
+      "time_reduction_vs_static100_native": 0.7301
+    },
+    {
+      "arm": "static20_native",
+      "family": "static",
+      "definition": "detections_per_img=20",
+      "sessions": 3,
+      "session_means_ms": [
+        127.398,
+        126.501,
+        126.059
+      ],
+      "mean_ms_session_averaged": 126.653,
+      "spread_of_session_means_ms": 1.339,
+      "p95_ms_session_averaged": 145.19,
+      "equal_domain_mean_ms_session_averaged": 130.145,
+      "emitted_instances_mean": 20.0,
+      "read_ms_mean": 0.0,
+      "wrapper_total_ms_mean": 0.0,
+      "probe_inflation_median_by_session": [
+        1.1121,
+        1.1703,
+        1.1532
+      ],
+      "contention_any_session": true,
+      "arm_pass_seconds_by_session": [
+        140.7,
+        139.6,
+        139.2
+      ],
+      "time_reduction_vs_static100_native": 0.6929
+    },
+    {
+      "arm": "static20_wrap",
+      "family": "wrapper_control",
+      "definition": "wrapper, constant 20: prices wrapper overhead at small batch",
+      "sessions": 3,
+      "session_means_ms": [
+        125.545,
+        127.604,
+        125.409
+      ],
+      "mean_ms_session_averaged": 126.186,
+      "spread_of_session_means_ms": 2.195,
+      "p95_ms_session_averaged": 143.694,
+      "equal_domain_mean_ms_session_averaged": 130.056,
+      "emitted_instances_mean": 20.0,
+      "read_ms_mean": 0.0,
+      "wrapper_total_ms_mean": 4.83551,
+      "probe_inflation_median_by_session": [
+        1.0886,
+        1.1368,
+        1.1593
+      ],
+      "contention_any_session": true,
+      "arm_pass_seconds_by_session": [
+        138.9,
+        140.9,
+        138.5
+      ],
+      "time_reduction_vs_static100_native": 0.694
+    },
+    {
+      "arm": "sync_c_plus_10_f15",
+      "family": "rule_sync",
+      "definition": "k=clip(c+10,15,100), one blocking scalar D2H read",
+      "sessions": 3,
+      "session_means_ms": [
+        126.437,
+        126.931,
+        126.238
+      ],
+      "mean_ms_session_averaged": 126.536,
+      "spread_of_session_means_ms": 0.693,
+      "p95_ms_session_averaged": 159.704,
+      "equal_domain_mean_ms_session_averaged": 132.948,
+      "emitted_instances_mean": 19.7139,
+      "read_ms_mean": 0.26341,
+      "wrapper_total_ms_mean": 5.14678,
+      "probe_inflation_median_by_session": [
+        1.1348,
+        1.094,
+        1.1545
+      ],
+      "contention_any_session": true,
+      "arm_pass_seconds_by_session": [
+        139.7,
+        140.2,
+        139.3
+      ],
+      "time_reduction_vs_static100_native": 0.6932
+    },
+    {
+      "arm": "sync_ceil_1p5_f15",
+      "family": "rule_sync",
+      "definition": "k=clip(ceil(1.5*c),15,100), one blocking scalar D2H read",
+      "sessions": 3,
+      "session_means_ms": [
+        122.025,
+        115.263,
+        116.852
+      ],
+      "mean_ms_session_averaged": 118.047,
+      "spread_of_session_means_ms": 6.762,
+      "p95_ms_session_averaged": 153.363,
+      "equal_domain_mean_ms_session_averaged": 123.284,
+      "emitted_instances_mean": 17.096,
+      "read_ms_mean": 0.26315,
+      "wrapper_total_ms_mean": 5.26525,
+      "probe_inflation_median_by_session": [
+        1.1974,
+        1.125,
+        1.1397
+      ],
+      "contention_any_session": true,
+      "arm_pass_seconds_by_session": [
+        134.9,
+        127.9,
+        129.3
+      ],
+      "time_reduction_vs_static100_native": 0.7137
+    }
+  ],
+  "sessions_meta": [
+    {
+      "dir": "jrtip\\rule_timing_v1_rep\\session1",
+      "session": 1,
+      "arm_order": [
+        "static100_native",
+        "static20_native",
+        "static16_native",
+        "static15_native",
+        "static100_wrap",
+        "static20_wrap",
+        "sync_c_plus_10_f15",
+        "sync_ceil_1p5_f15",
+        "readfull_c_plus_10_f15",
+        "bucket_c_plus_10_f15",
+        "bucket_ceil_1p5_f15"
+      ],
+      "frames_per_arm": 1073,
+      "gate": true,
+      "warmup_requested": 50,
+      "timing_stream_sha256": "553a930dc3b6474228ebc3f0d34aebf87ab8f0a46c825be14d2c5b2538b33c67",
+      "checkpoint_sha256": "7c45e7eefb06aadb111b9b3262b49bc9019e48f665b78a2e3f1a8ee2d4c405dd",
+      "versions": {
+        "python": "3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]",
+        "torch": "2.6.0+cu124",
+        "torchvision": "0.21.0+cu124",
+        "numpy": "2.2.6",
+        "PIL": "9.4.0",
+        "cuda_runtime": "12.4",
+        "scipy": "1.15.3",
+        "pycocotools": "2.0.11",
+        "platform": "Windows-10-10.0.19045-SP0"
+      }
+    },
+    {
+      "dir": "jrtip\\rule_timing_v1_rep\\session2",
+      "session": 2,
+      "arm_order": [
+        "static20_native",
+        "static16_native",
+        "static15_native",
+        "static100_wrap",
+        "static20_wrap",
+        "sync_c_plus_10_f15",
+        "sync_ceil_1p5_f15",
+        "readfull_c_plus_10_f15",
+        "bucket_c_plus_10_f15",
+        "bucket_ceil_1p5_f15",
+        "static100_native"
+      ],
+      "frames_per_arm": 1073,
+      "gate": true,
+      "warmup_requested": 50,
+      "timing_stream_sha256": "553a930dc3b6474228ebc3f0d34aebf87ab8f0a46c825be14d2c5b2538b33c67",
+      "checkpoint_sha256": "7c45e7eefb06aadb111b9b3262b49bc9019e48f665b78a2e3f1a8ee2d4c405dd",
+      "versions": {
+        "python": "3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]",
+        "torch": "2.6.0+cu124",
+        "torchvision": "0.21.0+cu124",
+        "numpy": "2.2.6",
+        "PIL": "9.4.0",
+        "cuda_runtime": "12.4",
+        "scipy": "1.15.3",
+        "pycocotools": "2.0.11",
+        "platform": "Windows-10-10.0.19045-SP0"
+      }
+    },
+    {
+      "dir": "jrtip\\rule_timing_v1_rep\\session3",
+      "session": 3,
+      "arm_order": [
+        "static16_native",
+        "static15_native",
+        "static100_wrap",
+        "static20_wrap",
+        "sync_c_plus_10_f15",
+        "sync_ceil_1p5_f15",
+        "readfull_c_plus_10_f15",
+        "bucket_c_plus_10_f15",
+        "bucket_ceil_1p5_f15",
+        "static100_native",
+        "static20_native"
+      ],
+      "frames_per_arm": 1073,
+      "gate": true,
+      "warmup_requested": 50,
+      "timing_stream_sha256": "553a930dc3b6474228ebc3f0d34aebf87ab8f0a46c825be14d2c5b2538b33c67",
+      "checkpoint_sha256": "7c45e7eefb06aadb111b9b3262b49bc9019e48f665b78a2e3f1a8ee2d4c405dd",
+      "versions": {
+        "python": "3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]",
+        "torch": "2.6.0+cu124",
+        "torchvision": "0.21.0+cu124",
+        "numpy": "2.2.6",
+        "PIL": "9.4.0",
+        "cuda_runtime": "12.4",
+        "scipy": "1.15.3",
+        "pycocotools": "2.0.11",
+        "platform": "Windows-10-10.0.19045-SP0"
+      }
+    }
+  ],
+  "identical_timing_stream_across_sessions": true,
+  "identical_checkpoint_across_sessions": true,
+  "identical_versions_across_sessions": true,
+  "all_gates_passed": true,
+  "aggregation": "per-arm session means first, then averaged over sessions (v1 section 6); individual requests are never pooled across sessions",
+  "implementation_overhead_decomposition": {
+    "wrapper_minus_native_at_100_ms": -2.138,
+    "wrapper_minus_native_at_20_ms": -0.467
+  },
+  "sync_vs_bucket": [
+    {
+      "rule_family": "c_plus_10_f15",
+      "sync_mean_ms": 126.536,
+      "bucket_mean_ms": 145.89,
+      "bucket_minus_sync_ms": 19.354,
+      "sync_emitted": 19.7139,
+      "bucket_emitted": 23.2106,
+      "bucket_waste_instances": 3.4967,
+      "ms_per_extra_masked_instance": 5.535
+    },
+    {
+      "rule_family": "ceil_1p5_f15",
+      "sync_mean_ms": 118.047,
+      "bucket_mean_ms": 121.588,
+      "bucket_minus_sync_ms": 3.541,
+      "sync_emitted": 17.096,
+      "bucket_emitted": 18.4296,
+      "bucket_waste_instances": 1.3336,
+      "ms_per_extra_masked_instance": 2.655
+    }
+  ],
+  "quality_side": "not measured here: the AP/count rows of these arm names live in jrtip/budget_policy_v1/policy_eval.json (constant and sync rules) and jrtip/budget_bucket_pricing_v1/policy_eval.json (bucketed rules)",
+  "not_measured": [
+    "queueing replay",
+    "energy",
+    "second hardware",
+    "locked test roles",
+    "36-epoch checkpoint",
+    "controller (learned) arms"
+  ],
+  "note": "Predeclared P1 bottleneck pilot: default 1000 optimizer updates, effective batch 4 (physical 1 x accumulation 4), seed 43, FP32, independent generic COCO R50-FPN initialization; multi-scale long edge 320/480/640. A shorter pilot first measures bottlenecks. SGD .005/.9/1e-4, 500-update linear warmup from .0005, then constant .005. Even a longer --steps run uses this pilot schedule, NOT the formal 36-epoch 24/32-epoch decay schedule. Formal 36-epoch training has NOT been run by this script's implementation; pilot outputs must not be described as full formal results. Selection uses only V_SOURCE/V_SHIFT at long edge 640; benchmark does not reselect weights. Relative S640 tolerances were fixed before measurement: AP drop <=1 percentage point and count MAE increase <=0.2. Development point-estimate feasibility is not a confirmatory noninferiority claim."
+}

@@ -1,0 +1,25 @@
+{
+  "version": "jrtip-mask-restore-resolution-v1",
+  "generated_utc": "2026-11-22T14:10:20Z",
+  "frames_requested": 2947,
+  "frames_skipped_as_complete": 0,
+  "frames_written": 2947,
+  "elapsed_seconds": 1568.8,
+  "streams": {
+    "1": {
+      "path": "jrtip\\mask_restore_resolution_v1\\quality_g1_S640.jsonl",
+      "lines": 2947,
+      "sha256": "babfb50b71eaaecbedbe02474d6391f9d4b2bf0cfc710b1c2852dfade5003ea6"
+    },
+    "0p75": {
+      "path": "jrtip\\mask_restore_resolution_v1\\quality_g0p75_S640.jsonl",
+      "lines": 2947,
+      "sha256": "0287b3d2dde27ca6704002e3f8cc98b6cd29a4d894bd03f4178ab24d38c4859e"
+    },
+    "0p5": {
+      "path": "jrtip\\mask_restore_resolution_v1\\quality_g0p5_S640.jsonl",
+      "lines": 2947,
+      "sha256": "f7effda9112da60212c6d234dda871be584c7e059dd13f4817c891cb33228aba"
+    }
+  }
+}

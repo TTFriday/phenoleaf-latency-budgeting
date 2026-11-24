@@ -1,0 +1,1539 @@
+{
+  "version": "jrtip-detection-budget-quality-v2",
+  "merged_utc": "2026-11-22T05:42:06Z",
+  "scale": 640,
+  "controls_and_bars": {
+    "control_budget": 100,
+    "AP_drop_limit_pp": 1.0,
+    "count_MAE_increase_limit_leaf": 0.2
+  },
+  "budgets_measured": [
+    5,
+    10,
+    20,
+    25,
+    30,
+    50,
+    100
+  ],
+  "budgets_missing": [],
+  "same_process_for_all_budgets": false,
+  "run_ids": [
+    "101064-2026-11-22T04:04:05Z",
+    "116900-2026-11-22T05:18:56Z",
+    "19060-2026-11-22T04:40:42Z",
+    "30008-2026-11-22T04:55:17Z",
+    "70632-2026-11-22T04:48:57Z",
+    "73888-2026-11-22T05:29:46Z",
+    "75112-2026-11-22T04:26:04Z"
+  ],
+  "checkpoint_sha256_identical_across_reports": true,
+  "checkpoints": [
+    "7c45e7eefb06aadb111b9b3262b49bc9019e48f665b78a2e3f1a8ee2d4c405dd"
+  ],
+  "dev_stream_identical_across_budgets_and_matches_frozen_benchmark": true,
+  "selected_stream_sha256": "fc70f5cbf7ab31b485bc44cae0f4f9b4dea43509cb74c05809cd3e38c8af65b8",
+  "control_vs_frozen_benchmark": {
+    "AP_this_pass": 70.4607911786734,
+    "AP_frozen": 70.4607911786734,
+    "difference_pp": 0.0,
+    "AP50_difference_pp": 0.0,
+    "count_MAE_this_pass": 1.0139046254831632,
+    "count_MAE_frozen": 1.0139046254831632,
+    "count_MAE_difference_leaf": 0.0,
+    "control_reproduces_frozen_benchmark": true
+  },
+  "budgets": {
+    "5": {
+      "budget": 5,
+      "AP": 39.095565310241305,
+      "AP50": 50.23715098767563,
+      "AP75": 46.06671968109992,
+      "count_MAE": 5.106754050275321,
+      "AP_by_role": {
+        "V_SOURCE": 36.621922356923754,
+        "V_SHIFT": 41.569208263558856
+      },
+      "count_MAE_by_role": {
+        "V_SOURCE": 5.648137064836805,
+        "V_SHIFT": 4.565371035713837
+      },
+      "AP_drop_vs_control_pp": 31.3652258684321,
+      "count_MAE_increase_vs_control_leaf": 4.092849424792158,
+      "quality_acceptable": false,
+      "elapsed_seconds": 299.3903114000568,
+      "frames_evaluated": 2947,
+      "selected_population": {
+        "TRAIN": {
+          "frames": 0,
+          "plants": 0,
+          "genotypes": 0
+        },
+        "V_SOURCE": {
+          "frames": 1737,
+          "plants": 31,
+          "genotypes": 15
+        },
+        "V_SHIFT": {
+          "frames": 1210,
+          "plants": 24,
+          "genotypes": 3
+        }
+      },
+      "selected_stream_sha256": "fc70f5cbf7ab31b485bc44cae0f4f9b4dea43509cb74c05809cd3e38c8af65b8",
+      "run_id": "30008-2026-11-22T04:55:17Z",
+      "report_path": "jrtip\\detection_budget_quality_v1\\cap00005\\budget_report_000005.json",
+      "quality_jsonl": "jrtip\\detection_budget_quality_v1\\cap00005\\quality_000005_S640.jsonl",
+      "quality_jsonl_sha256": "6f19f51976d50b6fa961cf8a62efdc1b525166eee430404250ddef9bc9024797",
+      "per_genotype": {
+        "V_SHIFT": {
+          "Ei-6": {
+            "AP": 43.45076207512939,
+            "AP50": 54.45544554455446,
+            "AP75": 50.035261419206165,
+            "count_MAE": 4.2631578947368425,
+            "frames": 35,
+            "plants": 2,
+            "gt_instances": 322
+          },
+          "Kz-9": {
+            "AP": 42.21308791706535,
+            "AP50": 56.31662562628098,
+            "AP75": 49.58092445283502,
+            "count_MAE": 4.022303583331985,
+            "frames": 1108,
+            "plants": 19,
+            "gt_instances": 9542
+          },
+          "Or-0": {
+            "AP": 39.043774798481834,
+            "AP50": 47.524752475247524,
+            "AP75": 45.834961414243224,
+            "count_MAE": 5.410651629072682,
+            "frames": 67,
+            "plants": 3,
+            "gt_instances": 701
+          }
+        },
+        "V_SOURCE": {
+          "Ba4-1": {
+            "AP": 33.4681380865428,
+            "AP50": 43.56435643564357,
+            "AP75": 41.600070721357845,
+            "count_MAE": 6.416666666666667,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 274
+          },
+          "Ba5-1": {
+            "AP": 31.82621847424002,
+            "AP50": 39.603960396039604,
+            "AP75": 35.39157034652594,
+            "count_MAE": 7.695652173913044,
+            "frames": 23,
+            "plants": 1,
+            "gt_instances": 292
+          },
+          "Bch-4": {
+            "AP": 45.55504010702777,
+            "AP50": 58.415841584158414,
+            "AP75": 53.878280885901454,
+            "count_MAE": 3.6,
+            "frames": 15,
+            "plants": 1,
+            "gt_instances": 129
+          },
+          "Col-0": {
+            "AP": 41.44428017198724,
+            "AP50": 55.437117565717344,
+            "AP75": 49.317667043728584,
+            "count_MAE": 4.224208221959596,
+            "frames": 266,
+            "plants": 4,
+            "gt_instances": 2362
+          },
+          "Cvi-0": {
+            "AP": 44.42731011692318,
+            "AP50": 59.273879849405155,
+            "AP75": 52.11487473888484,
+            "count_MAE": 3.316107361887784,
+            "frames": 260,
+            "plants": 4,
+            "gt_instances": 2124
+          },
+          "Go-0": {
+            "AP": 23.996437702875426,
+            "AP50": 31.5049504950495,
+            "AP75": 28.30579408305794,
+            "count_MAE": 10.733333333333333,
+            "frames": 30,
+            "plants": 1,
+            "gt_instances": 472
+          },
+          "Hs-0": {
+            "AP": 30.200116623473917,
+            "AP50": 39.68742066514344,
+            "AP75": 36.33026874115983,
+            "count_MAE": 7.0,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 192
+          },
+          "Ler-1": {
+            "AP": 39.64073722648725,
+            "AP50": 50.46016782629851,
+            "AP75": 47.494446436305175,
+            "count_MAE": 4.277236842105262,
+            "frames": 221,
+            "plants": 4,
+            "gt_instances": 2123
+          },
+          "Lz-0": {
+            "AP": 34.43668579278581,
+            "AP50": 42.57425742574257,
+            "AP75": 42.57425742574257,
+            "count_MAE": 6.6875,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 187
+          },
+          "Sav-0": {
+            "AP": 41.5330207743046,
+            "AP50": 49.504950495049506,
+            "AP75": 48.145214521452154,
+            "count_MAE": 5.083333333333333,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 242
+          },
+          "TOU-I-17": {
+            "AP": 35.21730689265289,
+            "AP50": 50.963906066174346,
+            "AP75": 42.883431166196964,
+            "count_MAE": 4.407600412894129,
+            "frames": 267,
+            "plants": 4,
+            "gt_instances": 2475
+          },
+          "Uk-1": {
+            "AP": 30.360526878649157,
+            "AP50": 44.52011694900739,
+            "AP75": 36.10640684715296,
+            "count_MAE": 5.898048966312494,
+            "frames": 262,
+            "plants": 3,
+            "gt_instances": 2849
+          },
+          "Uk-4": {
+            "AP": 32.25069877639849,
+            "AP50": 41.43564356435644,
+            "AP75": 38.871480554648876,
+            "count_MAE": 7.071428571428571,
+            "frames": 28,
+            "plants": 1,
+            "gt_instances": 338
+          },
+          "Ws-2": {
+            "AP": 41.94418011275582,
+            "AP50": 49.504950495049506,
+            "AP75": 49.432943294329434,
+            "count_MAE": 5.090909090909091,
+            "frames": 22,
+            "plants": 1,
+            "gt_instances": 222
+          },
+          "Zdr-1": {
+            "AP": 43.028137616751955,
+            "AP50": 59.1788915870189,
+            "AP75": 52.29914719513076,
+            "count_MAE": 3.2200309978087756,
+            "frames": 263,
+            "plants": 3,
+            "gt_instances": 2086
+          }
+        }
+      }
+    },
+    "10": {
+      "budget": 10,
+      "AP": 64.16429174857068,
+      "AP50": 85.38805274910207,
+      "AP75": 74.49284329306812,
+      "count_MAE": 1.4998228999921839,
+      "AP_by_role": {
+        "V_SOURCE": 60.79722256137341,
+        "V_SHIFT": 67.53136093576795
+      },
+      "count_MAE_by_role": {
+        "V_SOURCE": 2.00089239922953,
+        "V_SHIFT": 0.9987534007548374
+      },
+      "AP_drop_vs_control_pp": 6.2964994301027275,
+      "count_MAE_increase_vs_control_leaf": 0.4859182745090207,
+      "quality_acceptable": false,
+      "elapsed_seconds": 359.80573749996256,
+      "frames_evaluated": 2947,
+      "selected_population": {
+        "TRAIN": {
+          "frames": 0,
+          "plants": 0,
+          "genotypes": 0
+        },
+        "V_SOURCE": {
+          "frames": 1737,
+          "plants": 31,
+          "genotypes": 15
+        },
+        "V_SHIFT": {
+          "frames": 1210,
+          "plants": 24,
+          "genotypes": 3
+        }
+      },
+      "selected_stream_sha256": "fc70f5cbf7ab31b485bc44cae0f4f9b4dea43509cb74c05809cd3e38c8af65b8",
+      "run_id": "70632-2026-11-22T04:48:57Z",
+      "report_path": "jrtip\\detection_budget_quality_v1\\cap00010\\budget_report_000010.json",
+      "quality_jsonl": "jrtip\\detection_budget_quality_v1\\cap00010\\quality_000010_S640.jsonl",
+      "quality_jsonl_sha256": "8d2ef0adcb914f511ce9328f10a4558ce81d3c2af16c1d0ad362f86dfb0e1de5",
+      "per_genotype": {
+        "V_SHIFT": {
+          "Ei-6": {
+            "AP": 72.3678999766307,
+            "AP50": 94.32487737170399,
+            "AP75": 82.14005205551167,
+            "count_MAE": 0.6118421052631579,
+            "frames": 35,
+            "plants": 2,
+            "gt_instances": 322
+          },
+          "Kz-9": {
+            "AP": 62.86784686768444,
+            "AP50": 87.58206564447207,
+            "AP75": 72.16386747233061,
+            "count_MAE": 1.0646185982544873,
+            "frames": 1108,
+            "plants": 19,
+            "gt_instances": 9542
+          },
+          "Or-0": {
+            "AP": 67.35833596298868,
+            "AP50": 85.9156532659615,
+            "AP75": 78.48641306626575,
+            "count_MAE": 1.3197994987468673,
+            "frames": 67,
+            "plants": 3,
+            "gt_instances": 701
+          }
+        },
+        "V_SOURCE": {
+          "Ba4-1": {
+            "AP": 59.83605615498635,
+            "AP50": 82.1565786237009,
+            "AP75": 72.77061530768417,
+            "count_MAE": 1.9583333333333333,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 274
+          },
+          "Ba5-1": {
+            "AP": 60.80886125948221,
+            "AP50": 76.2200007691475,
+            "AP75": 67.38052491261416,
+            "count_MAE": 3.0434782608695654,
+            "frames": 23,
+            "plants": 1,
+            "gt_instances": 292
+          },
+          "Bch-4": {
+            "AP": 70.75939497619234,
+            "AP50": 98.57360461320856,
+            "AP75": 81.74487169160844,
+            "count_MAE": 0.9333333333333333,
+            "frames": 15,
+            "plants": 1,
+            "gt_instances": 129
+          },
+          "Col-0": {
+            "AP": 62.58098527288921,
+            "AP50": 85.81631891294278,
+            "AP75": 72.30318919970135,
+            "count_MAE": 1.38853895704178,
+            "frames": 266,
+            "plants": 4,
+            "gt_instances": 2362
+          },
+          "Cvi-0": {
+            "AP": 65.9144504627829,
+            "AP50": 90.50987429955161,
+            "AP75": 75.81900068484863,
+            "count_MAE": 0.7750808444746368,
+            "frames": 260,
+            "plants": 4,
+            "gt_instances": 2124
+          },
+          "Go-0": {
+            "AP": 46.00624135283844,
+            "AP50": 62.04087341005018,
+            "AP75": 54.917177496058734,
+            "count_MAE": 5.733333333333333,
+            "frames": 30,
+            "plants": 1,
+            "gt_instances": 472
+          },
+          "Hs-0": {
+            "AP": 60.36313520034851,
+            "AP50": 77.78422529051238,
+            "AP75": 72.08230844552897,
+            "count_MAE": 2.125,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 192
+          },
+          "Ler-1": {
+            "AP": 62.36399159795776,
+            "AP50": 81.8469983455539,
+            "AP75": 73.63494656889904,
+            "count_MAE": 1.322105263157895,
+            "frames": 221,
+            "plants": 4,
+            "gt_instances": 2123
+          },
+          "Lz-0": {
+            "AP": 62.90614440171808,
+            "AP50": 79.89085952791612,
+            "AP75": 77.43675071300711,
+            "count_MAE": 2.125,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 187
+          },
+          "Sav-0": {
+            "AP": 70.00270624702102,
+            "AP50": 88.61356636241649,
+            "AP75": 80.96140499581013,
+            "count_MAE": 1.0833333333333333,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 242
+          },
+          "TOU-I-17": {
+            "AP": 54.26309591134133,
+            "AP50": 80.83844394670339,
+            "AP75": 63.94545189486316,
+            "count_MAE": 1.5111184226621384,
+            "frames": 267,
+            "plants": 4,
+            "gt_instances": 2475
+          },
+          "Uk-1": {
+            "AP": 49.017125428838085,
+            "AP50": 73.91725326298891,
+            "AP75": 56.450475613247086,
+            "count_MAE": 2.7567730211679433,
+            "frames": 262,
+            "plants": 3,
+            "gt_instances": 2849
+          },
+          "Uk-4": {
+            "AP": 55.62955731848741,
+            "AP50": 73.04427187148723,
+            "AP75": 65.34645238468563,
+            "count_MAE": 2.8214285714285716,
+            "frames": 28,
+            "plants": 1,
+            "gt_instances": 338
+          },
+          "Ws-2": {
+            "AP": 70.83057404934468,
+            "AP50": 85.99343022129496,
+            "AP75": 82.76625816074284,
+            "count_MAE": 1.3181818181818181,
+            "frames": 22,
+            "plants": 1,
+            "gt_instances": 222
+          },
+          "Zdr-1": {
+            "AP": 60.67601878637291,
+            "AP50": 85.28230160489933,
+            "AP75": 73.27420775220436,
+            "count_MAE": 1.118347496125274,
+            "frames": 263,
+            "plants": 3,
+            "gt_instances": 2086
+          }
+        }
+      }
+    },
+    "20": {
+      "budget": 20,
+      "AP": 70.04801629286568,
+      "AP50": 94.837045584838,
+      "AP75": 80.4720315045409,
+      "count_MAE": 1.0131725797511175,
+      "AP_by_role": {
+        "V_SOURCE": 68.87486064582218,
+        "V_SHIFT": 71.22117193990918
+      },
+      "count_MAE_by_role": {
+        "V_SOURCE": 0.8620782165812337,
+        "V_SHIFT": 1.1642669429210013
+      },
+      "AP_drop_vs_control_pp": 0.41277488580772115,
+      "count_MAE_increase_vs_control_leaf": -0.0007320457320456608,
+      "quality_acceptable": true,
+      "elapsed_seconds": 473.4426635999698,
+      "frames_evaluated": 2947,
+      "selected_population": {
+        "TRAIN": {
+          "frames": 0,
+          "plants": 0,
+          "genotypes": 0
+        },
+        "V_SOURCE": {
+          "frames": 1737,
+          "plants": 31,
+          "genotypes": 15
+        },
+        "V_SHIFT": {
+          "frames": 1210,
+          "plants": 24,
+          "genotypes": 3
+        }
+      },
+      "selected_stream_sha256": "fc70f5cbf7ab31b485bc44cae0f4f9b4dea43509cb74c05809cd3e38c8af65b8",
+      "run_id": "19060-2026-11-22T04:40:42Z",
+      "report_path": "jrtip\\detection_budget_quality_v1\\cap00020\\budget_report_000020.json",
+      "quality_jsonl": "jrtip\\detection_budget_quality_v1\\cap00020\\quality_000020_S640.jsonl",
+      "quality_jsonl_sha256": "aac76102b417a03b4dfabc6f9c887d8e3d21c33911421b0820aa4ff33e9a687d",
+      "per_genotype": {
+        "V_SHIFT": {
+          "Ei-6": {
+            "AP": 73.98258469569807,
+            "AP50": 96.4748818097514,
+            "AP75": 83.48067690670061,
+            "count_MAE": 1.8207236842105263,
+            "frames": 35,
+            "plants": 2,
+            "gt_instances": 322
+          },
+          "Kz-9": {
+            "AP": 66.66782781565988,
+            "AP50": 94.34214228112403,
+            "AP75": 75.91463939568062,
+            "count_MAE": 0.7176911796401969,
+            "frames": 1108,
+            "plants": 19,
+            "gt_instances": 9542
+          },
+          "Or-0": {
+            "AP": 73.0131033083696,
+            "AP50": 94.74755245056338,
+            "AP75": 84.52640260009414,
+            "count_MAE": 0.9543859649122807,
+            "frames": 67,
+            "plants": 3,
+            "gt_instances": 701
+          }
+        },
+        "V_SOURCE": {
+          "Ba4-1": {
+            "AP": 68.28499555751979,
+            "AP50": 96.98389204760066,
+            "AP75": 80.40499731397918,
+            "count_MAE": 0.5833333333333334,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 274
+          },
+          "Ba5-1": {
+            "AP": 72.91084025285083,
+            "AP50": 95.51918570678724,
+            "AP75": 81.18169119421127,
+            "count_MAE": 0.9130434782608695,
+            "frames": 23,
+            "plants": 1,
+            "gt_instances": 292
+          },
+          "Bch-4": {
+            "AP": 71.07420524816571,
+            "AP50": 98.57360461320856,
+            "AP75": 82.27763925407896,
+            "count_MAE": 1.0666666666666667,
+            "frames": 15,
+            "plants": 1,
+            "gt_instances": 129
+          },
+          "Col-0": {
+            "AP": 68.46492276464534,
+            "AP50": 94.96656562880358,
+            "AP75": 78.26529795387299,
+            "count_MAE": 0.7300121285439436,
+            "frames": 266,
+            "plants": 4,
+            "gt_instances": 2362
+          },
+          "Cvi-0": {
+            "AP": 69.57393998622474,
+            "AP50": 95.81134728164722,
+            "AP75": 79.65392211179338,
+            "count_MAE": 0.6100190124269204,
+            "frames": 260,
+            "plants": 4,
+            "gt_instances": 2124
+          },
+          "Go-0": {
+            "AP": 62.68197484574076,
+            "AP50": 87.82155309055308,
+            "AP75": 73.5174565985539,
+            "count_MAE": 1.1,
+            "frames": 30,
+            "plants": 1,
+            "gt_instances": 472
+          },
+          "Hs-0": {
+            "AP": 69.3099479959743,
+            "AP50": 91.84566505075357,
+            "AP75": 80.31423583607406,
+            "count_MAE": 0.375,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 192
+          },
+          "Ler-1": {
+            "AP": 70.98674629791459,
+            "AP50": 95.81892480821035,
+            "AP75": 82.5244388837594,
+            "count_MAE": 0.7696052631578947,
+            "frames": 221,
+            "plants": 4,
+            "gt_instances": 2123
+          },
+          "Lz-0": {
+            "AP": 73.3827977914905,
+            "AP50": 96.83399674634427,
+            "AP75": 86.96274354806134,
+            "count_MAE": 1.625,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 187
+          },
+          "Sav-0": {
+            "AP": 72.53373044639143,
+            "AP50": 93.55738698920307,
+            "AP75": 81.80583318367411,
+            "count_MAE": 0.75,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 242
+          },
+          "TOU-I-17": {
+            "AP": 61.01910808170512,
+            "AP50": 92.70784386802156,
+            "AP75": 70.51246769442757,
+            "count_MAE": 0.8273879720259502,
+            "frames": 267,
+            "plants": 4,
+            "gt_instances": 2475
+          },
+          "Uk-1": {
+            "AP": 60.511010534013224,
+            "AP50": 92.68450274442162,
+            "AP75": 68.72025988403017,
+            "count_MAE": 0.904123939543695,
+            "frames": 262,
+            "plants": 3,
+            "gt_instances": 2849
+          },
+          "Uk-4": {
+            "AP": 69.09596171274214,
+            "AP50": 93.23915172231024,
+            "AP75": 80.68203060033643,
+            "count_MAE": 0.7857142857142857,
+            "frames": 28,
+            "plants": 1,
+            "gt_instances": 338
+          },
+          "Ws-2": {
+            "AP": 77.3377624092276,
+            "AP50": 97.434312653858,
+            "AP75": 89.24114852197212,
+            "count_MAE": 0.9545454545454546,
+            "frames": 22,
+            "plants": 1,
+            "gt_instances": 222
+          },
+          "Zdr-1": {
+            "AP": 65.95496576272674,
+            "AP50": 93.49055188622233,
+            "AP75": 78.4881880450257,
+            "count_MAE": 0.9367217144994923,
+            "frames": 263,
+            "plants": 3,
+            "gt_instances": 2086
+          }
+        }
+      }
+    },
+    "25": {
+      "budget": 25,
+      "AP": 70.19958527688954,
+      "AP50": 95.06670357594692,
+      "AP75": 80.62083173211812,
+      "count_MAE": 1.0136731440016817,
+      "AP_by_role": {
+        "V_SOURCE": 69.13412992172523,
+        "V_SHIFT": 71.26504063205384
+      },
+      "count_MAE_by_role": {
+        "V_SOURCE": 0.8630793450823623,
+        "V_SHIFT": 1.1642669429210013
+      },
+      "AP_drop_vs_control_pp": 0.2612059017838675,
+      "count_MAE_increase_vs_control_leaf": -0.00023148148148144365,
+      "quality_acceptable": true,
+      "elapsed_seconds": 529.8613270999631,
+      "frames_evaluated": 2947,
+      "selected_population": {
+        "TRAIN": {
+          "frames": 0,
+          "plants": 0,
+          "genotypes": 0
+        },
+        "V_SOURCE": {
+          "frames": 1737,
+          "plants": 31,
+          "genotypes": 15
+        },
+        "V_SHIFT": {
+          "frames": 1210,
+          "plants": 24,
+          "genotypes": 3
+        }
+      },
+      "selected_stream_sha256": "fc70f5cbf7ab31b485bc44cae0f4f9b4dea43509cb74c05809cd3e38c8af65b8",
+      "run_id": "73888-2026-11-22T05:29:46Z",
+      "report_path": "jrtip\\detection_budget_quality_v1\\cap00025\\budget_report_000025.json",
+      "quality_jsonl": "jrtip\\detection_budget_quality_v1\\cap00025\\quality_000025_S640.jsonl",
+      "quality_jsonl_sha256": "e2a75949868d0d36c554cf88310114d12b3bd379996c25284a812ee5b25cbfbb",
+      "per_genotype": {
+        "V_SHIFT": {
+          "Ei-6": {
+            "AP": 74.01578395446174,
+            "AP50": 96.46769320029416,
+            "AP75": 83.47533815365568,
+            "count_MAE": 1.8207236842105263,
+            "frames": 35,
+            "plants": 2,
+            "gt_instances": 322
+          },
+          "Kz-9": {
+            "AP": 66.73349321639095,
+            "AP50": 94.34639925059959,
+            "AP75": 75.93700695447885,
+            "count_MAE": 0.7176911796401969,
+            "frames": 1108,
+            "plants": 19,
+            "gt_instances": 9542
+          },
+          "Or-0": {
+            "AP": 73.04584472530881,
+            "AP50": 94.71584683369936,
+            "AP75": 84.52640260009414,
+            "count_MAE": 0.9543859649122807,
+            "frames": 67,
+            "plants": 3,
+            "gt_instances": 701
+          }
+        },
+        "V_SOURCE": {
+          "Ba4-1": {
+            "AP": 68.61149187947372,
+            "AP50": 96.91380751631537,
+            "AP75": 80.98107372910181,
+            "count_MAE": 0.5833333333333334,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 274
+          },
+          "Ba5-1": {
+            "AP": 72.99813553568804,
+            "AP50": 96.1120299025284,
+            "AP75": 81.08713197993221,
+            "count_MAE": 0.9130434782608695,
+            "frames": 23,
+            "plants": 1,
+            "gt_instances": 292
+          },
+          "Bch-4": {
+            "AP": 71.07420524816571,
+            "AP50": 98.57360461320856,
+            "AP75": 82.27763925407896,
+            "count_MAE": 1.0666666666666667,
+            "frames": 15,
+            "plants": 1,
+            "gt_instances": 129
+          },
+          "Col-0": {
+            "AP": 68.58280935491726,
+            "AP50": 95.39391927710359,
+            "AP75": 78.30126839109408,
+            "count_MAE": 0.7300121285439436,
+            "frames": 266,
+            "plants": 4,
+            "gt_instances": 2362
+          },
+          "Cvi-0": {
+            "AP": 69.66257336211919,
+            "AP50": 96.23950846139093,
+            "AP75": 79.66309115322538,
+            "count_MAE": 0.6100190124269204,
+            "frames": 260,
+            "plants": 4,
+            "gt_instances": 2124
+          },
+          "Go-0": {
+            "AP": 63.94842255979736,
+            "AP50": 90.22156941394371,
+            "AP75": 74.76581822303704,
+            "count_MAE": 1.1666666666666667,
+            "frames": 30,
+            "plants": 1,
+            "gt_instances": 472
+          },
+          "Hs-0": {
+            "AP": 69.3853475544288,
+            "AP50": 92.34896538078657,
+            "AP75": 80.31423583607406,
+            "count_MAE": 0.375,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 192
+          },
+          "Ler-1": {
+            "AP": 71.10205470736463,
+            "AP50": 95.84864179506668,
+            "AP75": 83.1328064796735,
+            "count_MAE": 0.7696052631578947,
+            "frames": 221,
+            "plants": 4,
+            "gt_instances": 2123
+          },
+          "Lz-0": {
+            "AP": 73.36001255777461,
+            "AP50": 96.79131324207223,
+            "AP75": 86.96274354806134,
+            "count_MAE": 1.625,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 187
+          },
+          "Sav-0": {
+            "AP": 72.7341503363228,
+            "AP50": 93.7083371742953,
+            "AP75": 81.80583318367411,
+            "count_MAE": 0.75,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 242
+          },
+          "TOU-I-17": {
+            "AP": 61.23356524307,
+            "AP50": 93.31154624054332,
+            "AP75": 70.86495798175488,
+            "count_MAE": 0.8321956643336426,
+            "frames": 267,
+            "plants": 4,
+            "gt_instances": 2475
+          },
+          "Uk-1": {
+            "AP": 61.19796884144099,
+            "AP50": 94.05764029166177,
+            "AP75": 69.34083994063778,
+            "count_MAE": 0.8346794950992504,
+            "frames": 262,
+            "plants": 3,
+            "gt_instances": 2849
+          },
+          "Uk-4": {
+            "AP": 69.62667132848222,
+            "AP50": 93.38176643517106,
+            "AP75": 81.27821930732644,
+            "count_MAE": 0.7857142857142857,
+            "frames": 28,
+            "plants": 1,
+            "gt_instances": 338
+          },
+          "Ws-2": {
+            "AP": 77.3641997053931,
+            "AP50": 97.417459549543,
+            "AP75": 89.24114852197212,
+            "count_MAE": 0.9545454545454546,
+            "frames": 22,
+            "plants": 1,
+            "gt_instances": 222
+          },
+          "Zdr-1": {
+            "AP": 66.13034061144003,
+            "AP50": 94.0313015618109,
+            "AP75": 78.91440589275715,
+            "count_MAE": 0.9497087274865054,
+            "frames": 263,
+            "plants": 3,
+            "gt_instances": 2086
+          }
+        }
+      }
+    },
+    "30": {
+      "budget": 30,
+      "AP": 70.2972983617111,
+      "AP50": 95.18727226143228,
+      "AP75": 80.691921679465,
+      "count_MAE": 1.0139046254831632,
+      "AP_by_role": {
+        "V_SOURCE": 69.28926520078969,
+        "V_SHIFT": 71.30533152263251
+      },
+      "count_MAE_by_role": {
+        "V_SOURCE": 0.8635423080453253,
+        "V_SHIFT": 1.1642669429210013
+      },
+      "AP_drop_vs_control_pp": 0.16349281696230378,
+      "count_MAE_increase_vs_control_leaf": 0.0,
+      "quality_acceptable": true,
+      "elapsed_seconds": 628.0802560000448,
+      "frames_evaluated": 2947,
+      "selected_population": {
+        "TRAIN": {
+          "frames": 0,
+          "plants": 0,
+          "genotypes": 0
+        },
+        "V_SOURCE": {
+          "frames": 1737,
+          "plants": 31,
+          "genotypes": 15
+        },
+        "V_SHIFT": {
+          "frames": 1210,
+          "plants": 24,
+          "genotypes": 3
+        }
+      },
+      "selected_stream_sha256": "fc70f5cbf7ab31b485bc44cae0f4f9b4dea43509cb74c05809cd3e38c8af65b8",
+      "run_id": "116900-2026-11-22T05:18:56Z",
+      "report_path": "jrtip\\detection_budget_quality_v1\\cap00030\\budget_report_000030.json",
+      "quality_jsonl": "jrtip\\detection_budget_quality_v1\\cap00030\\quality_000030_S640.jsonl",
+      "quality_jsonl_sha256": "b30b88b4c09fd73fc25be03c96a5ce6b26f0d819d9e6824ec6282472bc8e50f0",
+      "per_genotype": {
+        "V_SHIFT": {
+          "Ei-6": {
+            "AP": 74.10360595662966,
+            "AP50": 96.78009832804729,
+            "AP75": 83.47533815365568,
+            "count_MAE": 1.8207236842105263,
+            "frames": 35,
+            "plants": 2,
+            "gt_instances": 322
+          },
+          "Kz-9": {
+            "AP": 66.73584159071726,
+            "AP50": 94.34780607937566,
+            "AP75": 75.93274513187623,
+            "count_MAE": 0.7176911796401969,
+            "frames": 1108,
+            "plants": 19,
+            "gt_instances": 9542
+          },
+          "Or-0": {
+            "AP": 73.07654702055059,
+            "AP50": 94.7073444101549,
+            "AP75": 84.52640260009414,
+            "count_MAE": 0.9543859649122807,
+            "frames": 67,
+            "plants": 3,
+            "gt_instances": 701
+          }
+        },
+        "V_SOURCE": {
+          "Ba4-1": {
+            "AP": 68.81028183569192,
+            "AP50": 96.98839900694757,
+            "AP75": 80.97653514765332,
+            "count_MAE": 0.5833333333333334,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 274
+          },
+          "Ba5-1": {
+            "AP": 73.08568695093027,
+            "AP50": 96.0846896922867,
+            "AP75": 81.05112347283375,
+            "count_MAE": 0.9130434782608695,
+            "frames": 23,
+            "plants": 1,
+            "gt_instances": 292
+          },
+          "Bch-4": {
+            "AP": 71.07420524816571,
+            "AP50": 98.57360461320856,
+            "AP75": 82.27763925407896,
+            "count_MAE": 1.0666666666666667,
+            "frames": 15,
+            "plants": 1,
+            "gt_instances": 129
+          },
+          "Col-0": {
+            "AP": 68.57893093598099,
+            "AP50": 95.37665476301218,
+            "AP75": 78.30092606335785,
+            "count_MAE": 0.7300121285439436,
+            "frames": 266,
+            "plants": 4,
+            "gt_instances": 2362
+          },
+          "Cvi-0": {
+            "AP": 69.78324623679386,
+            "AP50": 96.2307132381479,
+            "AP75": 79.66266053606486,
+            "count_MAE": 0.6100190124269204,
+            "frames": 260,
+            "plants": 4,
+            "gt_instances": 2124
+          },
+          "Go-0": {
+            "AP": 64.46846138229809,
+            "AP50": 90.77044788951547,
+            "AP75": 75.37405550011657,
+            "count_MAE": 1.1666666666666667,
+            "frames": 30,
+            "plants": 1,
+            "gt_instances": 472
+          },
+          "Hs-0": {
+            "AP": 69.85205721247685,
+            "AP50": 92.94852533678217,
+            "AP75": 80.84661694303719,
+            "count_MAE": 0.375,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 192
+          },
+          "Ler-1": {
+            "AP": 71.26141521577047,
+            "AP50": 96.25008134805583,
+            "AP75": 83.13139046436257,
+            "count_MAE": 0.7696052631578947,
+            "frames": 221,
+            "plants": 4,
+            "gt_instances": 2123
+          },
+          "Lz-0": {
+            "AP": 73.42308687905913,
+            "AP50": 96.78431697164204,
+            "AP75": 86.96274354806134,
+            "count_MAE": 1.625,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 187
+          },
+          "Sav-0": {
+            "AP": 72.94527583480111,
+            "AP50": 93.70478353132069,
+            "AP75": 82.32909794538344,
+            "count_MAE": 0.75,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 242
+          },
+          "TOU-I-17": {
+            "AP": 61.367438834539186,
+            "AP50": 93.32357846430517,
+            "AP75": 70.92140498742057,
+            "count_MAE": 0.8321956643336426,
+            "frames": 267,
+            "plants": 4,
+            "gt_instances": 2475
+          },
+          "Uk-1": {
+            "AP": 61.32148103837282,
+            "AP50": 94.19298791614553,
+            "AP75": 69.36263892497195,
+            "count_MAE": 0.841623939543695,
+            "frames": 262,
+            "plants": 3,
+            "gt_instances": 2849
+          },
+          "Uk-4": {
+            "AP": 69.76052262797513,
+            "AP50": 93.38176643517106,
+            "AP75": 81.6673233603823,
+            "count_MAE": 0.7857142857142857,
+            "frames": 28,
+            "plants": 1,
+            "gt_instances": 338
+          },
+          "Ws-2": {
+            "AP": 77.43807501571315,
+            "AP50": 97.80926343581396,
+            "AP75": 89.24114852197212,
+            "count_MAE": 0.9545454545454546,
+            "frames": 22,
+            "plants": 1,
+            "gt_instances": 222
+          },
+          "Zdr-1": {
+            "AP": 66.16881276327673,
+            "AP50": 94.02211111272439,
+            "AP75": 78.97991628612304,
+            "count_MAE": 0.9497087274865054,
+            "frames": 263,
+            "plants": 3,
+            "gt_instances": 2086
+          }
+        }
+      }
+    },
+    "50": {
+      "budget": 50,
+      "AP": 70.39773404763596,
+      "AP50": 95.35413608220202,
+      "AP75": 80.8332035974459,
+      "count_MAE": 1.0139046254831632,
+      "AP_by_role": {
+        "V_SOURCE": 69.43217746214944,
+        "V_SHIFT": 71.3632906331225
+      },
+      "count_MAE_by_role": {
+        "V_SOURCE": 0.8635423080453253,
+        "V_SHIFT": 1.1642669429210013
+      },
+      "AP_drop_vs_control_pp": 0.06305713103743926,
+      "count_MAE_increase_vs_control_leaf": 0.0,
+      "quality_acceptable": true,
+      "elapsed_seconds": 856.9463373000035,
+      "frames_evaluated": 2947,
+      "selected_population": {
+        "TRAIN": {
+          "frames": 0,
+          "plants": 0,
+          "genotypes": 0
+        },
+        "V_SOURCE": {
+          "frames": 1737,
+          "plants": 31,
+          "genotypes": 15
+        },
+        "V_SHIFT": {
+          "frames": 1210,
+          "plants": 24,
+          "genotypes": 3
+        }
+      },
+      "selected_stream_sha256": "fc70f5cbf7ab31b485bc44cae0f4f9b4dea43509cb74c05809cd3e38c8af65b8",
+      "run_id": "75112-2026-11-22T04:26:04Z",
+      "report_path": "jrtip\\detection_budget_quality_v1\\cap00050\\budget_report_000050.json",
+      "quality_jsonl": "jrtip\\detection_budget_quality_v1\\cap00050\\quality_000050_S640.jsonl",
+      "quality_jsonl_sha256": "5da31e7d4256b896bc0862beb14ae121e2afc02818ef0087d841a376d819d5de",
+      "per_genotype": {
+        "V_SHIFT": {
+          "Ei-6": {
+            "AP": 74.13152444206365,
+            "AP50": 96.69153557035682,
+            "AP75": 83.73110630472821,
+            "count_MAE": 1.8207236842105263,
+            "frames": 35,
+            "plants": 2,
+            "gt_instances": 322
+          },
+          "Kz-9": {
+            "AP": 66.83964532869634,
+            "AP50": 94.56841016379319,
+            "AP75": 75.93199167394815,
+            "count_MAE": 0.7176911796401969,
+            "frames": 1108,
+            "plants": 19,
+            "gt_instances": 9542
+          },
+          "Or-0": {
+            "AP": 73.11870212860751,
+            "AP50": 95.01531284267865,
+            "AP75": 84.52640260009414,
+            "count_MAE": 0.9543859649122807,
+            "frames": 67,
+            "plants": 3,
+            "gt_instances": 701
+          }
+        },
+        "V_SOURCE": {
+          "Ba4-1": {
+            "AP": 68.98272059185544,
+            "AP50": 97.2556084144817,
+            "AP75": 80.97653514765332,
+            "count_MAE": 0.5833333333333334,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 274
+          },
+          "Ba5-1": {
+            "AP": 73.09786552220014,
+            "AP50": 96.06080129788656,
+            "AP75": 81.02730328294936,
+            "count_MAE": 0.9130434782608695,
+            "frames": 23,
+            "plants": 1,
+            "gt_instances": 292
+          },
+          "Bch-4": {
+            "AP": 71.11159881889215,
+            "AP50": 98.57360461320856,
+            "AP75": 82.27763925407896,
+            "count_MAE": 1.0666666666666667,
+            "frames": 15,
+            "plants": 1,
+            "gt_instances": 129
+          },
+          "Col-0": {
+            "AP": 68.637294238318,
+            "AP50": 95.37238624733455,
+            "AP75": 78.30092606335785,
+            "count_MAE": 0.7300121285439436,
+            "frames": 266,
+            "plants": 4,
+            "gt_instances": 2362
+          },
+          "Cvi-0": {
+            "AP": 69.83761807406249,
+            "AP50": 96.22452714881892,
+            "AP75": 79.88293706931975,
+            "count_MAE": 0.6100190124269204,
+            "frames": 260,
+            "plants": 4,
+            "gt_instances": 2124
+          },
+          "Go-0": {
+            "AP": 65.21142505942385,
+            "AP50": 91.31116185732695,
+            "AP75": 76.27014014372732,
+            "count_MAE": 1.1666666666666667,
+            "frames": 30,
+            "plants": 1,
+            "gt_instances": 472
+          },
+          "Hs-0": {
+            "AP": 69.97587316181666,
+            "AP50": 93.24645627381388,
+            "AP75": 81.11605372278075,
+            "count_MAE": 0.375,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 192
+          },
+          "Ler-1": {
+            "AP": 71.29338118326875,
+            "AP50": 96.23633602764058,
+            "AP75": 83.34015570009193,
+            "count_MAE": 0.7696052631578947,
+            "frames": 221,
+            "plants": 4,
+            "gt_instances": 2123
+          },
+          "Lz-0": {
+            "AP": 73.54937816206542,
+            "AP50": 96.78431697164204,
+            "AP75": 87.27433895341193,
+            "count_MAE": 1.625,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 187
+          },
+          "Sav-0": {
+            "AP": 73.0684168440028,
+            "AP50": 94.17272079157814,
+            "AP75": 82.50312558705545,
+            "count_MAE": 0.75,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 242
+          },
+          "TOU-I-17": {
+            "AP": 61.441976474690684,
+            "AP50": 93.60916939300405,
+            "AP75": 70.93035375845143,
+            "count_MAE": 0.8321956643336426,
+            "frames": 267,
+            "plants": 4,
+            "gt_instances": 2475
+          },
+          "Uk-1": {
+            "AP": 61.55526759477963,
+            "AP50": 94.60934602833613,
+            "AP75": 69.64273739042963,
+            "count_MAE": 0.841623939543695,
+            "frames": 262,
+            "plants": 3,
+            "gt_instances": 2849
+          },
+          "Uk-4": {
+            "AP": 69.9709828849872,
+            "AP50": 93.8085108178879,
+            "AP75": 82.00767429891218,
+            "count_MAE": 0.7857142857142857,
+            "frames": 28,
+            "plants": 1,
+            "gt_instances": 338
+          },
+          "Ws-2": {
+            "AP": 77.53765111720173,
+            "AP50": 97.75354820428002,
+            "AP75": 89.5222535555524,
+            "count_MAE": 0.9545454545454546,
+            "frames": 22,
+            "plants": 1,
+            "gt_instances": 222
+          },
+          "Zdr-1": {
+            "AP": 66.21121220467671,
+            "AP50": 94.2292954946771,
+            "AP75": 78.97643110175194,
+            "count_MAE": 0.9497087274865054,
+            "frames": 263,
+            "plants": 3,
+            "gt_instances": 2086
+          }
+        }
+      }
+    },
+    "100": {
+      "budget": 100,
+      "AP": 70.4607911786734,
+      "AP50": 95.41115101923182,
+      "AP75": 80.92950804085432,
+      "count_MAE": 1.0139046254831632,
+      "AP_by_role": {
+        "V_SOURCE": 69.50937659666876,
+        "V_SHIFT": 71.41220576067805
+      },
+      "count_MAE_by_role": {
+        "V_SOURCE": 0.8635423080453253,
+        "V_SHIFT": 1.1642669429210013
+      },
+      "AP_drop_vs_control_pp": 0.0,
+      "count_MAE_increase_vs_control_leaf": 0.0,
+      "quality_acceptable": true,
+      "elapsed_seconds": 1296.1078026000177,
+      "frames_evaluated": 2947,
+      "selected_population": {
+        "TRAIN": {
+          "frames": 0,
+          "plants": 0,
+          "genotypes": 0
+        },
+        "V_SOURCE": {
+          "frames": 1737,
+          "plants": 31,
+          "genotypes": 15
+        },
+        "V_SHIFT": {
+          "frames": 1210,
+          "plants": 24,
+          "genotypes": 3
+        }
+      },
+      "selected_stream_sha256": "fc70f5cbf7ab31b485bc44cae0f4f9b4dea43509cb74c05809cd3e38c8af65b8",
+      "run_id": "101064-2026-11-22T04:04:05Z",
+      "report_path": "jrtip\\detection_budget_quality_v1\\cap00100\\budget_report_000100.json",
+      "quality_jsonl": "jrtip\\detection_budget_quality_v1\\cap00100\\quality_000100_S640.jsonl",
+      "quality_jsonl_sha256": "9f42b099d72d1c01191764068b4460f78b39d70d1ce74871ed410b361a687cf1",
+      "per_genotype": {
+        "V_SHIFT": {
+          "Ei-6": {
+            "AP": 74.15354441816446,
+            "AP50": 96.67867622244407,
+            "AP75": 83.83357955747499,
+            "count_MAE": 1.8207236842105263,
+            "frames": 35,
+            "plants": 2,
+            "gt_instances": 322
+          },
+          "Kz-9": {
+            "AP": 66.88348041185836,
+            "AP50": 94.56516351681266,
+            "AP75": 76.04317888336942,
+            "count_MAE": 0.7176911796401969,
+            "frames": 1108,
+            "plants": 19,
+            "gt_instances": 9542
+          },
+          "Or-0": {
+            "AP": 73.19959245201134,
+            "AP50": 95.11791932811148,
+            "AP75": 84.6391547390954,
+            "count_MAE": 0.9543859649122807,
+            "frames": 67,
+            "plants": 3,
+            "gt_instances": 701
+          }
+        },
+        "V_SOURCE": {
+          "Ba4-1": {
+            "AP": 69.03310942466629,
+            "AP50": 97.24246339405272,
+            "AP75": 81.15026255756904,
+            "count_MAE": 0.5833333333333334,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 274
+          },
+          "Ba5-1": {
+            "AP": 73.15482805302871,
+            "AP50": 96.24283743872037,
+            "AP75": 81.02730328294936,
+            "count_MAE": 0.9130434782608695,
+            "frames": 23,
+            "plants": 1,
+            "gt_instances": 292
+          },
+          "Bch-4": {
+            "AP": 71.13222465607402,
+            "AP50": 98.57360461320856,
+            "AP75": 82.27763925407896,
+            "count_MAE": 1.0666666666666667,
+            "frames": 15,
+            "plants": 1,
+            "gt_instances": 129
+          },
+          "Col-0": {
+            "AP": 68.64843059104979,
+            "AP50": 95.37238624733455,
+            "AP75": 78.30092606335785,
+            "count_MAE": 0.7300121285439436,
+            "frames": 266,
+            "plants": 4,
+            "gt_instances": 2362
+          },
+          "Cvi-0": {
+            "AP": 69.85020726875698,
+            "AP50": 96.22452714881892,
+            "AP75": 79.88234852380948,
+            "count_MAE": 0.6100190124269204,
+            "frames": 260,
+            "plants": 4,
+            "gt_instances": 2124
+          },
+          "Go-0": {
+            "AP": 65.450850456815,
+            "AP50": 91.75852736133338,
+            "AP75": 76.66250252325072,
+            "count_MAE": 1.1666666666666667,
+            "frames": 30,
+            "plants": 1,
+            "gt_instances": 472
+          },
+          "Hs-0": {
+            "AP": 70.02824173421271,
+            "AP50": 93.24447893078136,
+            "AP75": 81.11429843431337,
+            "count_MAE": 0.375,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 192
+          },
+          "Ler-1": {
+            "AP": 71.40199962759117,
+            "AP50": 96.23633602764058,
+            "AP75": 83.42695846247231,
+            "count_MAE": 0.7696052631578947,
+            "frames": 221,
+            "plants": 4,
+            "gt_instances": 2123
+          },
+          "Lz-0": {
+            "AP": 73.63138214589793,
+            "AP50": 96.78431697164204,
+            "AP75": 87.45638941652275,
+            "count_MAE": 1.625,
+            "frames": 16,
+            "plants": 1,
+            "gt_instances": 187
+          },
+          "Sav-0": {
+            "AP": 73.14683201928332,
+            "AP50": 94.42050914868862,
+            "AP75": 82.46284246737662,
+            "count_MAE": 0.75,
+            "frames": 24,
+            "plants": 1,
+            "gt_instances": 242
+          },
+          "TOU-I-17": {
+            "AP": 61.519798237494214,
+            "AP50": 93.60708014732991,
+            "AP75": 71.09768015309159,
+            "count_MAE": 0.8321956643336426,
+            "frames": 267,
+            "plants": 4,
+            "gt_instances": 2475
+          },
+          "Uk-1": {
+            "AP": 61.67414415354374,
+            "AP50": 94.80420969842865,
+            "AP75": 69.80515518642851,
+            "count_MAE": 0.841623939543695,
+            "frames": 262,
+            "plants": 3,
+            "gt_instances": 2849
+          },
+          "Uk-4": {
+            "AP": 70.147876916953,
+            "AP50": 94.03031437476182,
+            "AP75": 82.02285656038158,
+            "count_MAE": 0.7857142857142857,
+            "frames": 28,
+            "plants": 1,
+            "gt_instances": 338
+          },
+          "Ws-2": {
+            "AP": 77.56389275556698,
+            "AP50": 97.75354820428002,
+            "AP75": 89.5222535555524,
+            "count_MAE": 0.9545454545454546,
+            "frames": 22,
+            "plants": 1,
+            "gt_instances": 222
+          },
+          "Zdr-1": {
+            "AP": 66.25683090909759,
+            "AP50": 94.23059553309236,
+            "AP75": 79.09625888477585,
+            "count_MAE": 0.9497087274865054,
+            "frames": 263,
+            "plants": 3,
+            "gt_instances": 2086
+          }
+        }
+      }
+    }
+  },
+  "acceptable_budgets": [
+    100,
+    20,
+    25,
+    30,
+    50
+  ],
+  "lowest_acceptable_budget_below_control": 20,
+  "smoke_limited": false,
+  "integrity_problems": [],
+  "verdict": "quality_preserved_below_control_at_budgets: 20, 25, 30, 50",
+  "scope_limits": [
+    "Development roles only; C_POLICY/T_ID/T_GENO/T_EXT never loaded or evaluated.",
+    "Single seed 43 pilot checkpoint at 1000 optimizer updates, long edge 640 only; this is not the formal 36-epoch schedule.",
+    "Point estimates on 2,947 development frames; no confirmatory confidence interval, no multiple-comparison control, and no locked-test evidence.",
+    "Time savings per budget come from the separate bottleneck-decomposition run, which measured 40-frame medians on a device shared with desktop CUDA contexts; this merge reuses those timings as context and does not re-measure them.",
+    "Counts are soft-mask instance counts of a fixed top-down field of view; no physical area or biomass calibration is implied."
+  ],
+  "producer_version": [
+    "jrtip-detection-budget-quality-v2"
+  ]
+}

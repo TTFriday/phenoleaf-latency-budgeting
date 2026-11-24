@@ -1,0 +1,264 @@
+{
+  "version": "jrtip-budget-rule-vector-check-v1",
+  "generated_utc": "2026-11-22T15:45:31Z",
+  "pricing_artifact": "jrtip\\budget_bucket_pricing_v1\\bucket_pricing.json",
+  "stream": "jrtip\\detection_budget_quality_v1\\cap00100\\quality_000100_S640.jsonl",
+  "frames": 2947,
+  "count_score_threshold": 0.5,
+  "bucket_grid": [
+    15,
+    20,
+    30,
+    50,
+    100
+  ],
+  "arms_checked": 5,
+  "arms_priced_only": [
+    "sync_c_plus_2_f17",
+    "sync_c_plus_3_f17",
+    "sync_c_plus_5_f17",
+    "sync_c_plus_10_f17",
+    "sync_ceil_1p25_f17",
+    "sync_ceil_1p5_f17",
+    "sync_c_plus_2_f18",
+    "sync_c_plus_3_f18",
+    "sync_c_plus_5_f18",
+    "sync_c_plus_10_f18",
+    "sync_ceil_1p25_f18",
+    "sync_ceil_1p5_f18",
+    "sync_c_plus_2_f19",
+    "sync_c_plus_3_f19",
+    "sync_c_plus_5_f19",
+    "sync_c_plus_10_f19",
+    "sync_ceil_1p25_f19",
+    "sync_ceil_1p5_f19"
+  ],
+  "checks_total": 31,
+  "checks_failed": 0,
+  "failures": [],
+  "checks": [
+    {
+      "name": "count_field_equals_score_ge_half",
+      "pass": true,
+      "detail": "0 frames, first []"
+    },
+    {
+      "name": "arm_sync_c_plus_10_f15_mode_rule_floor_match",
+      "pass": true,
+      "detail": "timing sync/('c_plus_m', 10)/15 vs pricing sync/('c_plus_m', 10)/15"
+    },
+    {
+      "name": "arm_sync_c_plus_10_f15_per_frame_vectors_identical",
+      "pass": true,
+      "detail": "policy-vs-timing frame mismatches 0, record-count-vs-scalar mismatches 0"
+    },
+    {
+      "name": "arm_sync_c_plus_10_f15_never_drops_reported_leaf",
+      "pass": true,
+      "detail": "0 frames where k < count"
+    },
+    {
+      "name": "arm_sync_c_plus_10_f15_budget_histogram_matches_artifact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "arm_sync_c_plus_10_f15_mean_work_matches_artifact",
+      "pass": true,
+      "detail": "recomputed 19.3532 vs artifact 19.353"
+    },
+    {
+      "name": "arm_sync_ceil_1p5_f15_mode_rule_floor_match",
+      "pass": true,
+      "detail": "timing sync/('ceil_mul', 1.5)/15 vs pricing sync/('ceil_mul', 1.5)/15"
+    },
+    {
+      "name": "arm_sync_ceil_1p5_f15_per_frame_vectors_identical",
+      "pass": true,
+      "detail": "policy-vs-timing frame mismatches 0, record-count-vs-scalar mismatches 0"
+    },
+    {
+      "name": "arm_sync_ceil_1p5_f15_never_drops_reported_leaf",
+      "pass": true,
+      "detail": "0 frames where k < count"
+    },
+    {
+      "name": "arm_sync_ceil_1p5_f15_budget_histogram_matches_artifact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "arm_sync_ceil_1p5_f15_mean_work_matches_artifact",
+      "pass": true,
+      "detail": "recomputed 16.9861 vs artifact 16.986"
+    },
+    {
+      "name": "arm_readfull_c_plus_10_f15_mode_rule_floor_match",
+      "pass": true,
+      "detail": "timing readfull/('c_plus_m', 10)/15 vs pricing readfull/('c_plus_m', 10)/15"
+    },
+    {
+      "name": "arm_readfull_c_plus_10_f15_per_frame_vectors_identical",
+      "pass": true,
+      "detail": "policy-vs-timing frame mismatches 0, record-count-vs-scalar mismatches 0"
+    },
+    {
+      "name": "arm_readfull_c_plus_10_f15_never_drops_reported_leaf",
+      "pass": true,
+      "detail": "0 frames where k < count"
+    },
+    {
+      "name": "arm_readfull_c_plus_10_f15_budget_histogram_matches_artifact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "arm_readfull_c_plus_10_f15_mean_work_matches_artifact",
+      "pass": true,
+      "detail": "recomputed 19.3532 vs artifact 19.353"
+    },
+    {
+      "name": "arm_bucket_c_plus_10_f15_mode_rule_floor_match",
+      "pass": true,
+      "detail": "timing bucket/('c_plus_m', 10)/15 vs pricing bucket/('c_plus_m', 10)/15"
+    },
+    {
+      "name": "arm_bucket_c_plus_10_f15_per_frame_vectors_identical",
+      "pass": true,
+      "detail": "policy-vs-timing frame mismatches 0, record-count-vs-scalar mismatches 0"
+    },
+    {
+      "name": "arm_bucket_c_plus_10_f15_bucketing_bites",
+      "pass": true,
+      "detail": "the grid left every frame's k unchanged, so the composite comparison would be vacuous"
+    },
+    {
+      "name": "arm_bucket_c_plus_10_f15_never_drops_reported_leaf",
+      "pass": true,
+      "detail": "0 frames where k < count"
+    },
+    {
+      "name": "arm_bucket_c_plus_10_f15_budget_histogram_matches_artifact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "arm_bucket_c_plus_10_f15_mean_work_matches_artifact",
+      "pass": true,
+      "detail": "recomputed 22.6722 vs artifact 22.672"
+    },
+    {
+      "name": "arm_bucket_ceil_1p5_f15_mode_rule_floor_match",
+      "pass": true,
+      "detail": "timing bucket/('ceil_mul', 1.5)/15 vs pricing bucket/('ceil_mul', 1.5)/15"
+    },
+    {
+      "name": "arm_bucket_ceil_1p5_f15_per_frame_vectors_identical",
+      "pass": true,
+      "detail": "policy-vs-timing frame mismatches 0, record-count-vs-scalar mismatches 0"
+    },
+    {
+      "name": "arm_bucket_ceil_1p5_f15_bucketing_bites",
+      "pass": true,
+      "detail": "the grid left every frame's k unchanged, so the composite comparison would be vacuous"
+    },
+    {
+      "name": "arm_bucket_ceil_1p5_f15_never_drops_reported_leaf",
+      "pass": true,
+      "detail": "0 frames where k < count"
+    },
+    {
+      "name": "arm_bucket_ceil_1p5_f15_budget_histogram_matches_artifact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "arm_bucket_ceil_1p5_f15_mean_work_matches_artifact",
+      "pass": true,
+      "detail": "recomputed 18.2694 vs artifact 18.269"
+    },
+    {
+      "name": "bucket_of_lands_on_the_frozen_grid",
+      "pass": true,
+      "detail": "off-grid values []"
+    },
+    {
+      "name": "bucket_grid_matches_pricing_run",
+      "pass": true,
+      "detail": "timing [15, 20, 30, 50, 100] vs pricing [15, 20, 30, 50, 100]"
+    },
+    {
+      "name": "bucket_of_never_below_raw",
+      "pass": true,
+      "detail": "0 counterexamples"
+    }
+  ],
+  "per_arm": {
+    "sync_c_plus_10_f15": {
+      "frames": 2947,
+      "mean_k": 19.3532,
+      "min_k": 15,
+      "max_k": 36,
+      "mode": "sync",
+      "rule": [
+        "c_plus_m",
+        10
+      ],
+      "floor": 15,
+      "frames_moved_by_the_grid": 0
+    },
+    "sync_ceil_1p5_f15": {
+      "frames": 2947,
+      "mean_k": 16.9861,
+      "min_k": 15,
+      "max_k": 39,
+      "mode": "sync",
+      "rule": [
+        "ceil_mul",
+        1.5
+      ],
+      "floor": 15,
+      "frames_moved_by_the_grid": 0
+    },
+    "readfull_c_plus_10_f15": {
+      "frames": 2947,
+      "mean_k": 19.3532,
+      "min_k": 15,
+      "max_k": 36,
+      "mode": "readfull",
+      "rule": [
+        "c_plus_m",
+        10
+      ],
+      "floor": 15,
+      "frames_moved_by_the_grid": 0
+    },
+    "bucket_c_plus_10_f15": {
+      "frames": 2947,
+      "mean_k": 22.6722,
+      "min_k": 15,
+      "max_k": 50,
+      "mode": "bucket",
+      "rule": [
+        "c_plus_m",
+        10
+      ],
+      "floor": 15,
+      "frames_moved_by_the_grid": 2143
+    },
+    "bucket_ceil_1p5_f15": {
+      "frames": 2947,
+      "mean_k": 18.2694,
+      "min_k": 15,
+      "max_k": 50,
+      "mode": "bucket",
+      "rule": [
+        "ceil_mul",
+        1.5
+      ],
+      "floor": 15,
+      "frames_moved_by_the_grid": 815
+    }
+  },
+  "claim": "frame-by-frame identity, over the frozen development contract, between the policy module's rule arithmetic plus the timing module's bucket map and the timing module's own composite decision function - for the five rule arms section 11 timed and section 14 priced.  This is a decision-function check, not a metric check: the AP and count MAE of those arms come from one shared evaluation engine, so their agreement across pipelines is definitional, not independent evidence."
+}

@@ -1,0 +1,470 @@
+{
+  "version": "jrtip-rule-timing-readout-v1",
+  "generated_utc": "2026-11-22T20:01:41Z",
+  "source_report": "jrtip\\rule_timing_v1_rep\\rule_timing.json",
+  "aggregation_reused": "per-arm session means first, then averaged over sessions (v1 section 6); individual requests are never pooled across sessions",
+  "all_gates_passed": true,
+  "arms": [
+    {
+      "arm": "bucket_c_plus_10_f15",
+      "family": "rule_bucket",
+      "mean_ms": 145.89,
+      "spread_ms": 16.201,
+      "spread_pct_of_mean": 11.1,
+      "p95_ms": 190.685,
+      "emitted_per_frame": 23.2106,
+      "read_ms": 0.26865,
+      "wrapper_ms": 5.48469,
+      "reduction_vs_static100_pct": 64.62
+    },
+    {
+      "arm": "bucket_ceil_1p5_f15",
+      "family": "rule_bucket",
+      "mean_ms": 121.588,
+      "spread_ms": 3.417,
+      "spread_pct_of_mean": 2.81,
+      "p95_ms": 170.314,
+      "emitted_per_frame": 18.4296,
+      "read_ms": 0.25975,
+      "wrapper_ms": 5.18377,
+      "reduction_vs_static100_pct": 70.52
+    },
+    {
+      "arm": "readfull_c_plus_10_f15",
+      "family": "rule_readfull",
+      "mean_ms": 130.401,
+      "spread_ms": 14.318,
+      "spread_pct_of_mean": 10.98,
+      "p95_ms": 165.25,
+      "emitted_per_frame": 19.7139,
+      "read_ms": 0.16058,
+      "wrapper_ms": 5.23592,
+      "reduction_vs_static100_pct": 68.38
+    },
+    {
+      "arm": "static100_native",
+      "family": "static",
+      "mean_ms": 412.382,
+      "spread_ms": 2.354,
+      "spread_pct_of_mean": 0.57,
+      "p95_ms": 492.08,
+      "emitted_per_frame": 91.4846,
+      "read_ms": 0.0,
+      "wrapper_ms": 0.0,
+      "reduction_vs_static100_pct": 0.0
+    },
+    {
+      "arm": "static100_wrap",
+      "family": "wrapper_control",
+      "mean_ms": 410.244,
+      "spread_ms": 11.159,
+      "spread_pct_of_mean": 2.72,
+      "p95_ms": 485.732,
+      "emitted_per_frame": 91.4846,
+      "read_ms": 0.0,
+      "wrapper_ms": 6.98642,
+      "reduction_vs_static100_pct": 0.52
+    },
+    {
+      "arm": "static15_native",
+      "family": "static",
+      "mean_ms": 107.99,
+      "spread_ms": 3.022,
+      "spread_pct_of_mean": 2.8,
+      "p95_ms": 125.029,
+      "emitted_per_frame": 15.0,
+      "read_ms": 0.0,
+      "wrapper_ms": 0.0,
+      "reduction_vs_static100_pct": 73.81
+    },
+    {
+      "arm": "static16_native",
+      "family": "static",
+      "mean_ms": 111.303,
+      "spread_ms": 1.569,
+      "spread_pct_of_mean": 1.41,
+      "p95_ms": 128.417,
+      "emitted_per_frame": 16.0,
+      "read_ms": 0.0,
+      "wrapper_ms": 0.0,
+      "reduction_vs_static100_pct": 73.01
+    },
+    {
+      "arm": "static20_native",
+      "family": "static",
+      "mean_ms": 126.653,
+      "spread_ms": 1.339,
+      "spread_pct_of_mean": 1.06,
+      "p95_ms": 145.19,
+      "emitted_per_frame": 20.0,
+      "read_ms": 0.0,
+      "wrapper_ms": 0.0,
+      "reduction_vs_static100_pct": 69.29
+    },
+    {
+      "arm": "static20_wrap",
+      "family": "wrapper_control",
+      "mean_ms": 126.186,
+      "spread_ms": 2.195,
+      "spread_pct_of_mean": 1.74,
+      "p95_ms": 143.694,
+      "emitted_per_frame": 20.0,
+      "read_ms": 0.0,
+      "wrapper_ms": 4.83551,
+      "reduction_vs_static100_pct": 69.4
+    },
+    {
+      "arm": "sync_c_plus_10_f15",
+      "family": "rule_sync",
+      "mean_ms": 126.536,
+      "spread_ms": 0.693,
+      "spread_pct_of_mean": 0.55,
+      "p95_ms": 159.704,
+      "emitted_per_frame": 19.7139,
+      "read_ms": 0.26341,
+      "wrapper_ms": 5.14678,
+      "reduction_vs_static100_pct": 69.32
+    },
+    {
+      "arm": "sync_ceil_1p5_f15",
+      "family": "rule_sync",
+      "mean_ms": 118.047,
+      "spread_ms": 6.762,
+      "spread_pct_of_mean": 5.73,
+      "p95_ms": 153.363,
+      "emitted_per_frame": 17.096,
+      "read_ms": 0.26315,
+      "wrapper_ms": 5.26525,
+      "reduction_vs_static100_pct": 71.37
+    }
+  ],
+  "wrapper_overhead": {
+    "at_cap_100": {
+      "wrapper_ms": 410.244,
+      "native_ms": 412.382,
+      "wrapper_minus_native_ms": -2.138,
+      "session_spread_ms": 11.159,
+      "within_spread": true
+    },
+    "at_cap_20": {
+      "wrapper_ms": 126.186,
+      "native_ms": 126.653,
+      "wrapper_minus_native_ms": -0.467,
+      "session_spread_ms": 2.195,
+      "within_spread": true
+    }
+  },
+  "decision_read_cost": {
+    "sync_read_ms_mean": 0.26341,
+    "readfull_read_ms_mean": 0.16058,
+    "read_ms_as_pct_of_service": 0.208,
+    "readfull_minus_sync_ms": 3.865,
+    "worst_arm_session_spread_ms": 14.318,
+    "resolvable": false,
+    "interpretation": "the two arms deliver identical budgets, so their measured difference is attribution noise unless it exceeds the session spread"
+  },
+  "static_cost_slope": {
+    "segments": [
+      {
+        "segment": "static15_native -> static16_native",
+        "instances": 1.0,
+        "ms": 3.313,
+        "ms_per_instance": 3.313
+      },
+      {
+        "segment": "static16_native -> static20_native",
+        "instances": 4.0,
+        "ms": 15.35,
+        "ms_per_instance": 3.8375
+      },
+      {
+        "segment": "static20_native -> static100_native",
+        "instances": 71.485,
+        "ms": 285.729,
+        "ms_per_instance": 3.9971
+      }
+    ],
+    "ms_per_instance_local_15_to_20": 3.5753
+  },
+  "bucket_grid_waste": [
+    {
+      "rule_family": "c_plus_10_f15",
+      "sync_ms": 126.536,
+      "bucket_ms": 145.89,
+      "bucket_minus_sync_ms": 19.354,
+      "extra_masked_instances_per_frame": 3.4967,
+      "ms_per_extra_instance_observed": 5.5349,
+      "static_curve_ms_per_instance": 3.5753,
+      "decision_read_ms_bucket": 0.26865,
+      "grid_ceil_waste_pct_of_service": 15.3
+    },
+    {
+      "rule_family": "ceil_1p5_f15",
+      "sync_ms": 118.047,
+      "bucket_ms": 121.588,
+      "bucket_minus_sync_ms": 3.541,
+      "extra_masked_instances_per_frame": 1.3336,
+      "ms_per_extra_instance_observed": 2.6552,
+      "static_curve_ms_per_instance": 3.5753,
+      "decision_read_ms_bucket": 0.25975,
+      "grid_ceil_waste_pct_of_service": 3.0
+    }
+  ],
+  "equal_work_pairs": {
+    "static15_anchor_ms": 107.99,
+    "ms_per_instance": 3.5753,
+    "pairs": [
+      {
+        "rule_arm": "sync_c_plus_10_f15",
+        "emitted_per_frame": 19.714,
+        "measured_ms": 126.536,
+        "static_line_predicted_ms": 124.844,
+        "measured_minus_predicted_ms": 1.692,
+        "nearest_statics": {
+          "static15_ms": 107.99,
+          "static20_ms": 126.653
+        },
+        "note": "predicted = static15 mean + local static slope x extra masked instances; a rule arm sitting on the line means the time axis rewards nothing beyond delivering fewer masks - the rule's advantage is on the quality axis (plan v2 section 5 clause 3)"
+      },
+      {
+        "rule_arm": "sync_ceil_1p5_f15",
+        "emitted_per_frame": 17.096,
+        "measured_ms": 118.047,
+        "static_line_predicted_ms": 115.484,
+        "measured_minus_predicted_ms": 2.563,
+        "nearest_statics": {
+          "static15_ms": 107.99,
+          "static20_ms": 126.653
+        },
+        "note": "predicted = static15 mean + local static slope x extra masked instances; a rule arm sitting on the line means the time axis rewards nothing beyond delivering fewer masks - the rule's advantage is on the quality axis (plan v2 section 5 clause 3)"
+      },
+      {
+        "rule_arm": "readfull_c_plus_10_f15",
+        "emitted_per_frame": 19.714,
+        "measured_ms": 130.401,
+        "static_line_predicted_ms": 124.844,
+        "measured_minus_predicted_ms": 5.557,
+        "nearest_statics": {
+          "static15_ms": 107.99,
+          "static20_ms": 126.653
+        },
+        "note": "predicted = static15 mean + local static slope x extra masked instances; a rule arm sitting on the line means the time axis rewards nothing beyond delivering fewer masks - the rule's advantage is on the quality axis (plan v2 section 5 clause 3)"
+      },
+      {
+        "rule_arm": "bucket_c_plus_10_f15",
+        "emitted_per_frame": 23.211,
+        "measured_ms": 145.89,
+        "static_line_predicted_ms": 137.345,
+        "measured_minus_predicted_ms": 8.545,
+        "nearest_statics": {
+          "static15_ms": 107.99,
+          "static20_ms": 126.653
+        },
+        "note": "predicted = static15 mean + local static slope x extra masked instances; a rule arm sitting on the line means the time axis rewards nothing beyond delivering fewer masks - the rule's advantage is on the quality axis (plan v2 section 5 clause 3)"
+      },
+      {
+        "rule_arm": "bucket_ceil_1p5_f15",
+        "emitted_per_frame": 18.43,
+        "measured_ms": 121.588,
+        "static_line_predicted_ms": 120.252,
+        "measured_minus_predicted_ms": 1.336,
+        "nearest_statics": {
+          "static15_ms": 107.99,
+          "static20_ms": 126.653
+        },
+        "note": "predicted = static15 mean + local static slope x extra masked instances; a rule arm sitting on the line means the time axis rewards nothing beyond delivering fewer masks - the rule's advantage is on the quality axis (plan v2 section 5 clause 3)"
+      }
+    ]
+  },
+  "interference_effect": {
+    "arms_compared": 11,
+    "difference_pct_median": 2.143,
+    "difference_pct_max": 10.788,
+    "contention_true_in_any_session": true,
+    "sessions_recorded": 3,
+    "per_arm": [
+      {
+        "arm": "bucket_c_plus_10_f15",
+        "inflation_min": 1.1198,
+        "inflation_max": 1.5968,
+        "mean_ms_cleanest_session": 141.086,
+        "mean_ms_dirtiest_session": 156.392,
+        "difference_ms": 15.306,
+        "difference_pct": 10.491,
+        "spread_of_session_means_ms": 16.201
+      },
+      {
+        "arm": "bucket_ceil_1p5_f15",
+        "inflation_min": 1.094,
+        "inflation_max": 1.1288,
+        "mean_ms_cleanest_session": 119.683,
+        "mean_ms_dirtiest_session": 123.1,
+        "difference_ms": 3.417,
+        "difference_pct": 2.81,
+        "spread_of_session_means_ms": 3.417
+      },
+      {
+        "arm": "readfull_c_plus_10_f15",
+        "inflation_min": 1.1154,
+        "inflation_max": 1.5196,
+        "mean_ms_cleanest_session": 125.795,
+        "mean_ms_dirtiest_session": 139.863,
+        "difference_ms": 14.068,
+        "difference_pct": 10.788,
+        "spread_of_session_means_ms": 14.318
+      },
+      {
+        "arm": "static100_native",
+        "inflation_min": 1.0813,
+        "inflation_max": 1.4247,
+        "mean_ms_cleanest_session": 413.854,
+        "mean_ms_dirtiest_session": 411.5,
+        "difference_ms": 2.354,
+        "difference_pct": 0.571,
+        "spread_of_session_means_ms": 2.354
+      },
+      {
+        "arm": "static100_wrap",
+        "inflation_min": 1.1205,
+        "inflation_max": 1.8802,
+        "mean_ms_cleanest_session": 403.296,
+        "mean_ms_dirtiest_session": 414.455,
+        "difference_ms": 11.159,
+        "difference_pct": 2.72,
+        "spread_of_session_means_ms": 11.159
+      },
+      {
+        "arm": "static15_native",
+        "inflation_min": 1.0726,
+        "inflation_max": 1.1101,
+        "mean_ms_cleanest_session": 107.455,
+        "mean_ms_dirtiest_session": 109.769,
+        "difference_ms": 2.314,
+        "difference_pct": 2.143,
+        "spread_of_session_means_ms": 3.022
+      },
+      {
+        "arm": "static16_native",
+        "inflation_min": 1.0855,
+        "inflation_max": 1.1145,
+        "mean_ms_cleanest_session": 110.972,
+        "mean_ms_dirtiest_session": 110.685,
+        "difference_ms": 0.287,
+        "difference_pct": 0.258,
+        "spread_of_session_means_ms": 1.569
+      },
+      {
+        "arm": "static20_native",
+        "inflation_min": 1.1121,
+        "inflation_max": 1.1703,
+        "mean_ms_cleanest_session": 127.398,
+        "mean_ms_dirtiest_session": 126.501,
+        "difference_ms": 0.897,
+        "difference_pct": 0.708,
+        "spread_of_session_means_ms": 1.339
+      },
+      {
+        "arm": "static20_wrap",
+        "inflation_min": 1.0886,
+        "inflation_max": 1.1593,
+        "mean_ms_cleanest_session": 125.545,
+        "mean_ms_dirtiest_session": 125.409,
+        "difference_ms": 0.136,
+        "difference_pct": 0.108,
+        "spread_of_session_means_ms": 2.195
+      },
+      {
+        "arm": "sync_c_plus_10_f15",
+        "inflation_min": 1.094,
+        "inflation_max": 1.1545,
+        "mean_ms_cleanest_session": 126.931,
+        "mean_ms_dirtiest_session": 126.238,
+        "difference_ms": 0.693,
+        "difference_pct": 0.548,
+        "spread_of_session_means_ms": 0.693
+      },
+      {
+        "arm": "sync_ceil_1p5_f15",
+        "inflation_min": 1.125,
+        "inflation_max": 1.1974,
+        "mean_ms_cleanest_session": 115.263,
+        "mean_ms_dirtiest_session": 122.025,
+        "difference_ms": 6.762,
+        "difference_pct": 5.728,
+        "spread_of_session_means_ms": 6.762
+      }
+    ],
+    "reading": "inflation of the isolated probe does not translate into a comparable shift of a 1,073-request mean; the gate violation is disclosed, not repaired, because the device is never quiet while the desktop session is up"
+  },
+  "section_7_1_gate": {
+    "gate": "plan v2 section 7.1: a rule or static arm with >=60% time reduction and <=1.0 pp AP drop, time measured on the device (section 6 forbids offline slopes as a substitute)",
+    "arms": [
+      {
+        "arm": "static20_native",
+        "measured_time_reduction_pct": 69.29,
+        "time_gate_60pct": true,
+        "ap_drop_pp_offline": 0.4128,
+        "quality_gate_1pp": true,
+        "both_gates": true
+      },
+      {
+        "arm": "static16_native",
+        "measured_time_reduction_pct": 73.01,
+        "time_gate_60pct": true,
+        "ap_drop_pp_offline": 0.9052,
+        "quality_gate_1pp": true,
+        "both_gates": true
+      },
+      {
+        "arm": "sync_ceil_1p5_f15",
+        "measured_time_reduction_pct": 71.37,
+        "time_gate_60pct": true,
+        "ap_drop_pp_offline": 0.3845,
+        "quality_gate_1pp": true,
+        "both_gates": true
+      },
+      {
+        "arm": "sync_c_plus_10_f15",
+        "measured_time_reduction_pct": 69.32,
+        "time_gate_60pct": true,
+        "ap_drop_pp_offline": 0.2956,
+        "quality_gate_1pp": true,
+        "both_gates": true
+      },
+      {
+        "arm": "readfull_c_plus_10_f15",
+        "measured_time_reduction_pct": 68.38,
+        "time_gate_60pct": true,
+        "ap_drop_pp_offline": 0.2956,
+        "quality_gate_1pp": true,
+        "both_gates": true
+      },
+      {
+        "arm": "bucket_ceil_1p5_f15",
+        "measured_time_reduction_pct": 70.52,
+        "time_gate_60pct": true,
+        "ap_drop_pp_offline": 0.2837,
+        "quality_gate_1pp": true,
+        "both_gates": true
+      },
+      {
+        "arm": "bucket_c_plus_10_f15",
+        "measured_time_reduction_pct": 64.62,
+        "time_gate_60pct": true,
+        "ap_drop_pp_offline": 0.2042,
+        "quality_gate_1pp": true,
+        "both_gates": true
+      }
+    ],
+    "quality_source": "jrtip\\budget_bucket_pricing_v1\\bucket_pricing.json"
+  },
+  "not_measured": [
+    "queueing replay",
+    "energy",
+    "second hardware",
+    "locked test roles",
+    "36-epoch checkpoint",
+    "controller (learned) arms"
+  ],
+  "scope": "development roles only; 1,000-step pilot checkpoint; service time on one shared RTX 3090; point estimates, not a non-inferiority claim; no quality number here is paired with a time number from a different arm"
+}

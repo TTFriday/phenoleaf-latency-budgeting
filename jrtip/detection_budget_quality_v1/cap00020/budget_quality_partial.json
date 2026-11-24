@@ -1,0 +1,14 @@
+{
+  "version": "jrtip-detection-budget-quality-v2",
+  "run_id": "19060-2026-11-22T04:40:42Z",
+  "budgets_requested": [
+    20
+  ],
+  "budgets_completed": [
+    20
+  ],
+  "reports": [
+    "budget_report_000020.json"
+  ],
+  "updated_utc": "2026-11-22T04:48:48Z"
+}

@@ -1,0 +1,36 @@
+{
+  "version": "jrtip-bottleneck-decomposition-v1",
+  "generated_utc": "2026-11-22T03:26:00Z",
+  "source_benchmark": "jrtip\\baseline_benchmark_v1",
+  "source_benchmark_config_sha256": "a48c1b58e5b9440bfad7801cf1d57a5be4166ba8f1cda00afa9749c691aa333f",
+  "checkpoint": "jrtip\\baseline_pilot_v1\\checkpoint_001000.pt",
+  "checkpoint_sha256": "7c45e7eefb06aadb111b9b3262b49bc9019e48f665b78a2e3f1a8ee2d4c405dd",
+  "coco_weights_sha256_constant": "bf2d0c1efbc936eeee2bc95a48e80ebc86b891f61b0106485937fc29f9315fc0",
+  "training_config_weight_sha256": "bf2d0c1efbc936eeee2bc95a48e80ebc86b891f61b0106485937fc29f9315fc0",
+  "device": "cuda",
+  "precision": "FP32",
+  "frames_per_scale": 358,
+  "stride": 3,
+  "warmup_calls": 60,
+  "probe_every": 25,
+  "clean_probe_ratio": 1.15,
+  "scales": [
+    320,
+    480,
+    640
+  ],
+  "detection_budget_sweep": [
+    100,
+    20,
+    5
+  ],
+  "detection_budget_frames": 40,
+  "smoke_limited": false,
+  "timing_stream_sha256_of_full_selection": "553a930dc3b6474228ebc3f0d34aebf87ab8f0a46c825be14d2c5b2538b33c67",
+  "subsampled_stream_sha256": "c48a9ad9516114f345e46af3dfa9ccac9c5616e3244e39922040e045c9325406",
+  "diagnostic_only": true,
+  "protocol_timing_replacement": false,
+  "formal_36_epoch_run": false,
+  "locked_roles_accessed": [],
+  "note": "Two forwards per frame (first reported as the service forward, second as a device-clock repeat), a fixed call-count warmup, and a stride subsample of the protocol timing stream. Therefore not comparable as a timing session; the frozen checkpoint, role selection, and staging order are identical. Predeclared P1 bottleneck pilot: default 1000 optimizer updates, effective batch 4 (physical 1 x accumulation 4), seed 43, FP32, independent generic COCO R50-FPN initialization; multi-scale long edge 320/480/640. A shorter pilot first measures bottlenecks. SGD .005/.9/1e-4, 500-update linear warmup from .0005, then constant .005. Even a longer --steps run uses this pilot schedule, NOT the formal 36-epoch 24/32-epoch decay schedule. Formal 36-epoch training has NOT been run by this script's implementation; pilot outputs must not be described as full formal results. Selection uses only V_SOURCE/V_SHIFT at long edge 640; benchmark does not reselect weights. Relative S640 tolerances were fixed before measurement: AP drop <=1 percentage point and count MAE increase <=0.2. Development point-estimate feasibility is not a confirmatory noninferiority claim."
+}

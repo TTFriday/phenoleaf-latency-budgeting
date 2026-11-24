@@ -1,0 +1,135 @@
+{
+  "version": "jrtip-mask-restore-resolution-v1",
+  "generated_utc": "2026-11-22T18:02:01Z",
+  "sessions": [
+    "jrtip\\mask_restore_timing_v1\\session1",
+    "jrtip\\mask_restore_timing_v1\\session2",
+    "jrtip\\mask_restore_timing_v1\\session3"
+  ],
+  "protocol": "three fresh processes over the frozen 1,073-frame timing stream, rotated arm order, warmup, matmul interference probe, per-arm resume",
+  "model_scale_input": 640,
+  "control_budget": 100,
+  "arms": {
+    "g1": {
+      "sessions": 3,
+      "mean_ms": 414.1142,
+      "p50_ms": 426.6547,
+      "p95_ms": 496.017,
+      "p99_ms": 542.5864,
+      "saturated_throughput_per_second": 2.415,
+      "equal_domain_mean_ms": 441.2229,
+      "stage_means_ms": {
+        "decode_ms": 6.8582,
+        "resize_transfer_ms": 5.0459,
+        "network_sync_ms": 298.7741,
+        "restore_scores_masks_rle_serialize_sync_ms": 103.4317
+      },
+      "restore_substage_means_ms": {
+        "scores_to_cpu_ms": 0.1677,
+        "mask_restore_interpolate_to_cpu_ms": 37.0864,
+        "mask_threshold_ms": 10.9256,
+        "boxes_labels_ms": 0.6224,
+        "rle_encode_ms": 44.6782,
+        "serialize_ms": 0.9169
+      },
+      "serialized_bytes_mean": 20650.4,
+      "client_resample": {
+        "requests": 0,
+        "mean_ms": null
+      },
+      "contention_in_any_session": true,
+      "inflation_median_vs_fastest": [
+        2.6954,
+        1.1302,
+        2.6784
+      ],
+      "service_ms_minus_g1": 0.0,
+      "service_reduction_vs_g1": 0.0,
+      "restore_ms_minus_g1": 0.0,
+      "serialized_bytes_minus_g1": 0.0,
+      "service_ms_plus_client_resample": 414.1142,
+      "net_reduction_if_client_restores_full_res": 0.0
+    },
+    "g0p75": {
+      "sessions": 3,
+      "mean_ms": 504.7548,
+      "p50_ms": 512.6505,
+      "p95_ms": 677.177,
+      "p99_ms": 735.2017,
+      "saturated_throughput_per_second": 1.9812,
+      "equal_domain_mean_ms": 548.2463,
+      "stage_means_ms": {
+        "decode_ms": 6.9021,
+        "resize_transfer_ms": 4.8437,
+        "network_sync_ms": 292.5415,
+        "restore_scores_masks_rle_serialize_sync_ms": 62.3889
+      },
+      "restore_substage_means_ms": {
+        "scores_to_cpu_ms": 0.1678,
+        "mask_restore_interpolate_to_cpu_ms": 24.1497,
+        "mask_threshold_ms": 7.0353,
+        "boxes_labels_ms": 0.5961,
+        "rle_encode_ms": 24.6582,
+        "serialize_ms": 0.8459
+      },
+      "serialized_bytes_mean": 18627.7,
+      "client_resample": {
+        "requests": 3219,
+        "mean_ms": 138.0774
+      },
+      "contention_in_any_session": true,
+      "inflation_median_vs_fastest": [
+        2.08,
+        1.9883,
+        2.0417
+      ],
+      "service_ms_minus_g1": 90.6406,
+      "service_reduction_vs_g1": -0.2189,
+      "restore_ms_minus_g1": -41.0428,
+      "serialized_bytes_minus_g1": -2022.7,
+      "service_ms_plus_client_resample": 642.8322,
+      "net_reduction_if_client_restores_full_res": -0.5523
+    },
+    "g0p5": {
+      "sessions": 3,
+      "mean_ms": 466.3193,
+      "p50_ms": 472.8602,
+      "p95_ms": 631.3743,
+      "p99_ms": 680.8389,
+      "saturated_throughput_per_second": 2.1445,
+      "equal_domain_mean_ms": 503.3014,
+      "stage_means_ms": {
+        "decode_ms": 6.8607,
+        "resize_transfer_ms": 4.8142,
+        "network_sync_ms": 294.2658,
+        "restore_scores_masks_rle_serialize_sync_ms": 30.3253
+      },
+      "restore_substage_means_ms": {
+        "scores_to_cpu_ms": 0.1666,
+        "mask_restore_interpolate_to_cpu_ms": 11.8304,
+        "mask_threshold_ms": 3.1585,
+        "boxes_labels_ms": 0.5375,
+        "rle_encode_ms": 11.6095,
+        "serialize_ms": 0.6131
+      },
+      "serialized_bytes_mean": 13756.4,
+      "client_resample": {
+        "requests": 3219,
+        "mean_ms": 130.0523
+      },
+      "contention_in_any_session": true,
+      "inflation_median_vs_fastest": [
+        1.8274,
+        1.8529,
+        2.0446
+      ],
+      "service_ms_minus_g1": 52.2051,
+      "service_reduction_vs_g1": -0.1261,
+      "restore_ms_minus_g1": -73.1064,
+      "serialized_bytes_minus_g1": -6894.0,
+      "service_ms_plus_client_resample": 596.3716,
+      "net_reduction_if_client_restores_full_res": -0.4401
+    }
+  },
+  "note": "Predeclared P1 bottleneck pilot: default 1000 optimizer updates, effective batch 4 (physical 1 x accumulation 4), seed 43, FP32, independent generic COCO R50-FPN initialization; multi-scale long edge 320/480/640. A shorter pilot first measures bottlenecks. SGD .005/.9/1e-4, 500-update linear warmup from .0005, then constant .005. Even a longer --steps run uses this pilot schedule, NOT the formal 36-epoch 24/32-epoch decay schedule. Formal 36-epoch training has NOT been run by this script's implementation; pilot outputs must not be described as full formal results. Selection uses only V_SOURCE/V_SHIFT at long edge 640; benchmark does not reselect weights. Relative S640 tolerances were fixed before measurement: AP drop <=1 percentage point and count MAE increase <=0.2. Development point-estimate feasibility is not a confirmatory noninferiority claim."
+}

@@ -1,0 +1,11 @@
+{
+  "version": "jrtip-p1-v1.1",
+  "phase": "quality_genotype",
+  "optimizer_step": 20,
+  "pid": 19060,
+  "timestamp": 1795322888.4172866,
+  "predeclared_pilot_note": "Predeclared P1 bottleneck pilot: default 1000 optimizer updates, effective batch 4 (physical 1 x accumulation 4), seed 43, FP32, independent generic COCO R50-FPN initialization; multi-scale long edge 320/480/640. A shorter pilot first measures bottlenecks. SGD .005/.9/1e-4, 500-update linear warmup from .0005, then constant .005. Even a longer --steps run uses this pilot schedule, NOT the formal 36-epoch 24/32-epoch decay schedule. Formal 36-epoch training has NOT been run by this script's implementation; pilot outputs must not be described as full formal results. Selection uses only V_SOURCE/V_SHIFT at long edge 640; benchmark does not reselect weights. Relative S640 tolerances were fixed before measurement: AP drop <=1 percentage point and count MAE increase <=0.2. Development point-estimate feasibility is not a confirmatory noninferiority claim.",
+  "formal_36_epoch_run": false,
+  "role": "V_SOURCE",
+  "genotype": "Zdr-1"
+}

@@ -1,0 +1,161 @@
+{
+  "version": "jrtip-p1-v1.1",
+  "run": "jrtip\\baseline_pilot_v1",
+  "seed": 43,
+  "device": "cuda",
+  "precision": "FP32",
+  "steps_requested": 1000,
+  "physical_batch": 1,
+  "accumulation": 4,
+  "allow_shared_device": true,
+  "effective_batch": 4,
+  "views_per_image": 1,
+  "predeclared_pilot_note": "Predeclared P1 bottleneck pilot: default 1000 optimizer updates, effective batch 4 (physical 1 x accumulation 4), seed 43, FP32, independent generic COCO R50-FPN initialization; multi-scale long edge 320/480/640. A shorter pilot first measures bottlenecks. SGD .005/.9/1e-4, 500-update linear warmup from .0005, then constant .005. Even a longer --steps run uses this pilot schedule, NOT the formal 36-epoch 24/32-epoch decay schedule. Formal 36-epoch training has NOT been run by this script's implementation; pilot outputs must not be described as full formal results. Selection uses only V_SOURCE/V_SHIFT at long edge 640; benchmark does not reselect weights. Relative S640 tolerances were fixed before measurement: AP drop <=1 percentage point and count MAE increase <=0.2. Development point-estimate feasibility is not a confirmatory noninferiority claim.",
+  "formal_36_epoch_run": false,
+  "schedule": {
+    "type": "linear_warmup_then_constant",
+    "warmup_updates": 500,
+    "first_lr": 0.0005,
+    "base_lr": 0.005,
+    "budget_updates": 1000,
+    "formal_epoch_decay": false
+  },
+  "optimizer": {
+    "type": "SGD",
+    "lr": 0.005,
+    "momentum": 0.9,
+    "weight_decay": 0.0001
+  },
+  "geometry": {
+    "long_edges": [
+      320,
+      480,
+      640
+    ],
+    "bilinear_antialias": true,
+    "rounding": "nearest integer; actual x/y ratios",
+    "pad_right_bottom_stride": 32,
+    "training_masks": "nearest",
+    "restore": "soft bilinear original HW THEN >=.5",
+    "implicit_second_resize": false
+  },
+  "augmentation": {
+    "horizontal": 0.5,
+    "vertical": 0.5,
+    "rot90": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "color_probability": 0.8,
+    "brightness_contrast_saturation": 0.2,
+    "hue": 0.05,
+    "label_assisted_background": false
+  },
+  "detector": {
+    "name": "independent MaskRCNN R50 FPN P2-P6",
+    "trainable_backbone_layers": 3,
+    "frozen_BN": true,
+    "anchors": [
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "anchor_ratios": [
+      0.5,
+      1,
+      2
+    ],
+    "rpn_pre_post_train_test": 1000,
+    "rpn_nms": 0.7,
+    "box_nms": 0.5,
+    "max_instances": 100,
+    "AP_score": 0.001,
+    "count_score": 0.5,
+    "mask_threshold": 0.5,
+    "mask_loss": "stock BCE including zero-mass targets; native ROIAlign dispatch only"
+  },
+  "determinism": {
+    "algorithms": true,
+    "warn_only": true,
+    "bitwise_replay_guaranteed": false,
+    "ROIAlign": "native atomic CUDA backward, aligned=False; no compiled Python/Triton fallback",
+    "tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "threads": 4,
+    "interop_threads": 1
+  },
+  "evaluation_interval_updates": 500,
+  "selection_long_edge": 640,
+  "dev_max_frames_per_plant": 0,
+  "selection_diagnostic_subset": false,
+  "selection": "equal domains of genotype macro COCO AP, ties earlier update",
+  "inventory": "shared\\pilot_inventory.csv",
+  "inventory_sha256": "3190e4b511ece0a3137cf7ca3f9f60da0b35a6f89af7dcb80a33b5299ebfe9db",
+  "instances": "shared\\pilot_instances.jsonl",
+  "instances_sha256": "1c29234b9e31397df1a7777629a2e09315b66d4c38c1a7583eb22341a76b9a62",
+  "readiness": "shared\\pilot_readiness.json",
+  "readiness_sha256": "a18c0689d7237e9fe1e2de11f459546508ec21bc56a7105d606f71c00202551b",
+  "data_root": null,
+  "allowed_population": {
+    "TRAIN": {
+      "frames": 8070,
+      "plants": 150,
+      "genotypes": 15
+    },
+    "V_SOURCE": {
+      "frames": 1737,
+      "plants": 31,
+      "genotypes": 15
+    },
+    "V_SHIFT": {
+      "frames": 1210,
+      "plants": 24,
+      "genotypes": 3
+    }
+  },
+  "valid_mask_status": "valid",
+  "roles": {
+    "train": [
+      "TRAIN"
+    ],
+    "selection_and_benchmark": [
+      "V_SOURCE",
+      "V_SHIFT"
+    ],
+    "locked_never_opened": [
+      "C_POLICY",
+      "T_ID",
+      "T_GENO"
+    ]
+  },
+  "weights": "checkpoints/maskrcnn_resnet50_fpn_coco-bf2d0c1e.pth",
+  "weight_sha256": "bf2d0c1efbc936eeee2bc95a48e80ebc86b891f61b0106485937fc29f9315fc0",
+  "initialization": "public generic torchvision COCO V1; NOT MVA task weights",
+  "versions": {
+    "python": "3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]",
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "numpy": "2.2.6",
+    "PIL": "9.4.0",
+    "cuda_runtime": "12.4",
+    "scipy": "1.15.3",
+    "pycocotools": "2.0.11",
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "sources": {
+    "src\\jrtip_pilot.py": {
+      "sha256": "b1be675e379c3d6748f4e2b21fa0abc8ccbfff8b2a1f6eeb5ba5e017d28bc740"
+    },
+    "src\\mva_model.py": {
+      "sha256": "736715b9ad8e1c2ed8a75072378b3e9b9d8578f01ae0ac7cd62856e1ce2eb55e"
+    },
+    "src\\mva_pilot.py": {
+      "sha256": "8a1c1ed3a260fc355cf54908aa5055cec5e0791d688eb1d8fcf3b0a57ee13ec2"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "version": "jrtip-budget-features-v1",
+  "generated_utc": "2026-11-22T14:16:54Z",
+  "scope": "DEV",
+  "roles_opened": [
+    "V_SHIFT",
+    "V_SOURCE"
+  ],
+  "locked_roles_accessed": [],
+  "formal_36_epoch_run": false,
+  "diagnostic_only": true,
+  "benchmark": "jrtip\\baseline_benchmark_v1",
+  "checkpoint_sha256": "7c45e7eefb06aadb111b9b3262b49bc9019e48f665b78a2e3f1a8ee2d4c405dd",
+  "stream": "jrtip\\detection_budget_quality_v1\\cap00100\\quality_000100_S640.jsonl",
+  "stream_sha256": "9f42b099d72d1c01191764068b4460f78b39d70d1ce74871ed410b361a687cf1",
+  "selected_ids_digest": "fc70f5cbf7ab31b485bc44cae0f4f9b4dea43509cb74c05809cd3e38c8af65b8",
+  "action_set": [
+    100,
+    50,
+    30,
+    20,
+    15
+  ],
+  "feature_names": [
+    "raw_width",
+    "raw_height",
+    "raw_aspect",
+    "n_emitted",
+    "n_005",
+    "n_05",
+    "score_mean",
+    "score_min",
+    "score_p10",
+    "log_slope_8_40",
+    "score_rank15",
+    "score_rank20",
+    "score_rank30",
+    "fg_area_fraction",
+    "area_p10",
+    "area_p50",
+    "area_p90",
+    "tiny_area_fraction",
+    "edge_touch_fraction",
+    "pair_overlap_fraction",
+    "pair_iou_mean",
+    "perimeter_sq_over_area_median",
+    "flag_empty_output",
+    "flag_slope_missing",
+    "flag_rank15_missing",
+    "flag_rank20_missing",
+    "flag_rank30_missing",
+    "flag_n005_saturated"
+  ],
+  "score_sequence_group": [
+    "score_mean",
+    "score_min",
+    "score_p10",
+    "log_slope_8_40",
+    "score_rank15",
+    "score_rank20",
+    "score_rank30"
+  ],
+  "match_edge_iou": 0.5,
+  "tiny_area_fraction": 0.002,
+  "rank_slope_window": [
+    8,
+    40
+  ],
+  "rank_marks": [
+    15,
+    20,
+    30
+  ],
+  "frames": 2947,
+  "plants": 55,
+  "genotypes": 18,
+  "definitions": {
+    "l_M": "1 - sum(IoU of a max-total-IoU one-to-one matching over edges IoU>=0.5) / ((|P_k|+|Y|)/2); both empty 0; exactly one side empty 1",
+    "l_N": "abs(|P_k| - |Y|), P_k = first min(k, |P|) delivered instances with score >= count_score_threshold",
+    "delta": "loss at prefix k minus loss at the full delivered set (negative allowed)",
+    "n_005": "min(true count, cap) as archived; see flag_n005_saturated",
+    "geometry_group": "score >= count_score_threshold instances only (plan v1 section 3.2 output thresholds)"
+  },
+  "seconds": 104.3,
+  "jsonl": "frames_dev.jsonl",
+  "jsonl_sha256": "60469640fb6adbd00ad16eddb404c6e78a6ff107ffb6453ea162c22f0bbb8107"
+}

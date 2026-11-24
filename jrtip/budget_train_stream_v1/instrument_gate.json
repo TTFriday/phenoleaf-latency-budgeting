@@ -1,0 +1,11 @@
+{
+  "gate": "archived_dev_stream_byte_identity",
+  "frames_checked": 48,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "passed": true,
+  "archived_stream": "jrtip\\detection_budget_quality_v1\\cap00100\\quality_000100_S640.jsonl",
+  "archived_stream_sha256": "9f42b099d72d1c01191764068b4460f78b39d70d1ce74871ed410b361a687cf1",
+  "seconds": 19.9,
+  "utc": "2026-11-22T14:40:02Z"
+}

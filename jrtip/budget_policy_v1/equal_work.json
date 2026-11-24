@@ -1,0 +1,410 @@
+{
+  "version": "jrtip-budget-equal-work-v1",
+  "generated_utc": "2026-11-22T06:39:32Z",
+  "source": [
+    "jrtip\\budget_policy_v1\\policy_eval.json",
+    "jrtip\\budget_policy_v1_extra\\policy_eval.json"
+  ],
+  "work_window": 0.05,
+  "predeclared_tolerances": {
+    "AP_drop_vs_control_pp": 1.0,
+    "count_MAE_increase_vs_control_leaf": 0.2
+  },
+  "control_work_masks_per_frame": 89.519,
+  "static_curve_work_drop_points": [
+    [
+      5.0,
+      31.3652,
+      "5"
+    ],
+    [
+      10.0,
+      6.2965,
+      "10"
+    ],
+    [
+      15.0,
+      1.1888,
+      "15"
+    ],
+    [
+      16.0,
+      0.9052,
+      "16"
+    ],
+    [
+      17.0,
+      0.7145,
+      "17"
+    ],
+    [
+      18.0,
+      0.5937,
+      "18"
+    ],
+    [
+      19.0,
+      0.4483,
+      "19"
+    ],
+    [
+      19.999,
+      0.4128,
+      "20"
+    ],
+    [
+      21.999,
+      0.3296,
+      "22"
+    ],
+    [
+      23.997,
+      0.2763,
+      "24"
+    ],
+    [
+      24.996,
+      0.2612,
+      "25"
+    ],
+    [
+      25.995,
+      0.2384,
+      "26"
+    ],
+    [
+      27.992,
+      0.1917,
+      "28"
+    ],
+    [
+      29.985,
+      0.1635,
+      "30"
+    ],
+    [
+      34.956,
+      0.1351,
+      "35"
+    ],
+    [
+      39.88,
+      0.0952,
+      "40"
+    ],
+    [
+      44.734,
+      0.0697,
+      "45"
+    ],
+    [
+      49.494,
+      0.0631,
+      "50"
+    ],
+    [
+      89.519,
+      0.0,
+      "100"
+    ]
+  ],
+  "static_curve_monotone_in_work": true,
+  "monotonicity_breaches": [],
+  "cost_model": {
+    "slope_seconds_per_instance_per_frame_mean": 11.8929,
+    "intercept_seconds": 245.749,
+    "r_squared": 0.997599,
+    "max_abs_relative_residual": 0.04095
+  },
+  "arms": [
+    {
+      "arm": "clip(count+2,15,100)",
+      "kind": "rule_count_plus_m",
+      "work_masks_per_frame": 15.442,
+      "ap_drop_pp": 0.586,
+      "count_MAE_increase_leaf": 0.0,
+      "count_truncated_frames": 0,
+      "passes_quality_gate": true,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -2.2219
+      },
+      "predicted_pass_seconds": 429.4,
+      "nearest_static": {
+        "arm": "16",
+        "work": 16.0,
+        "ap_drop_pp": 0.9052,
+        "gain_pp": 0.3192
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 1.0634,
+        "error_bound_pp": 0.1582,
+        "gain_pp": 0.4774,
+        "extrapolated": null
+      }
+    },
+    {
+      "arm": "clip(count+5,15,100)",
+      "kind": "rule_count_plus_m",
+      "work_masks_per_frame": 16.258,
+      "ap_drop_pp": 0.4322,
+      "count_MAE_increase_leaf": 0.0,
+      "count_truncated_frames": 0,
+      "passes_quality_gate": true,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.6813
+      },
+      "predicted_pass_seconds": 439.1,
+      "nearest_static": {
+        "arm": "17",
+        "work": 17.0,
+        "ap_drop_pp": 0.7145,
+        "gain_pp": 0.2823
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.856,
+        "error_bound_pp": 0.1415,
+        "gain_pp": 0.4238,
+        "extrapolated": null
+      }
+    },
+    {
+      "arm": "clip(count+10,15,100)",
+      "kind": "rule_count_plus_m",
+      "work_masks_per_frame": 19.353,
+      "ap_drop_pp": 0.2956,
+      "count_MAE_increase_leaf": 0.0,
+      "count_truncated_frames": 0,
+      "passes_quality_gate": true,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4198
+      },
+      "predicted_pass_seconds": 475.9,
+      "nearest_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.1172
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4358,
+        "error_bound_pp": 0.023,
+        "gain_pp": 0.1402,
+        "extrapolated": null
+      }
+    },
+    {
+      "arm": "clip(count+2,20,100)",
+      "kind": "rule_count_plus_m",
+      "work_masks_per_frame": 20.047,
+      "ap_drop_pp": 0.3738,
+      "count_MAE_increase_leaf": 0.0,
+      "count_truncated_frames": 0,
+      "passes_quality_gate": true,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -2.0704
+      },
+      "predicted_pass_seconds": 484.2,
+      "nearest_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.039
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4108,
+        "error_bound_pp": 0.0812,
+        "gain_pp": 0.037,
+        "extrapolated": null
+      }
+    },
+    {
+      "arm": "clip(count+5,20,100)",
+      "kind": "rule_count_plus_m",
+      "work_masks_per_frame": 20.194,
+      "ap_drop_pp": 0.3345,
+      "count_MAE_increase_leaf": 0.0,
+      "count_truncated_frames": 0,
+      "passes_quality_gate": true,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.6814
+      },
+      "predicted_pass_seconds": 485.9,
+      "nearest_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.0783
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4047,
+        "error_bound_pp": 0.0751,
+        "gain_pp": 0.0702,
+        "extrapolated": null
+      }
+    },
+    {
+      "arm": "clip(count+10,20,100)",
+      "kind": "rule_count_plus_m",
+      "work_masks_per_frame": 21.258,
+      "ap_drop_pp": 0.2818,
+      "count_MAE_increase_leaf": 0.0,
+      "count_truncated_frames": 0,
+      "passes_quality_gate": true,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4198
+      },
+      "predicted_pass_seconds": 498.6,
+      "nearest_static": {
+        "arm": "22",
+        "work": 21.999,
+        "ap_drop_pp": 0.3296,
+        "gain_pp": 0.0478
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.3604,
+        "error_bound_pp": 0.0524,
+        "gain_pp": 0.0786,
+        "extrapolated": null
+      }
+    },
+    {
+      "arm": "clip(ceil(1.25*count),15,100)",
+      "kind": "rule_count_times_r",
+      "work_masks_per_frame": 15.905,
+      "ap_drop_pp": 0.4755,
+      "count_MAE_increase_leaf": 0.0,
+      "count_truncated_frames": 0,
+      "passes_quality_gate": true,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.685
+      },
+      "predicted_pass_seconds": 434.9,
+      "nearest_static": {
+        "arm": "16",
+        "work": 16.0,
+        "ap_drop_pp": 0.9052,
+        "gain_pp": 0.4297
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.9321,
+        "error_bound_pp": 0.2567,
+        "gain_pp": 0.4566,
+        "extrapolated": null
+      }
+    },
+    {
+      "arm": "clip(ceil(1.5*count),15,100)",
+      "kind": "rule_count_times_r",
+      "work_masks_per_frame": 16.986,
+      "ap_drop_pp": 0.3845,
+      "count_MAE_increase_leaf": 0.0,
+      "count_truncated_frames": 0,
+      "passes_quality_gate": true,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4181
+      },
+      "predicted_pass_seconds": 447.8,
+      "nearest_static": {
+        "arm": "17",
+        "work": 17.0,
+        "ap_drop_pp": 0.7145,
+        "gain_pp": 0.33
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.7172,
+        "error_bound_pp": 0.188,
+        "gain_pp": 0.3327,
+        "extrapolated": null
+      }
+    },
+    {
+      "arm": "clip(ceil(1.25*count),20,100)",
+      "kind": "rule_count_times_r",
+      "work_masks_per_frame": 20.182,
+      "ap_drop_pp": 0.3467,
+      "count_MAE_increase_leaf": 0.0,
+      "count_truncated_frames": 0,
+      "passes_quality_gate": true,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.6829
+      },
+      "predicted_pass_seconds": 485.8,
+      "nearest_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.0661
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.4052,
+        "error_bound_pp": 0.0756,
+        "gain_pp": 0.0585,
+        "extrapolated": null
+      }
+    },
+    {
+      "arm": "clip(ceil(1.5*count),20,100)",
+      "kind": "rule_count_times_r",
+      "work_masks_per_frame": 20.623,
+      "ap_drop_pp": 0.3036,
+      "count_MAE_increase_leaf": 0.0,
+      "count_truncated_frames": 0,
+      "passes_quality_gate": true,
+      "worst_genotype": {
+        "key": "V_SOURCE/Go-0",
+        "ap_drop_vs_control_pp": -1.4181
+      },
+      "predicted_pass_seconds": 491.0,
+      "nearest_static": {
+        "arm": "20",
+        "work": 19.999,
+        "ap_drop_pp": 0.4128,
+        "gain_pp": 0.1092
+      },
+      "interpolated_static": {
+        "ap_drop_pp": 0.3868,
+        "error_bound_pp": 0.0572,
+        "gain_pp": 0.0832,
+        "extrapolated": null
+      }
+    }
+  ],
+  "gates": {
+    "passing_static_arms": [
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "22",
+      "24",
+      "25",
+      "26",
+      "28",
+      "30",
+      "35",
+      "40",
+      "45",
+      "50"
+    ],
+    "arms_beating_static_at_equal_work_both_readings": [
+      "clip(count+2,15,100)",
+      "clip(count+5,15,100)",
+      "clip(count+10,15,100)",
+      "clip(count+10,20,100)",
+      "clip(ceil(1.25*count),15,100)",
+      "clip(ceil(1.5*count),15,100)",
+      "clip(ceil(1.5*count),20,100)"
+    ],
+    "criterion": "an arm counts only if the nearest passing static arm inside a 5% work window loses more AP, AND the statically interpolated drop at the same work exceeds the arm's drop by more than the interpolation error bound"
+  }
+}

@@ -1,0 +1,24 @@
+name	mode	floor	rule	definition	work_masks_per_frame	AP	ap_drop_vs_control_pp	count_MAE	count_MAE_increase_vs_control_leaf	frames_truncated	budget_mean	budget_p90	budget_max	frames_at_floor	frames_at_cap	gate_ap	gate_count	projected_wall_seconds_cost_model	reuses_quality_of
+sync_c_plus_10_f15	sync	15	["c_plus_m", 10]	k=clip(c+10,15,100), one blocking scalar D2H read	19.353	70.1652	0.2956	1.0139	0.0000	0	19.353	25.0	36	519	0	True	True	475.9	
+sync_ceil_1p5_f15	sync	15	["ceil_mul", 1.5]	k=clip(ceil(1.5*c),15,100), one blocking scalar D2H read	16.986	70.0763	0.3845	1.0139	0.0000	0	16.986	23.0	39	1938	0	True	True	447.8	
+readfull_c_plus_10_f15	readfull	15	["c_plus_m", 10]	as sync_c_plus_10_f15 but the whole score vector is transferred; prices candidate-feature controllers	19.353	70.1652	0.2956	1.0139	0.0000	0	19.353	25.0	36	519	0	True	True	475.9	sync_c_plus_10_f15
+bucket_c_plus_10_f15	bucket	15	["c_plus_m", 10]	k=clip(c+10,15,100) ceiled to {15,20,30,50,100}	22.672	70.2566	0.2042	1.0139	0.0000	0	22.672	30.0	50	519	0	True	True	515.4	
+bucket_ceil_1p5_f15	bucket	15	["ceil_mul", 1.5]	k=clip(ceil(1.5*c),15,100) ceiled to {15,20,30,50,100}	18.269	70.1771	0.2837	1.0139	0.0000	0	18.269	30.0	50	1938	0	True	True	463.0	
+sync_c_plus_2_f17	sync	17	["c_plus_m", 2]	k = clip(count+2, floor=17, cap=100)	17.195	69.9592	0.5016	1.0139	0.0000	0	17.195	17.0	28	2746	0	True	True	450.2	
+sync_c_plus_3_f17	sync	17	["c_plus_m", 3]	k = clip(count+3, floor=17, cap=100)	17.299	70.0143	0.4465	1.0139	0.0000	0	17.299	18.0	29	2640	0	True	True	451.5	
+sync_c_plus_5_f17	sync	17	["c_plus_m", 5]	k = clip(count+5, floor=17, cap=100)	17.645	70.0587	0.4021	1.0139	0.0000	0	17.645	20.0	31	2347	0	True	True	455.6	
+sync_c_plus_10_f17	sync	17	["c_plus_m", 10]	k = clip(count+10, floor=17, cap=100)	19.825	70.1651	0.2957	1.0139	0.0000	0	19.825	25.0	36	1161	0	True	True	481.5	
+sync_ceil_1p25_f17	sync	17	["ceil_ratio", 1.25]	k = clip(ceil(1p25*count), floor=17, cap=100)	17.498	70.0276	0.4332	1.0139	0.0000	0	17.498	19.0	33	2526	0	True	True	453.8	
+sync_ceil_1p5_f17	sync	17	["ceil_ratio", 1.5]	k = clip(ceil(1p5*count), floor=17, cap=100)	18.301	70.1177	0.3431	1.0139	0.0000	0	18.301	23.0	39	2150	0	True	True	463.4	
+sync_c_plus_2_f18	sync	18	["c_plus_m", 2]	k = clip(count+2, floor=18, cap=100)	18.127	69.9979	0.4629	1.0139	0.0000	0	18.127	18.0	28	2805	0	True	True	461.3	
+sync_c_plus_3_f18	sync	18	["c_plus_m", 3]	k = clip(count+3, floor=18, cap=100)	18.195	70.0499	0.4109	1.0139	0.0000	0	18.195	18.0	29	2746	0	True	True	462.1	
+sync_c_plus_5_f18	sync	18	["c_plus_m", 5]	k = clip(count+5, floor=18, cap=100)	18.442	70.0896	0.3712	1.0139	0.0000	0	18.442	20.0	31	2526	0	True	True	465.1	
+sync_c_plus_10_f18	sync	18	["c_plus_m", 10]	k = clip(count+10, floor=18, cap=100)	20.219	70.1675	0.2933	1.0139	0.0000	0	20.219	25.0	36	1395	0	True	True	486.2	
+sync_ceil_1p25_f18	sync	18	["ceil_ratio", 1.25]	k = clip(ceil(1p25*count), floor=18, cap=100)	18.355	70.0641	0.3967	1.0139	0.0000	0	18.355	19.0	33	2640	0	True	True	464.0	
+sync_ceil_1p5_f18	sync	18	["ceil_ratio", 1.5]	k = clip(ceil(1p5*count), floor=18, cap=100)	19.031	70.1328	0.3280	1.0139	0.0000	0	19.031	23.0	39	2347	0	True	True	472.1	
+sync_c_plus_2_f19	sync	19	["c_plus_m", 2]	k = clip(count+2, floor=19, cap=100)	19.078	70.0760	0.3848	1.0139	0.0000	0	19.078	19.0	28	2857	0	True	True	472.6	
+sync_c_plus_3_f19	sync	19	["c_plus_m", 3]	k = clip(count+3, floor=19, cap=100)	19.127	70.0916	0.3692	1.0139	0.0000	0	19.127	19.0	29	2805	0	True	True	473.2	
+sync_c_plus_5_f19	sync	19	["c_plus_m", 5]	k = clip(count+5, floor=19, cap=100)	19.299	70.1111	0.3497	1.0139	0.0000	0	19.299	20.0	31	2640	0	True	True	475.3	
+sync_c_plus_10_f19	sync	19	["c_plus_m", 10]	k = clip(count+10, floor=19, cap=100)	20.692	70.1711	0.2897	1.0139	0.0000	0	20.692	25.0	36	1668	0	True	True	491.8	
+sync_ceil_1p25_f19	sync	19	["ceil_ratio", 1.25]	k = clip(ceil(1p25*count), floor=19, cap=100)	19.251	70.1005	0.3603	1.0139	0.0000	0	19.251	19.0	33	2746	0	True	True	474.7	
+sync_ceil_1p5_f19	sync	19	["ceil_ratio", 1.5]	k = clip(ceil(1p5*count), floor=19, cap=100)	19.827	70.1498	0.3110	1.0139	0.0000	0	19.827	23.0	39	2347	0	True	True	481.6	

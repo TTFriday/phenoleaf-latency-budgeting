@@ -1,0 +1,283 @@
+{
+  "version": "jrtip-budget-train-stream-v1",
+  "run_id": "58628-20261122T154324Z",
+  "generated_utc": "2026-11-22T15:48:12Z",
+  "purpose": "P1b controller fitting data: TRAIN-domain cap-100 ordered instance stream (plan v2 sections 4.1-4.3)",
+  "source_benchmark": "jrtip\\baseline_benchmark_v1",
+  "checkpoint": "jrtip\\baseline_pilot_v1\\checkpoint_001000.pt",
+  "checkpoint_sha256": "7c45e7eefb06aadb111b9b3262b49bc9019e48f665b78a2e3f1a8ee2d4c405dd",
+  "scale": 640,
+  "cap": 100,
+  "model_default_detections_per_img": 100,
+  "precision": "FP32",
+  "batch": 1,
+  "threads": 4,
+  "device": "cpu",
+  "roles_opened": [
+    "TRAIN"
+  ],
+  "locked_roles_accessed": [],
+  "evaluation_contract": "records written by src/jrtip_pilot.quality()'s own call chain (input_bytes -> decode -> infer_image -> restore_output); schema identity proven by the development-stream byte gate",
+  "instrument_gate": {
+    "gate": "archived_dev_stream_byte_identity",
+    "frames_checked": 48,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "passed": true,
+    "archived_stream": "jrtip\\detection_budget_quality_v1\\cap00100\\quality_000100_S640.jsonl",
+    "archived_stream_sha256": "9f42b099d72d1c01191764068b4460f78b39d70d1ce74871ed410b361a687cf1",
+    "seconds": 19.9,
+    "utc": "2026-11-22T14:40:02Z",
+    "reused_by_this_pass": true
+  },
+  "train_pass": {
+    "stream": "quality_000100_S640_TRAIN.jsonl",
+    "stream_sha256": "afa47d213778f5bc8e60175c279c1df04cf51fec8db923689750f489e6c7087b",
+    "frames_total": 8070,
+    "frames_written_this_run": 0,
+    "elapsed_seconds_this_run": 272.0,
+    "per_genotype": {
+      "Ba4-1": {
+        "AP": 65.90959255174079,
+        "AP50": 93.97414882571563,
+        "AP75": 73.81347277078973,
+        "count_MAE": 0.7887542087542088,
+        "frames": 132,
+        "plants": 4,
+        "gt_instances": 1824,
+        "emitted_instances_mean": 97.93939393939394,
+        "reported_count_mean": 13.681818181818182,
+        "gt_count_mean": 13.818181818181818
+      },
+      "Ba5-1": {
+        "AP": 69.59008387838,
+        "AP50": 93.7782192846831,
+        "AP75": 79.55739832569705,
+        "count_MAE": 0.9161674354536965,
+        "frames": 156,
+        "plants": 6,
+        "gt_instances": 1994,
+        "emitted_instances_mean": 99.3076923076923,
+        "reported_count_mean": 12.397435897435898,
+        "gt_count_mean": 12.782051282051283
+      },
+      "Bch-4": {
+        "AP": 70.61540449865281,
+        "AP50": 96.03083612363366,
+        "AP75": 82.8654116116956,
+        "count_MAE": 1.0371517027863777,
+        "frames": 36,
+        "plants": 2,
+        "gt_instances": 335,
+        "emitted_instances_mean": 98.75,
+        "reported_count_mean": 10.194444444444445,
+        "gt_count_mean": 9.305555555555555
+      },
+      "Col-0": {
+        "AP": 71.07282580113339,
+        "AP50": 94.90929073113877,
+        "AP75": 81.80758977437071,
+        "count_MAE": 0.8336781810224623,
+        "frames": 1339,
+        "plants": 21,
+        "gt_instances": 13459,
+        "emitted_instances_mean": 92.64002987303958,
+        "reported_count_mean": 10.342793129200896,
+        "gt_count_mean": 10.051530993278567
+      },
+      "Cvi-0": {
+        "AP": 65.41927978800425,
+        "AP50": 93.98046021162256,
+        "AP75": 75.42452020131654,
+        "count_MAE": 0.7432301598800978,
+        "frames": 1103,
+        "plants": 18,
+        "gt_instances": 9927,
+        "emitted_instances_mean": 88.0453309156845,
+        "reported_count_mean": 8.809610154125114,
+        "gt_count_mean": 9.0
+      },
+      "Go-0": {
+        "AP": 70.09446936982239,
+        "AP50": 96.13000725077681,
+        "AP75": 79.7851852905929,
+        "count_MAE": 1.2126736111111112,
+        "frames": 78,
+        "plants": 4,
+        "gt_instances": 1025,
+        "emitted_instances_mean": 99.92307692307692,
+        "reported_count_mean": 13.692307692307692,
+        "gt_count_mean": 13.14102564102564
+      },
+      "Hs-0": {
+        "AP": 72.58909219869523,
+        "AP50": 95.56852712283731,
+        "AP75": 85.86056192604286,
+        "count_MAE": 1.0509559884559885,
+        "frames": 102,
+        "plants": 4,
+        "gt_instances": 1301,
+        "emitted_instances_mean": 99.26470588235294,
+        "reported_count_mean": 13.147058823529411,
+        "gt_count_mean": 12.754901960784315
+      },
+      "Ler-1": {
+        "AP": 65.9683308343744,
+        "AP50": 94.05802137988219,
+        "AP75": 75.66130421727183,
+        "count_MAE": 0.7526254977319953,
+        "frames": 1555,
+        "plants": 20,
+        "gt_instances": 13696,
+        "emitted_instances_mean": 81.27459807073954,
+        "reported_count_mean": 8.802572347266882,
+        "gt_count_mean": 8.807717041800643
+      },
+      "Lz-0": {
+        "AP": 69.51902248593882,
+        "AP50": 93.9740140093742,
+        "AP75": 81.39687691235832,
+        "count_MAE": 1.2948726960908952,
+        "frames": 166,
+        "plants": 6,
+        "gt_instances": 1998,
+        "emitted_instances_mean": 99.5,
+        "reported_count_mean": 13.018072289156626,
+        "gt_count_mean": 12.036144578313253
+      },
+      "Sav-0": {
+        "AP": 70.85433311988542,
+        "AP50": 96.7817842845138,
+        "AP75": 80.86668549402992,
+        "count_MAE": 0.8481313131313131,
+        "frames": 83,
+        "plants": 4,
+        "gt_instances": 787,
+        "emitted_instances_mean": 96.07228915662651,
+        "reported_count_mean": 10.0,
+        "gt_count_mean": 9.481927710843374
+      },
+      "TOU-I-17": {
+        "AP": 66.34836246866234,
+        "AP50": 95.21925446312774,
+        "AP75": 77.33030301002232,
+        "count_MAE": 0.8838537320772052,
+        "frames": 1279,
+        "plants": 21,
+        "gt_instances": 12748,
+        "emitted_instances_mean": 92.08131352619233,
+        "reported_count_mean": 10.278342455043003,
+        "gt_count_mean": 9.967161845191557
+      },
+      "Uk-1": {
+        "AP": 66.48094456946943,
+        "AP50": 95.49069937926697,
+        "AP75": 76.54993957158717,
+        "count_MAE": 0.8058740222064398,
+        "frames": 736,
+        "plants": 14,
+        "gt_instances": 8414,
+        "emitted_instances_mean": 94.24184782608695,
+        "reported_count_mean": 11.459239130434783,
+        "gt_count_mean": 11.432065217391305
+      },
+      "Uk-4": {
+        "AP": 68.8522739297408,
+        "AP50": 93.15761883591293,
+        "AP75": 78.27458079787951,
+        "count_MAE": 0.9883553274682306,
+        "frames": 119,
+        "plants": 4,
+        "gt_instances": 1479,
+        "emitted_instances_mean": 99.45378151260505,
+        "reported_count_mean": 12.823529411764707,
+        "gt_count_mean": 12.428571428571429
+      },
+      "Ws-2": {
+        "AP": 74.73706139708854,
+        "AP50": 96.64145283822796,
+        "AP75": 84.8634740326607,
+        "count_MAE": 1.3660287081339715,
+        "frames": 85,
+        "plants": 4,
+        "gt_instances": 772,
+        "emitted_instances_mean": 99.51764705882353,
+        "reported_count_mean": 10.282352941176471,
+        "gt_count_mean": 9.08235294117647
+      },
+      "Zdr-1": {
+        "AP": 67.92561355344436,
+        "AP50": 95.1288148276636,
+        "AP75": 78.78801606169579,
+        "count_MAE": 0.9416683001388129,
+        "frames": 1101,
+        "plants": 18,
+        "gt_instances": 10794,
+        "emitted_instances_mean": 90.76475930971844,
+        "reported_count_mean": 10.211625794732061,
+        "gt_count_mean": 9.803814713896458
+      }
+    },
+    "macro": {
+      "AP": 69.06511269633553,
+      "AP50": 94.98820997122513,
+      "AP75": 79.52302133320072,
+      "count_MAE": 0.9642680589628537
+    },
+    "status": "complete",
+    "completion_pass": {
+      "instrument_gate_reused_from": "jrtip\\budget_train_stream_v1\\instrument_gate.json",
+      "instrument_gate_utc": "2026-11-22T14:40:02Z",
+      "device_of_this_pass": "cpu",
+      "why": "the archive was written whole by an earlier process that then died in its post-pass bookkeeping; this pass re-derives only the readout and the report, and the archive's completeness is asserted by train_pass's own id/order checks"
+    }
+  },
+  "selected_population": {
+    "frames": 8070,
+    "plants": 150,
+    "genotypes": 15
+  },
+  "selected_stream_sha256": "e6a3c6b144aa411886830c261bf4c2a8dece624d80f78b3ef8adc87999b7f6d4",
+  "readiness_counts_by_role": {
+    "TRAIN": {
+      "frames": 8070,
+      "plant_units": 150
+    }
+  },
+  "formal_36_epoch_run": false,
+  "diagnostic_only": true,
+  "backbone_in_sample_on_train": true,
+  "limitation": "The P1 checkpoint was fit on these TRAIN frames, so the section 4.3 OOF folds remove regressor frame-level over-fitting but not backbone in-sample optimism; the P2 three-fold OOF backbones are what address that.",
+  "versions": {
+    "python": "3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]",
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "numpy": "2.2.6",
+    "PIL": "9.4.0",
+    "cuda_runtime": "12.4",
+    "scipy": "1.15.3",
+    "pycocotools": "2.0.11",
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "machine": {
+    "timestamp": 1795362205.6481755,
+    "pid": 58628,
+    "platform": "Windows-10-10.0.19045-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 85 Stepping 7, GenuineIntel",
+    "logical_cpu_count": 36,
+    "device": "cpu",
+    "threads": 4,
+    "interop_threads": 1,
+    "memory": {
+      "rss_bytes": 508571648,
+      "peak_rss_bytes": 508723200,
+      "cuda_allocated_bytes": 0,
+      "cuda_reserved_bytes": 0,
+      "cuda_peak_allocated_bytes": 0,
+      "cuda_peak_reserved_bytes": 0
+    },
+    "exclusive_platform_guaranteed": false
+  },
+  "note": "Predeclared P1 bottleneck pilot: default 1000 optimizer updates, effective batch 4 (physical 1 x accumulation 4), seed 43, FP32, independent generic COCO R50-FPN initialization; multi-scale long edge 320/480/640. A shorter pilot first measures bottlenecks. SGD .005/.9/1e-4, 500-update linear warmup from .0005, then constant .005. Even a longer --steps run uses this pilot schedule, NOT the formal 36-epoch 24/32-epoch decay schedule. Formal 36-epoch training has NOT been run by this script's implementation; pilot outputs must not be described as full formal results. Selection uses only V_SOURCE/V_SHIFT at long edge 640; benchmark does not reselect weights. Relative S640 tolerances were fixed before measurement: AP drop <=1 percentage point and count MAE increase <=0.2. Development point-estimate feasibility is not a confirmatory noninferiority claim."
+}

@@ -1,0 +1,219 @@
+{
+  "control_arm": "static100_native",
+  "passes": {
+    "primary": {
+      "sessions": [
+        {
+          "session": 1,
+          "session_generated_utc": "2026-11-22T12:21:49Z",
+          "max_deviation_slot": 7,
+          "reconstructed_window_utc": [
+            "12:10:17",
+            "12:12:37"
+          ],
+          "top_by_abs_deviation": [
+            {
+              "arm": "sync_c_plus_10_f15",
+              "slot": 7,
+              "normalised_deviation_pct": 0.79,
+              "session_mean_ms": 127.447,
+              "probe_inflation": 1.2386
+            },
+            {
+              "arm": "bucket_ceil_1p5_f15",
+              "slot": 11,
+              "normalised_deviation_pct": 0.58,
+              "session_mean_ms": 121.231,
+              "probe_inflation": 1.2792
+            },
+            {
+              "arm": "static20_wrap",
+              "slot": 6,
+              "normalised_deviation_pct": -0.51,
+              "session_mean_ms": 124.778,
+              "probe_inflation": 1.1204
+            }
+          ]
+        },
+        {
+          "session": 2,
+          "session_generated_utc": "2026-11-22T13:01:21Z",
+          "max_deviation_slot": 3,
+          "reconstructed_window_utc": [
+            "12:30:35",
+            "12:32:34"
+          ],
+          "top_by_abs_deviation": [
+            {
+              "arm": "static15_native",
+              "slot": 3,
+              "normalised_deviation_pct": 1.57,
+              "session_mean_ms": 107.106,
+              "probe_inflation": 1.1584
+            },
+            {
+              "arm": "static20_wrap",
+              "slot": 5,
+              "normalised_deviation_pct": 0.93,
+              "session_mean_ms": 126.568,
+              "probe_inflation": 1.1709
+            },
+            {
+              "arm": "static100_wrap",
+              "slot": 4,
+              "normalised_deviation_pct": -0.68,
+              "session_mean_ms": 409.599,
+              "probe_inflation": 1.1736
+            }
+          ]
+        },
+        {
+          "session": 3,
+          "session_generated_utc": "2026-11-22T13:40:26Z",
+          "max_deviation_slot": 5,
+          "reconstructed_window_utc": [
+            "13:19:15",
+            "13:21:31"
+          ],
+          "top_by_abs_deviation": [
+            {
+              "arm": "sync_c_plus_10_f15",
+              "slot": 5,
+              "normalised_deviation_pct": -2.24,
+              "session_mean_ms": 123.346,
+              "probe_inflation": 1.1809
+            },
+            {
+              "arm": "bucket_c_plus_10_f15",
+              "slot": 8,
+              "normalised_deviation_pct": -1.39,
+              "session_mean_ms": 137.492,
+              "probe_inflation": 1.0755
+            },
+            {
+              "arm": "readfull_c_plus_10_f15",
+              "slot": 7,
+              "normalised_deviation_pct": 1.3,
+              "session_mean_ms": 124.24,
+              "probe_inflation": 1.0489
+            }
+          ]
+        }
+      ],
+      "max_deviation_slot_per_session": [
+        7,
+        3,
+        5
+      ],
+      "all_three_sessions_same_slot": false,
+      "largest_abs_deviation_pct": 2.24
+    },
+    "replication": {
+      "sessions": [
+        {
+          "session": 1,
+          "session_generated_utc": "2026-11-22T18:42:02Z",
+          "max_deviation_slot": 8,
+          "reconstructed_window_utc": [
+            "18:32:39",
+            "18:34:53"
+          ],
+          "top_by_abs_deviation": [
+            {
+              "arm": "sync_ceil_1p5_f15",
+              "slot": 8,
+              "normalised_deviation_pct": 3.83,
+              "session_mean_ms": 122.025,
+              "probe_inflation": 1.1974
+            },
+            {
+              "arm": "static15_native",
+              "slot": 4,
+              "normalised_deviation_pct": 1.57,
+              "session_mean_ms": 109.769,
+              "probe_inflation": 1.1101
+            },
+            {
+              "arm": "bucket_c_plus_10_f15",
+              "slot": 10,
+              "normalised_deviation_pct": -1.13,
+              "session_mean_ms": 140.191,
+              "probe_inflation": 1.1255
+            }
+          ]
+        },
+        {
+          "session": 2,
+          "session_generated_utc": "2026-11-22T19:21:52Z",
+          "max_deviation_slot": 8,
+          "reconstructed_window_utc": [
+            "19:07:00",
+            "19:09:34"
+          ],
+          "top_by_abs_deviation": [
+            {
+              "arm": "readfull_c_plus_10_f15",
+              "slot": 8,
+              "normalised_deviation_pct": 11.1,
+              "session_mean_ms": 139.863,
+              "probe_inflation": 1.5196
+            },
+            {
+              "arm": "static20_wrap",
+              "slot": 5,
+              "normalised_deviation_pct": 1.68,
+              "session_mean_ms": 127.604,
+              "probe_inflation": 1.1368
+            },
+            {
+              "arm": "sync_ceil_1p5_f15",
+              "slot": 7,
+              "normalised_deviation_pct": -1.43,
+              "session_mean_ms": 115.263,
+              "probe_inflation": 1.125
+            }
+          ]
+        },
+        {
+          "session": 3,
+          "session_generated_utc": "2026-11-22T20:01:29Z",
+          "max_deviation_slot": 8,
+          "reconstructed_window_utc": [
+            "19:46:39",
+            "19:49:31"
+          ],
+          "top_by_abs_deviation": [
+            {
+              "arm": "bucket_c_plus_10_f15",
+              "slot": 8,
+              "normalised_deviation_pct": 10.93,
+              "session_mean_ms": 156.392,
+              "probe_inflation": 1.5968
+            },
+            {
+              "arm": "static100_wrap",
+              "slot": 3,
+              "normalised_deviation_pct": -2.14,
+              "session_mean_ms": 403.296,
+              "probe_inflation": 1.1205
+            },
+            {
+              "arm": "bucket_ceil_1p5_f15",
+              "slot": 9,
+              "normalised_deviation_pct": -1.32,
+              "session_mean_ms": 119.683,
+              "probe_inflation": 1.094
+            }
+          ]
+        }
+      ],
+      "max_deviation_slot_per_session": [
+        8,
+        8,
+        8
+      ],
+      "all_three_sessions_same_slot": true,
+      "largest_abs_deviation_pct": 11.1
+    }
+  }
+}

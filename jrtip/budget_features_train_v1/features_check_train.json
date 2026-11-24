@@ -1,0 +1,24 @@
+{
+  "version": "jrtip-budget-features-check-v1",
+  "generated_utc": "2026-11-22T15:40:40Z",
+  "features_dir": "jrtip\\budget_features_train_v1",
+  "scope": "TRAIN",
+  "stream": "jrtip/budget_train_stream_v1/quality_000100_S640_TRAIN.jsonl",
+  "frames_in_archive": 8070,
+  "frames_recomputed_independently": 200,
+  "expected_frames": 8070,
+  "tolerance_abs": 1e-06,
+  "checks": [
+    "contract",
+    "ranges",
+    "internal_consistency",
+    "independent_recomputation"
+  ],
+  "notes": [
+    "570 arm entries out of 40350 have a negative marginal delta_M (expected: plan v1 4.1 keeps negatives; most negative value seen -0.1141)",
+    "frame clipping changes the pairwise box statistics on 0 of 200 sampled frames; the module clips, and this check compares against the clipped reading"
+  ],
+  "failures": [],
+  "failure_count": 0,
+  "passed": true
+}
