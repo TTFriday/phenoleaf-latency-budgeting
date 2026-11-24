@@ -1,0 +1,929 @@
+{
+  "package": "phenoleaf-latency-budgeting",
+  "source_workspace_paths_are_relative": true,
+  "notes": [
+    "Original projects were read only.",
+    "Published hashes describe the portable copies, not the originals.",
+    "Machine snapshots and embedded source-code dumps were removed.",
+    "Path normalization changes file hashes but not scientific table values."
+  ],
+  "files": [
+    {
+      "published_path": "DATA_SOURCES.md",
+      "source_path": null,
+      "source_sha256": null,
+      "published_sha256": "5c01b3184132f6a69398b4ae71dfe24442e0f8e58ce657f5c44021583e48dafb",
+      "transformation": "generated"
+    },
+    {
+      "published_path": "README.md",
+      "source_path": null,
+      "source_sha256": null,
+      "published_sha256": "648f793dcb6bb73ef3b34d7b1e03dc1558d808b11180d80a58ba30efebfc513b",
+      "transformation": "generated"
+    },
+    {
+      "published_path": "THIRD_PARTY_NOTICES/DATASET_LICENSE.md",
+      "source_path": "spatial_gnn/data/phenoleaf_ts/PhenoLeaf-TS-main/DATASET_LICENSE.md",
+      "source_sha256": "16bc70a60ffe68cb657ef85f2edde966bae510a8c1634b6edced8785a82a43f2",
+      "published_sha256": "16bc70a60ffe68cb657ef85f2edde966bae510a8c1634b6edced8785a82a43f2",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "environment.md",
+      "source_path": null,
+      "source_sha256": null,
+      "published_sha256": "72776861aec992b48cac9bdd9c1c3f37f3021a0f6304bb7c1d91dead7501283a",
+      "transformation": "generated"
+    },
+    {
+      "published_path": "jrtip/baseline_benchmark_v1/benchmark_independent_verification.json",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_benchmark_v1/benchmark_independent_verification.json",
+      "source_sha256": "b3a4002b34ba484690df5435a940f6bedd0c96e7e2f1ae31c55d5473d7fd7351",
+      "published_sha256": "790dc8198d33f2f472676a4200274238e8a1ed40d0aed143e7b9ac77ec3940c6",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_benchmark_v1/quality.json",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_benchmark_v1/quality.json",
+      "source_sha256": "e72ac286da1e9e65ab2bf35ca2916b7673e396d82e79636718bfa4be75ed150e",
+      "published_sha256": "5d104058ac492f3a325d60c8842db1aede9964570d5eac01e3f92089859edabc",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_benchmark_v1/scales.csv",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_benchmark_v1/scales.csv",
+      "source_sha256": "79518bfb4ffa2e8b255bd3baf7ab7c8bb449e824d18405688286dd5bfbd95cfc",
+      "published_sha256": "541d644b165fd7e4811c94ac091b8adf48661228c41d8b55393d149ef02e5542",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "jrtip/baseline_benchmark_v1/scales.json",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_benchmark_v1/scales.json",
+      "source_sha256": "2c3d4a2df03744ce141cf9f34f5cae5caa767fd85870cd26e01e4fa4ed672f3e",
+      "published_sha256": "d9cb9dcb425587f2c86716f38440a1b19c9baa322c98e12782481e82bc798ddb",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_benchmark_v1/session_1.json",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_benchmark_v1/session_1.json",
+      "source_sha256": "74b733d5cc14035514c82bef9d8341085c2c26451de237b0f9af24f6f875d59e",
+      "published_sha256": "5a58f5fc477ed3e40b72fa6cdc41446dd4484ab605b7f4f1c5e66a44f4c3df7e",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_benchmark_v1/session_2.json",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_benchmark_v1/session_2.json",
+      "source_sha256": "0732d6b6a9a5eda2a2ff351aabe58c5100f4c92aed26ff2869e77462110a855d",
+      "published_sha256": "d41adbb5bc8393dd0082004007c19a235de40cf0aa790c0bd0604160404bea3c",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_benchmark_v1/session_3.json",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_benchmark_v1/session_3.json",
+      "source_sha256": "e7de39cdd2042c1fb06147778b989fd622f661cc5668c570dd86e314764274c0",
+      "published_sha256": "3c9f98e2ae23bdb26ee8085113bb092f526a5b08ee673752f8389b2ccda49b98",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_benchmark_v1/timing_session_1.jsonl",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_benchmark_v1/timing_session_1.jsonl",
+      "source_sha256": "4ed5a84a8879efbcdd7c84cfd5c7e47cd6c6d8ff90f5a9130910640dabe10b6e",
+      "published_sha256": "a8b8a8727b000a8924fb561dc9f59fcb7479e0d548b4a8d064e95e0499005e32",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_benchmark_v1/timing_session_2.jsonl",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_benchmark_v1/timing_session_2.jsonl",
+      "source_sha256": "b8e1072f74e65a9184b2d912f2201b6b02c897855a4b13d6e156cf8b025b63e2",
+      "published_sha256": "ac58362f4b3827ef9b2d1a799c75194006fe02428170c5c544bfbca2f6ebc6bb",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_benchmark_v1/timing_session_3.jsonl",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_benchmark_v1/timing_session_3.jsonl",
+      "source_sha256": "87264c74fa13f8c2f33033ad6b5bffb2a825752a84a6ce664d8d0165eef43d57",
+      "published_sha256": "c7b279a1956f49ea964a1bc1fedc03e39938243694f7bc052c18f728750fbac6",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_pilot_v1/best.json",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_pilot_v1/best.json",
+      "source_sha256": "68c494663236637f3d5f289ff1bcb208346e92d097f05cbf614f1c4089844f93",
+      "published_sha256": "b63a808d642ac06e805d71d0ae9943a980dc25937975c4f308ce752de3dd9457",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_pilot_v1/dev_001000.json",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_pilot_v1/dev_001000.json",
+      "source_sha256": "ebf5fcc97c3917079f72d6d0c0a692b185c976ddf7656c1383135b91298fcb04",
+      "published_sha256": "b31a5e2f0b3b87dea59adb2a8ebf556a8eab0815e5eae1cc422fd71fefbe8c8d",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_pilot_v1/dev_001000_verification.json",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_pilot_v1/dev_001000_verification.json",
+      "source_sha256": "afcd13512a0065310700180e5e6decc3d4d87a535753905355056418f51d608d",
+      "published_sha256": "8253a560dee235656babcd5a4268d5d7cd59293436567b6179aa833cc6a1e83a",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_pilot_v1/latest.json",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_pilot_v1/latest.json",
+      "source_sha256": "36aa9913b8f3bbff7365f95442a672bd8f3512c69be6a7e2bc3c2d5ad86fe032",
+      "published_sha256": "9aae32b25edaca984b831e21a843f26d030509d950d463d27b3e809c5cb51fb4",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/baseline_pilot_v1/run_config.json",
+      "source_path": "phenoleaf_experiments/jrtip/baseline_pilot_v1/run_config.json",
+      "source_sha256": "f2ca76007b74667aa7abaa59b0a1d971bc6b7772f676c22de8f610f8a2c585b1",
+      "published_sha256": "b474ad3d660867f1ceabb0877f9bac270df9d98894d89c0f64b28531bb5775f6",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/bottleneck_decomposition_v1/decomposition.json",
+      "source_path": "phenoleaf_experiments/jrtip/bottleneck_decomposition_v1/decomposition.json",
+      "source_sha256": "f1984bdc79d64210a44a88402065f75a531e2de4bf2815d04a4eb2d367e8a02d",
+      "published_sha256": "ee55b05aa2276559d15c27a5eede326998b9082727167cb0822c77818360c93a",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/bottleneck_decomposition_v1/decomposition_config.json",
+      "source_path": "phenoleaf_experiments/jrtip/bottleneck_decomposition_v1/decomposition_config.json",
+      "source_sha256": "120a8b7e17ee8ce6a4e5cf76f9d9b3448803983952ea69402d0d3f8844647c12",
+      "published_sha256": "e0fe19e649643f4788d0291f5288050c854b76835531b5f8fede3d8e8b1e091b",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/bottleneck_decomposition_v1/decomposition_independent_verification.json",
+      "source_path": "phenoleaf_experiments/jrtip/bottleneck_decomposition_v1/decomposition_independent_verification.json",
+      "source_sha256": "4ca418ac13f41eb8418281781f80993f3a4c8caf96cc327cb917bfdc005c41fa",
+      "published_sha256": "978de3d449e5e7e1814da4312dd9d1c268e1892b8c1ebb7f40ed0d6833fadd09",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/bottleneck_decomposition_v1/frames_S320.jsonl",
+      "source_path": "phenoleaf_experiments/jrtip/bottleneck_decomposition_v1/frames_S320.jsonl",
+      "source_sha256": "8417daab144684f53ad3f405874330bfb511035c40e98c12284eed9a5a416832",
+      "published_sha256": "7a72dd6e8f57150201b13075295070c2b2d11193d11f20f3f2619b3ef376b405",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/bottleneck_decomposition_v1/frames_S480.jsonl",
+      "source_path": "phenoleaf_experiments/jrtip/bottleneck_decomposition_v1/frames_S480.jsonl",
+      "source_sha256": "8847d77bb0b4fcfff96ad8a79a7d31aa28fec80718a33a3598e04d1c65a70f7b",
+      "published_sha256": "cbdbc8bc3e13affdd5053967506d9c8b586179f58f2caa089cae14f4e00a2aa1",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/bottleneck_decomposition_v1/frames_S640.jsonl",
+      "source_path": "phenoleaf_experiments/jrtip/bottleneck_decomposition_v1/frames_S640.jsonl",
+      "source_sha256": "c7e4a530229d85be49e1b01520c8e61de461df2995d608a65177b2a931222535",
+      "published_sha256": "36b9c4877b3fe6dc840c54cbd54ea36da12be2b2f293dbd1852bdd6032316add",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_bucket_pricing_v1/arms.tsv",
+      "source_path": "phenoleaf_experiments/jrtip/budget_bucket_pricing_v1/arms.tsv",
+      "source_sha256": "0a89e6f4de45fb0c93420538774d22566e50e6dc6f3b50777dc90e2e04eb02f8",
+      "published_sha256": "0a89e6f4de45fb0c93420538774d22566e50e6dc6f3b50777dc90e2e04eb02f8",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "jrtip/budget_bucket_pricing_v1/bucket_pricing.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_bucket_pricing_v1/bucket_pricing.json",
+      "source_sha256": "721c9b3f062b8125b63bf374dd921bcdeaaebe52020efb75254fcc52014f8674",
+      "published_sha256": "4587b00def5fbdf1a995dce09998ca29c4609b64bb30ec06ef8d186772953222",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_bucket_pricing_v1/equal_work_rules.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_bucket_pricing_v1/equal_work_rules.json",
+      "source_sha256": "834cc4c8ac564f7fec12134cf362a59f21b07c7a4bffea626e60acbfaf1f8fd4",
+      "published_sha256": "74da34d76e4cb16489afd6820d1daa0c5e8ba28e65680d99a75c6daa3e5c06ed",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_bucket_pricing_v1/rule_vector_check.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_bucket_pricing_v1/rule_vector_check.json",
+      "source_sha256": "226d44661f216eb5217735998d568b2d0e748c390eeea6807939a95a4e8fb5b4",
+      "published_sha256": "716c0f36d8cf635e0f9e42de8cb1938cd7e6a8b92076eb88aa017925ceb1cc6b",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_features_dev_v1/features_check_dev.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_features_dev_v1/features_check_dev.json",
+      "source_sha256": "1b93adbd38a3947b10cc51ac68a0be120725b2d886fa8761c567941a1e085ac6",
+      "published_sha256": "0f2e7985aa8bacc767bc163171bea7bcc4c435a289968024982547f0dd5f58fb",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_features_dev_v1/features_dev.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_features_dev_v1/features_dev.json",
+      "source_sha256": "dceac2b6cb15f8fc8493fe82dcc12c9806c6d6d6c33ac2fac8c16723529ac8c9",
+      "published_sha256": "579c79451228ff35383d4198170ecd051629224f7adde410b6de44323c7c3d51",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_features_dev_v1/frames_dev.jsonl",
+      "source_path": "phenoleaf_experiments/jrtip/budget_features_dev_v1/frames_dev.jsonl",
+      "source_sha256": "60469640fb6adbd00ad16eddb404c6e78a6ff107ffb6453ea162c22f0bbb8107",
+      "published_sha256": "86e12b5b9bd80ca20bb5232fb7152d04a9ea2c05c58afc53571489d7f6fb4ee4",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_features_train_v1/features_check_train.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_features_train_v1/features_check_train.json",
+      "source_sha256": "2f1cd93d060fbf5cac91db001a5bff699126329708e51a0384596357e150d142",
+      "published_sha256": "59ed994a78907bcf0b79db28ea4c45303a123267bae08d9c0568c48c2a3538d2",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_features_train_v1/features_train.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_features_train_v1/features_train.json",
+      "source_sha256": "dfd35522ee9a60c21e9a410b04cc83911a2895b8e5b9934659dff41cfe9c29e7",
+      "published_sha256": "003902e7b60450ca26b4bf236243edf8335a042459c9a1101877799c5efb7ef4",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_features_train_v1/frames_train.jsonl",
+      "source_path": "phenoleaf_experiments/jrtip/budget_features_train_v1/frames_train.jsonl",
+      "source_sha256": "e9810dfc22a816e3cbe54f135c32da9272e4382a9d2209b9f6b109a122456bf3",
+      "published_sha256": "04f99b16af265e71c98986a4d0bcefccc8d790002718d97b71e8d0949e29eaf2",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_p1b_v1/arms_A1.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_p1b_v1/arms_A1.json",
+      "source_sha256": "6b7474b2f6028b7039317cee7e8132c47b27f039a54e4bdbb00322e4a7a8f8ff",
+      "published_sha256": "f5ac2b2b1896609ac12147ce6769fe4bcaee7156265324bb58977d1979277c93",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_p1b_v1/arms_A3.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_p1b_v1/arms_A3.json",
+      "source_sha256": "4b413d4fd778677df267c3cc786e744af2c4a5ad7dff1dab4752abc383b02505",
+      "published_sha256": "f8ef6405e547b12e8066934c4f2546bb70cad611af9858292fa58b2a1f099af4",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_p1b_v1/arms_C1.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_p1b_v1/arms_C1.json",
+      "source_sha256": "ec066b9f148b6ca2d8445d229e20efbbc59f17bd18f0f4d8d3e26db837e519ee",
+      "published_sha256": "69503c341a4dc73f355813244274d1a65a2f983d74a22daaa32b27895c925344",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_p1b_v1/comparator_duplicates.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_p1b_v1/comparator_duplicates.json",
+      "source_sha256": "62727ceaaeaeaef438586c8cb1cc30208c2ef39e52503269a3cb45f08ff30eac",
+      "published_sha256": "4c692a6043b97f82409af3bd2338cd52e2b8a1d3581ff410763865843e061362",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_p1b_v1/condition1_verdict.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_p1b_v1/condition1_verdict.json",
+      "source_sha256": "9c6ffa36b47b023eb8a4a53da3bb0271afc996319acb73057203e16d6a65d762",
+      "published_sha256": "1cbd58259e04517abe69cd62f939a823f2ed2e3d42b3c061023547e83c806d53",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_p1b_v1/condition1_with_ablations.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_p1b_v1/condition1_with_ablations.json",
+      "source_sha256": "42128aa687dced18cc511f33137f15b7e3edaf63465ccb8d5bda5c640ca9120f",
+      "published_sha256": "a86e47e515dfe2b2ace03f8199cd6e0509a1d77297a261841ac342d8be5ddfdc",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_p1b_v1/controller_A1.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_p1b_v1/controller_A1.json",
+      "source_sha256": "1ca7784f583bae7eb71b6543ba480de014b1bbd29e57c8463b5887585808951f",
+      "published_sha256": "432063732f13c1c9d2926a0ad69840182ab2c2b5ea3d3ce83cf2740a41f3ecd9",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_p1b_v1/controller_A3.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_p1b_v1/controller_A3.json",
+      "source_sha256": "df47e88cff513a3304212580eef9e86b44cde88454fb922d4a535fdb7afd8897",
+      "published_sha256": "813a4df283603217e9f26734dbb422fa483419e3be6ee2ba521f993b0930d581",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_p1b_v1/controller_C1.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_p1b_v1/controller_C1.json",
+      "source_sha256": "4650f392091838fe98817486e9b0a377df7b7bb6b3dc915acaf254a38ddad55e",
+      "published_sha256": "91f85a55cdbd96ecfede046686d210c907908e1109f3fb4b79af5d0d7393ba12",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_p1b_v1/equal_work_C1.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_p1b_v1/equal_work_C1.json",
+      "source_sha256": "ba56ee3964551247e8c95f9d736845f5ba5c2f334189843d72b46b02b01bea96",
+      "published_sha256": "6a65ba120ee35ac72556df551f6d220171d5a3d6d5cef884918502903d77103a",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_p1b_v1/equal_work_ablations.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_p1b_v1/equal_work_ablations.json",
+      "source_sha256": "cbf212d461698c6a6d1b7ba7e9e548470b0b0d0cdaf248555c48c6cb2d6a0301",
+      "published_sha256": "a47cff8aff992bac0b911088e242577b403cff459199007a9fb29ade9e43ed17",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_policy_v1/equal_work.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_policy_v1/equal_work.json",
+      "source_sha256": "3b82a65c6221eabd6a5c1682c73aa38282fa0001632d3e0198fc01867bebb154",
+      "published_sha256": "ee2e107d7d5a0b1092ed0d321b25f2971bc53f12d03e0be3d24f5fda17bdbf38",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_policy_v1/mask_string_diff_probe.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_policy_v1/mask_string_diff_probe.json",
+      "source_sha256": "2c284cfc7db74d6e749b9dcfd52ad6a9a3ea90cbd98c78451b6b169bc5c450b6",
+      "published_sha256": "f039ac07c223f689c1df8cca0811dd3102a7f081d692580cf00a9c3fc83e5f4a",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_policy_v1/policy_eval.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_policy_v1/policy_eval.json",
+      "source_sha256": "5b63aca7d45e03ca8beb37463303ec73b8a55d2ed2ebd18e1783c790a7cd329d",
+      "published_sha256": "52d8b83ab9c30ad5bdc1d102ccfe1d043bb5c336751a512e07d02a8f84e240bb",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_policy_v1_extra/policy_eval.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_policy_v1_extra/policy_eval.json",
+      "source_sha256": "f157881b0c24b8d31a847c93d3ecebd9a41054d1d0fbd0021ba6efe5853dfef0",
+      "published_sha256": "1e480aaf5eda5da2f22cd543d3ca60e7a5071ca149aefac4875748bcac317c5c",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_train_stream_v1/instrument_gate.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_train_stream_v1/instrument_gate.json",
+      "source_sha256": "3d96c0c554e99a0d632163b7274ca053765ca104933072063d8ee4ceecf3b84a",
+      "published_sha256": "83f2e7a5d6665a1f22dc4faaaf7a6c71b4b36525ae99dd44c48bad68d9e57cda",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_train_stream_v1/train_stream_audit.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_train_stream_v1/train_stream_audit.json",
+      "source_sha256": "0baf7a91e8dd4bff559e3d08e1a61c9d1c5006c53698190a43c37f380fe863b1",
+      "published_sha256": "37307942a4776309f2ed7ba4c09f1840c88c5ff4e91d372cc7418c6561fea15b",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_train_stream_v1/train_stream_config.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_train_stream_v1/train_stream_config.json",
+      "source_sha256": "ec2784372ae2292a31f1d51002d00a37d32de113ed9b0103861d08a222ff4a62",
+      "published_sha256": "f45566858fb2d6d3be78f1caa8a31d5e76055dd4d936c20f6037bba47b3912cb",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/budget_train_stream_v1/train_stream_report.json",
+      "source_path": "phenoleaf_experiments/jrtip/budget_train_stream_v1/train_stream_report.json",
+      "source_sha256": "ec2784372ae2292a31f1d51002d00a37d32de113ed9b0103861d08a222ff4a62",
+      "published_sha256": "f45566858fb2d6d3be78f1caa8a31d5e76055dd4d936c20f6037bba47b3912cb",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/budget_headroom.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/budget_headroom.json",
+      "source_sha256": "61dfde7918681e0237568e0ad6bc99557ed65edf25852177dea1e564552b8d65",
+      "published_sha256": "55b39b087df929a4a89b3b8498b101a7e2eb4be21f3fafa7bdae838b4589e5b5",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/budget_quality.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/budget_quality.json",
+      "source_sha256": "2e7391c1426b8f227f4a0e4d103f30cd3275581fbe47a3f14bfffe6702c096d6",
+      "published_sha256": "76c825444bf5502c40d4a9e410c7e8e54934e2cca8f06f35fdb79407eb4ae8ad",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/budget_quality_independent_verification.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/budget_quality_independent_verification.json",
+      "source_sha256": "c8710a7004c484b5a3ab6b32ece9efefec9ea2f8ac2a2d39a644f47ab28ad964",
+      "published_sha256": "6a618ab9dafc21c9c9820c72ebce53d985d625a423d8b90f3c1ff89335cbaa55",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00005/budget_quality_config.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00005/budget_quality_config.json",
+      "source_sha256": "3b7d88723383e4fbc90d3ff3a1ba624696ccab3b89d8b7f36830874c2f97829f",
+      "published_sha256": "224160508b61d1991b99a027da27ae8a4d8afd9d031f00520615cd6897453bf1",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00005/budget_quality_partial.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00005/budget_quality_partial.json",
+      "source_sha256": "67fe8f5c6112459a9af728c6054b69d0eac9103e7cebfaaa6e546a0a78c2081b",
+      "published_sha256": "852e84db392d077ceb57b9d5d0bfec3dad4fa758b8ca1c6bccc7ddc153e604a8",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00005/budget_report_000005.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00005/budget_report_000005.json",
+      "source_sha256": "964494a98964f32f3483f29cfae8c712262ca6e921335e7e699b6770b76a17ef",
+      "published_sha256": "0897928f76790600107423d53994b3c76209a5ad1d513bd8d47b68f0f955e8ff",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00005/status.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00005/status.json",
+      "source_sha256": "2fdd705d2b2c17e93496361e5107b11d9a1ef52702d6cd686b5cededc3e9f6e1",
+      "published_sha256": "27851b3a527cf0bd8b80443296c0ccfa80c1ad1528c2692500a1fae9d0d4961b",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00010/budget_quality_config.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00010/budget_quality_config.json",
+      "source_sha256": "6a74a78e991326fdc7d13ededbfac4afe1437e3cb9ab32633ae06c7b1cb29f75",
+      "published_sha256": "ad177963e8111a1b53fca5ca0fe5bbd64fd29ee3e9244f104248b91e3baf2472",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00010/budget_quality_partial.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00010/budget_quality_partial.json",
+      "source_sha256": "9d222da7cf23ee39237aa535588ea663244e0c06432a3cb88da3dfed9d37df85",
+      "published_sha256": "1995eb4deaa04e2e5543fbd0c8a8790a5eb7d8f3636d40650b382f40ef914192",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00010/budget_report_000010.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00010/budget_report_000010.json",
+      "source_sha256": "223ede3cf576cf99bc1e38f6dc55ce78803cb43e4bb4a94357af4c3d9a512f46",
+      "published_sha256": "fa6598ae0013d564e1464aff49d0d06fac1f81e97915bc68903e5801dabbd53c",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00010/status.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00010/status.json",
+      "source_sha256": "f2e3628ec09055de86375cf3c104a5403a3168dd8a75810f8f9ce488b84305cd",
+      "published_sha256": "19de09c7415fdbbe45ce58a3b91d828e6a355c463fd67090a962ff6f28fe1447",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00020/budget_quality_config.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00020/budget_quality_config.json",
+      "source_sha256": "b8cdecb6f9860078a29630c7ce7ef22714b9219862c197bc574d212ed7d7e53f",
+      "published_sha256": "df84de1524004ee24980338d25a1fb3b26361c9cc31ee7247e2c8fcd5c070fae",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00020/budget_quality_partial.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00020/budget_quality_partial.json",
+      "source_sha256": "757143a166c7cf29b80529b2a7b8f2d7e434bbb68064ce4392fec0442bc97690",
+      "published_sha256": "635d0e8debf5e7d20cb4afc6274d500ff2404f9dc0b316c3afb9e39ecc3ee02f",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00020/budget_report_000020.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00020/budget_report_000020.json",
+      "source_sha256": "8158d4db232e07c6ea172642788ea712a79ba9dcbe1b64073d513e544acbef51",
+      "published_sha256": "e4257cea5d9716d71a66889692b0aa02cd59871893121220d26776d441ac3978",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00020/status.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00020/status.json",
+      "source_sha256": "22a06aa02150d9542d58692012cc2396279172b6c330395f4dfb75c6b6f17ada",
+      "published_sha256": "c9538c551ce8a2b5d36e81b6afa5d6dca1210341a33b0f9dd6881f909702619b",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00025/budget_quality_config.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00025/budget_quality_config.json",
+      "source_sha256": "5b5b385037c5f06939c716a54b064d02a03d464fd53acb7ddf25eb1b4cff3ecd",
+      "published_sha256": "d14bcaf971db13a1794f0e8f641a9af3021db85d8171896cb85a5bc7de4f8638",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00025/budget_quality_partial.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00025/budget_quality_partial.json",
+      "source_sha256": "6bc452bb787258e65a4e1738ae6103c74cb019e56577bf04e37f33f6c8df6d3b",
+      "published_sha256": "03dcbc396222fb2c55404f986c80ae3601bf483de4e34d91a45b4337e9e2d6d4",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00025/budget_report_000025.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00025/budget_report_000025.json",
+      "source_sha256": "01a07fe82d14979dd4894926b85528c87d688c89cd4ca89c115fd123ef08799e",
+      "published_sha256": "9da8d261c5f06d8d68a72785311dc480e400c0c9ef375caf0e4b206da7a8b240",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00025/status.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00025/status.json",
+      "source_sha256": "b1c29f812f519ba7144cde59bc20a7a190cbfb1bcb9acc4193816e0ff162d897",
+      "published_sha256": "2e9a11bc0e96517b1e49fa17130628e3139d998872d91bbb3b81527485a8f5e6",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00030/budget_quality_config.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00030/budget_quality_config.json",
+      "source_sha256": "0c6b8b2c0bb47f863c3728df645a2a755f9c9bfb89dd48818047821b3614bbb4",
+      "published_sha256": "30748c86ed58a69225c1919dbc1913983733b0ec30abd7b3d782537dee97c610",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00030/budget_quality_partial.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00030/budget_quality_partial.json",
+      "source_sha256": "541394efb71cfd822109bde4f77b78b843c705384df15069ee1c753a7c481181",
+      "published_sha256": "98453b25877a8463a8167079e889a7c0f95b4b5902137dcf8745fae11f90c3e8",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00030/budget_report_000030.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00030/budget_report_000030.json",
+      "source_sha256": "c2054da2bb8158285dfa2c13dff1bf0ddf3087c34e9993245b2714bdd5ef2c30",
+      "published_sha256": "92aa05152ea6f0e96844f6c87e5119ef756075e8ecf3dde36365522e30ecff43",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00030/status.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00030/status.json",
+      "source_sha256": "130a21b3cf947a48b8d84d730ae9eb0c7b1d93db11b85b7246e9660df892a693",
+      "published_sha256": "0bb32317156506f7b25809e093155e769395244e64d9f39377f7affba3b8a652",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00050/budget_quality_config.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00050/budget_quality_config.json",
+      "source_sha256": "8a0e56bd2d3efc9d376e8aba08be89d76546b12fffdd6d3baeacbc21d314c7d1",
+      "published_sha256": "bce6d66a8507cdc7199206a88ca39567a8612117dd8ebb6f98b9fb6b263daa17",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00050/budget_quality_partial.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00050/budget_quality_partial.json",
+      "source_sha256": "f4bc83e83053f8a0948f2e5aec174280af5b112290fcb5ca7f08e568be3769b0",
+      "published_sha256": "b661d0609531fe56e3d97416bfaed3f0b72d1bf5195a4316090c73cc230e364a",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00050/budget_report_000050.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00050/budget_report_000050.json",
+      "source_sha256": "d5f98ced042396170d81b574bd4fb835e72d3546d59d41fa076842d70e688882",
+      "published_sha256": "bc396009aad28f96607313307ac5814b56b90fff5400900b679472ae1ef43518",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00050/status.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00050/status.json",
+      "source_sha256": "8778f528ae7ec145d411cd794b34f37b39bb3a06518c1c0433c1a9f149dd85a6",
+      "published_sha256": "95fbdf736f50f59a05c6c4c8aacc4cb6535da9c2c98d628796ee0963969245d0",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00100/budget_quality_config.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00100/budget_quality_config.json",
+      "source_sha256": "8b0c01ed3ba02f07f2be23826d8ca75fd8657ca9fb46813b8d03fe8e3aab5f12",
+      "published_sha256": "b5d15de4a57b4d942ce330ce7800122d3af5f579d1eeb54373edab710f46bdbd",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00100/budget_quality_partial.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00100/budget_quality_partial.json",
+      "source_sha256": "9b89040696934dd2eab1c5f7726975d54465571e4210bda25dbd7dbb0211f61b",
+      "published_sha256": "fa4cd5afef649dc5dab69f173dc1d1f440da44ab9caa21f42ca7d8bcade07527",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00100/budget_report_000100.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00100/budget_report_000100.json",
+      "source_sha256": "45550c85bd84e3e050a5dd218bc12a1bcba58d4ab93de28fb5082491cff6cd32",
+      "published_sha256": "e0816a7b2e76d7b775d60ef76c6fbfe9974a64cbd264ddf4344f2d3eb4d62d8e",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/detection_budget_quality_v1/cap00100/status.json",
+      "source_path": "phenoleaf_experiments/jrtip/detection_budget_quality_v1/cap00100/status.json",
+      "source_sha256": "d97d22a71aea7c0f679f1cb393e7b62996c0daae849f6a1d63c75cd3bc4fdf0a",
+      "published_sha256": "81e1a892bc2be9ac4b7116feed959df8c05ce6ac82c4ad33f5037a53ebb36e90",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/mask_restore_resolution_v1/quality_pass.json",
+      "source_path": "phenoleaf_experiments/jrtip/mask_restore_resolution_v1/quality_pass.json",
+      "source_sha256": "34abdbe364f921d2cdcb1163821038ecc0bb2207f04c4b633ed5a990f7118ab2",
+      "published_sha256": "68c1d59f2a8c35a0e1d9ae158debf73e7ca7c5c3c75a5c45c778c59fce617041",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/mask_restore_resolution_v1/restore_config.json",
+      "source_path": "phenoleaf_experiments/jrtip/mask_restore_resolution_v1/restore_config.json",
+      "source_sha256": "454404908ae1d555f396e3f49ca9c8e272c3c5489275596f757dbd6456fcc4a6",
+      "published_sha256": "b69615341a51813a797919ca3e2d38ac8479bf9340c72061120e67201b8028f5",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/mask_restore_resolution_v1/restore_quality.json",
+      "source_path": "phenoleaf_experiments/jrtip/mask_restore_resolution_v1/restore_quality.json",
+      "source_sha256": "b1f353ff09bb88e88e9bf371d0fae632a27bd04ddab3385ee3b1615fba53da52",
+      "published_sha256": "135e669e7dd83fe2583be48d5b8526084bfb2b8a7a18d101e11b6505c8e67931",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/mask_restore_timing_v1/restore_timing.json",
+      "source_path": "phenoleaf_experiments/jrtip/mask_restore_timing_v1/restore_timing.json",
+      "source_sha256": "2937129dd5c9530452a3da7c030bcd8f36b6990dafb47aa0ecab333a3a76d38f",
+      "published_sha256": "5a5a908dae5d768e72df41ff0fc594bad73e30dbfe2f020ff04a5f4a2f2e17e5",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/rule_timing_v1/rule_timing.json",
+      "source_path": "phenoleaf_experiments/jrtip/rule_timing_v1/rule_timing.json",
+      "source_sha256": "2507cf843962f4e2da27901e6f6efd4d1ac1c1e997a8f1e392f0bcbc33b12d82",
+      "published_sha256": "5a78992a714bf83e80849260d6b16485f88176d34e4b577c8e84898a5e29727a",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/rule_timing_v1/rule_timing_readout.json",
+      "source_path": "phenoleaf_experiments/jrtip/rule_timing_v1/rule_timing_readout.json",
+      "source_sha256": "3f3fe3e7a5fd98e456b731f72b1dc6a481c3f9e1126a4e24630d2ee54c60d40a",
+      "published_sha256": "a38846ee3554613c73d60f99b908375138ee67f0926472fb6cd919612528dc92",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/rule_timing_v1_rep/replication_compare.json",
+      "source_path": "phenoleaf_experiments/jrtip/rule_timing_v1_rep/replication_compare.json",
+      "source_sha256": "34cfc4355781f6e19ba8605ae9a8e8a353b54cc3e2b77f609bc27d9d42e1deca",
+      "published_sha256": "968caef4eb00381b3b4262bc5b0b03b2740bf7a5751246d293ff2dc541a45d16",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/rule_timing_v1_rep/rule_timing.json",
+      "source_path": "phenoleaf_experiments/jrtip/rule_timing_v1_rep/rule_timing.json",
+      "source_sha256": "ed6f44d8a7aa9fda2f8a4da602498786b7664a7bcaa4fbae61b268baecb72069",
+      "published_sha256": "f12983ed782859312e0a8a8adc069d499a3fd53c7472005c693b1504c99c0114",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/rule_timing_v1_rep/rule_timing_readout.json",
+      "source_path": "phenoleaf_experiments/jrtip/rule_timing_v1_rep/rule_timing_readout.json",
+      "source_sha256": "2c38ff8f9a06b7ce35fb5e7a1e49ac0a4c837925a685ac3f0a02a587c7d2923c",
+      "published_sha256": "794f9760d3d4b816256c4c3f789bd06c1f5808d4d49792cdf4ff1c62831d492b",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "jrtip/rule_timing_v1_rep/slot_probe.json",
+      "source_path": "phenoleaf_experiments/jrtip/rule_timing_v1_rep/slot_probe.json",
+      "source_sha256": "bdc93b0b3effa886f5d1b64beb3f307ad1240d55a59417f55f8e6756e26bab4e",
+      "published_sha256": "b8b777551e86c8cad879277ef66c9c888b0080566f56f028412280f862a6f9e1",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "metadata/audit_verification.json",
+      "source_path": "phenoleaf_experiments/shared/audit_verification.json",
+      "source_sha256": "a640f607843dabad1a8b5ce43fbf19a996f3dddba020cd4a0795261da7123cb2",
+      "published_sha256": "02740edcb1e1c640a4f29d727aa203945e03782ad357057165cba80855e5f0bd",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "metadata/pilot_readiness.json",
+      "source_path": "phenoleaf_experiments/shared/pilot_readiness.json",
+      "source_sha256": "a18c0689d7237e9fe1e2de11f459546508ec21bc56a7105d606f71c00202551b",
+      "published_sha256": "eecfa38c111e8365ad0cb0c22c6ddf24af00a55523fc7cd1946b00c9d95fb466",
+      "transformation": "machine fields removed; paths normalized"
+    },
+    {
+      "published_path": "requirements.txt",
+      "source_path": null,
+      "source_sha256": null,
+      "published_sha256": "061232e236526428f5e0f580f4ceb72b360b238a8db4eb6866858cb2cdfd9933",
+      "transformation": "generated"
+    },
+    {
+      "published_path": "results/numbers.md",
+      "source_path": "jrtip_budget_paper/numbers.md",
+      "source_sha256": "e9f7b8be3c7abd7c7e97d282df245855b76728bf8ce315e6fc0ead70f4d454f6",
+      "published_sha256": "c03f0eb62127525e122c7af8a2ce8b0f557cb4b42084c1658b464c51c5444d99",
+      "transformation": "text decoded as UTF-8; path strings normalized"
+    },
+    {
+      "published_path": "shared/inventory_provenance.json",
+      "source_path": null,
+      "source_sha256": null,
+      "published_sha256": "75e3bdf5a36fd3f9dcd2350eae562d8ded782ae49005ea0a6fead3e3e178d875",
+      "transformation": "generated"
+    },
+    {
+      "published_path": "shared/pilot_inventory.csv",
+      "source_path": "phenoleaf_experiments/shared/pilot_inventory.csv",
+      "source_sha256": "3190e4b511ece0a3137cf7ca3f9f60da0b35a6f89af7dcb80a33b5299ebfe9db",
+      "published_sha256": "f926a8a4dad2d59074d5fc3390de95a9c44c4858d265d6b47268ccef08a1ff9d",
+      "transformation": "path columns normalized"
+    },
+    {
+      "published_path": "src/jrtip_bottleneck_decomposition.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_bottleneck_decomposition.py",
+      "source_sha256": "d4a97d60a43808bf40b4554ffca6865b532aa67d60a32c14fb695617f282df64",
+      "published_sha256": "d4a97d60a43808bf40b4554ffca6865b532aa67d60a32c14fb695617f282df64",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_bucket_pricing.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_bucket_pricing.py",
+      "source_sha256": "6a5cb212e25671424cffba31f5f5c102efbc39ca81e5156c5af910327890e8eb",
+      "published_sha256": "6a5cb212e25671424cffba31f5f5c102efbc39ca81e5156c5af910327890e8eb",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_controller_fit.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_controller_fit.py",
+      "source_sha256": "f70a82bf126af532199c0cd28365eda8bc723e789b07088dab8cd7fc1d246bad",
+      "published_sha256": "f70a82bf126af532199c0cd28365eda8bc723e789b07088dab8cd7fc1d246bad",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_equal_work.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_equal_work.py",
+      "source_sha256": "d3881c7c54e55d7a9b5732f00366b016c46ef60cdb8be23dd87a944bf4cb67a9",
+      "published_sha256": "d3881c7c54e55d7a9b5732f00366b016c46ef60cdb8be23dd87a944bf4cb67a9",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_features.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_features.py",
+      "source_sha256": "fead1465d697168a2db3659c49127af4f50279a30b157d1311a79085a528f87d",
+      "published_sha256": "fead1465d697168a2db3659c49127af4f50279a30b157d1311a79085a528f87d",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_features_check.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_features_check.py",
+      "source_sha256": "d68379ee6953c0a5e1adebd89264aabd9e4a9231d9bdaeea7d066ae6711dd247",
+      "published_sha256": "d68379ee6953c0a5e1adebd89264aabd9e4a9231d9bdaeea7d066ae6711dd247",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_headroom.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_headroom.py",
+      "source_sha256": "1a2ed0fa72cae4ffebe2814406a99ea7145743230c228ff4ea515ec91379167f",
+      "published_sha256": "1a2ed0fa72cae4ffebe2814406a99ea7145743230c228ff4ea515ec91379167f",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_p1b_condition1.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_p1b_condition1.py",
+      "source_sha256": "6d5c039add57ef7d9dad7841b94ea04abb89cc056a546e9e7b42a477cf8c9f2b",
+      "published_sha256": "6d5c039add57ef7d9dad7841b94ea04abb89cc056a546e9e7b42a477cf8c9f2b",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_policy.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_policy.py",
+      "source_sha256": "e6f28278cf85163222d9681011a7c78cee6f0d2cdec9763bb8a530f5dd2d7645",
+      "published_sha256": "e6f28278cf85163222d9681011a7c78cee6f0d2cdec9763bb8a530f5dd2d7645",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_rule_equal_work.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_rule_equal_work.py",
+      "source_sha256": "2fd7cffef5c2e61202ac44a74028582c3fe8b2f8f6639cec60ab87b70b6d9ba0",
+      "published_sha256": "2fd7cffef5c2e61202ac44a74028582c3fe8b2f8f6639cec60ab87b70b6d9ba0",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_rule_timing.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_rule_timing.py",
+      "source_sha256": "098fbeb15734c4c798968a5f632710c2636323ee9fdb96b68428e092f38d3623",
+      "published_sha256": "098fbeb15734c4c798968a5f632710c2636323ee9fdb96b68428e092f38d3623",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_rule_vector_check.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_rule_vector_check.py",
+      "source_sha256": "b91f097db7182b182b67141da43d1b2cba33cac1eec1f148a25904d6b9f61677",
+      "published_sha256": "b91f097db7182b182b67141da43d1b2cba33cac1eec1f148a25904d6b9f61677",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_train_stream.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_train_stream.py",
+      "source_sha256": "dd9796003e1b02dfafed7e5d09446d9049f5ab14760ffde5eb70d5d486d6ce26",
+      "published_sha256": "dd9796003e1b02dfafed7e5d09446d9049f5ab14760ffde5eb70d5d486d6ce26",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_budget_train_stream_audit.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_budget_train_stream_audit.py",
+      "source_sha256": "74205be4c97e1b0e4363ee4a9661389b6f61369d7e040e8dca9e2c763e4f3866",
+      "published_sha256": "74205be4c97e1b0e4363ee4a9661389b6f61369d7e040e8dca9e2c763e4f3866",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_comparator_duplicates_v1.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_comparator_duplicates_v1.py",
+      "source_sha256": "05abbd27ff3e2e9770bd382edce0f2a44670ab453fdb78f2c65022f7249d8458",
+      "published_sha256": "05abbd27ff3e2e9770bd382edce0f2a44670ab453fdb78f2c65022f7249d8458",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_detection_budget_merge.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_detection_budget_merge.py",
+      "source_sha256": "9a2766f93f21dec42f84f03df59a33340e8ae5bbd33167f34a929ea4fca748b3",
+      "published_sha256": "9a2766f93f21dec42f84f03df59a33340e8ae5bbd33167f34a929ea4fca748b3",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_detection_budget_quality.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_detection_budget_quality.py",
+      "source_sha256": "58cdb087e18eb85195a206e1274addd9576caa28208aa5ad20f697baa095d1a9",
+      "published_sha256": "58cdb087e18eb85195a206e1274addd9576caa28208aa5ad20f697baa095d1a9",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_mask_restore_resolution.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_mask_restore_resolution.py",
+      "source_sha256": "14e9cd066c959213b74e959d693e4e0a4115ffb0fc174d8a2ac5ecdd61b7edf2",
+      "published_sha256": "14e9cd066c959213b74e959d693e4e0a4115ffb0fc174d8a2ac5ecdd61b7edf2",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_mask_string_diff_probe.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_mask_string_diff_probe.py",
+      "source_sha256": "ad18a576c64adbffbd70b3a4ee90bf7c5b1569d274b69f0186ad58de7a618c95",
+      "published_sha256": "ad18a576c64adbffbd70b3a4ee90bf7c5b1569d274b69f0186ad58de7a618c95",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_pilot.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_pilot.py",
+      "source_sha256": "b1be675e379c3d6748f4e2b21fa0abc8ccbfff8b2a1f6eeb5ba5e017d28bc740",
+      "published_sha256": "b1be675e379c3d6748f4e2b21fa0abc8ccbfff8b2a1f6eeb5ba5e017d28bc740",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_rule_timing_readout.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_rule_timing_readout.py",
+      "source_sha256": "898467e2d295be7ad104243645a61e4fcd586b2caba5c3d0f41dd3d5c77ac571",
+      "published_sha256": "898467e2d295be7ad104243645a61e4fcd586b2caba5c3d0f41dd3d5c77ac571",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_rule_timing_replication_compare.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_rule_timing_replication_compare.py",
+      "source_sha256": "07e3ddde7a915b7a21f9412fc11342278ec917b6699e217250d3e4f6bfbda736",
+      "published_sha256": "07e3ddde7a915b7a21f9412fc11342278ec917b6699e217250d3e4f6bfbda736",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/jrtip_rule_timing_slot_probe.py",
+      "source_path": "phenoleaf_experiments/src/jrtip_rule_timing_slot_probe.py",
+      "source_sha256": "e12732f12991ec9e2f2074620b2ea6494beb77b9f453c5f20d3bf0acd26a60b9",
+      "published_sha256": "e12732f12991ec9e2f2074620b2ea6494beb77b9f453c5f20d3bf0acd26a60b9",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/mva_model.py",
+      "source_path": "phenoleaf_experiments/src/mva_model.py",
+      "source_sha256": "736715b9ad8e1c2ed8a75072378b3e9b9d8578f01ae0ac7cd62856e1ce2eb55e",
+      "published_sha256": "736715b9ad8e1c2ed8a75072378b3e9b9d8578f01ae0ac7cd62856e1ce2eb55e",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/mva_pilot.py",
+      "source_path": "phenoleaf_experiments/src/mva_pilot.py",
+      "source_sha256": "8a1c1ed3a260fc355cf54908aa5055cec5e0791d688eb1d8fcf3b0a57ee13ec2",
+      "published_sha256": "3f4cf375722ddc1126b5c6ada1f50cffb81bac820a15628d3c24c54a0d9fb89e",
+      "transformation": "default checkpoint path parameterized"
+    },
+    {
+      "published_path": "src/verify_jrtip_benchmark.py",
+      "source_path": "phenoleaf_experiments/src/verify_jrtip_benchmark.py",
+      "source_sha256": "924358e7c0b1e0bf844fa1ca06d3e75c9696261fb20e1bf27804c6528aa35b84",
+      "published_sha256": "924358e7c0b1e0bf844fa1ca06d3e75c9696261fb20e1bf27804c6528aa35b84",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/verify_jrtip_budget_quality.py",
+      "source_path": "phenoleaf_experiments/src/verify_jrtip_budget_quality.py",
+      "source_sha256": "b5edc44fdb54b0ea6a6f6c24241aa0055d174214207a647910bb18a5a57ae084",
+      "published_sha256": "b5edc44fdb54b0ea6a6f6c24241aa0055d174214207a647910bb18a5a57ae084",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "src/verify_jrtip_decomposition.py",
+      "source_path": "phenoleaf_experiments/src/verify_jrtip_decomposition.py",
+      "source_sha256": "c6d3a1d5edcb7d2598ec3d6b1211f5df0be9f2e0821c263bc336ff4196612f30",
+      "published_sha256": "c6d3a1d5edcb7d2598ec3d6b1211f5df0be9f2e0821c263bc336ff4196612f30",
+      "transformation": "verbatim"
+    },
+    {
+      "published_path": "tests/test_jrtip.py",
+      "source_path": "phenoleaf_experiments/tests/test_jrtip.py",
+      "source_sha256": "8d70a07d032c902a15b2b1969f0e23bb6d72d1878639551509a33829bb924b51",
+      "published_sha256": "a6e6aead91ba04135f2183c8d3e019608d9758fa23e663456fffae3b8fc76dd9",
+      "transformation": "synthetic paths use explicit data root"
+    },
+    {
+      "published_path": "tests/test_jrtip_gpu_policy.py",
+      "source_path": "phenoleaf_experiments/tests/test_jrtip_gpu_policy.py",
+      "source_sha256": "466faeed86ccda1c288475e10a2e98bd5076aea9eed0eb11cfe7355f8d934286",
+      "published_sha256": "466faeed86ccda1c288475e10a2e98bd5076aea9eed0eb11cfe7355f8d934286",
+      "transformation": "synthetic paths use explicit data root"
+    }
+  ]
+}
